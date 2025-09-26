@@ -1,43 +1,31 @@
-# Astro Starter Kit: Minimal
+# Sanahuja Dev - Landing Page
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+[![Estado del Proyecto: En Desarrollo](https://img.shields.io/badge/estado-en_desarrollo-yellow.svg)](https://github.com/josejaviersanahuja/sanahuja-dev-site)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este repositorio contiene el código fuente de mi landing page personal y portafolio: [www.sanahuja.dev](https://www.sanahuja.dev) (próximamente).
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+### ✨ Sobre el Proyecto
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+El objetivo de este proyecto es crear una tarjeta de presentación digital moderna, rápida y accesible. El sitio está construido con **Astro** para garantizar un rendimiento óptimo y una experiencia de usuario fluida.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+El diseño es minimalista y está centrado en presentar mi marca personal, **Sanahuja Dev**, y facilitar el contacto a través de un formulario.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+---
 
-Any static assets, like images, can be placed in the `public/` directory.
+### 🛠️ Tecnologías Principales
 
-## 🧞 Commands
+- **Framework:** ![Astro](https://img.shields.io/badge/Astro-FF5D01?style=for-the-badge&logo=astro&logoColor=white)
+- **Lenguaje:** ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+### 👨‍💻 Sobre el Autor
 
-## 👀 Want to learn more?
+Este proyecto está siendo desarrollado y mantenido por mí, **José Javier Sanahuja**.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Soy un **Desarrollador Web y Socio IT**. Si quieres saber más sobre mi trabajo, puedes encontrarme en:
+
+- 🔗 [LinkedIn](https://www.linkedin.com/in/josejsanahuja/)
+- 📂 [GitHub](https://github.com/josejaviersanahuja)
