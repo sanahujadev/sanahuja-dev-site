@@ -29,3 +29,9 @@ Soy un **Desarrollador Web y Socio IT**. Si quieres saber más sobre mi trabajo,
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/josejsanahuja/)
 - 📂 [GitHub](https://github.com/josejaviersanahuja)
+
+---
+
+### 🙏 Agradecimientos
+
+Este proyecto utiliza componentes de la plantilla [astro-theme de Tailus-UI](https://github.com/Tailus-UI/astro-theme), la cual está licenciada bajo la licencia MIT. ¡Muchas gracias a sus creadores por su excelente trabajo!
