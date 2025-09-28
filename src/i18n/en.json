@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "title": "SanahujaDev | Web Developer",
+        "description": "Professional portfolio and website of SanahujaDev, web application developer."
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "contact": "Contact"
+    }
+}

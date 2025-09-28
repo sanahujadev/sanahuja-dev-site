@@ -2,18 +2,24 @@
 import { AstroFont } from 'astro-font';
 import AppFooter from "../components/AppFooter.astro";
 import AppHeader from "../components/AppHeader.astro";
-import "./../tailus.css"
+import "./../global.css"
+
+import es from "./../i18n/es.json";
+import en from "./../i18n/en.json";
+
+const { currentLocale } = Astro;
+const t = currentLocale === "es" ? es : en;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={currentLocale}>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
-        <meta name="description" content="Template built with tailwindcss using Tailus blocks v2" />
-        <title>Tailus astro theme</title>
+        <meta name="description" content={t.meta.description} />
+        <title>{t.meta.title}</title>
 
         <AstroFont
             config={[

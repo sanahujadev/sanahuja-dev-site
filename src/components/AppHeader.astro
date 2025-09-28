@@ -1,21 +1,27 @@
 ---
 import Container from "./Container.astro";
+import es from "./../i18n/es.json";
+import en from "./../i18n/en.json";
+
+const { currentLocale } = Astro;
+const t = currentLocale === "es" ? es : en;
+
 const links = [
     {
         to: "/#features",
-        label: "Features",
+        label: t.nav.home,
     },
     {
         to: "/#solution",
-        label: "Solution",
+        label: t.nav.about,
     },
     {
         to: "/#reviews",
-        label: "Reviews",
+        label: t.nav.services,
     },
     {
-        to: "https://github.com/luasenvy/nextjs-astro-theme",
-        label: "NextJS Version",
+        to: "/#contact",
+        label: t.nav.contact,
     },
 ];
 ---
