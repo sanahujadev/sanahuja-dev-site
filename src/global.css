@@ -1,7 +1,40 @@
 @import 'tailwindcss';
 
+/* 
+  ================================================================
+  PALETA DE COLORES SEMÁNTICA DESACOPLADA (con valores directos)
+  ================================================================
+*/
+
+:root {
+  /* Colores de tu Marca */
+  --color-brand-dark: #212121;
+  --color-brand-light: #E0E0E0;
+  --color-brand-orange: #FF6F00;
+
+  /* -- Fondos -- */
+  --color-bg-surface: #FFFFFF; /* white */
+  --color-bg-surface-dark: #1F2937; /* gray-800 */
+
+  /* -- Texto -- */
+  --color-text-default: #111827; /* gray-900 */
+  --color-text-default-dark: #FFFFFF; /* white */
+  --color-text-muted: #4B5563; /* gray-600 */
+  --color-text-muted-dark: #D1D5DB; /* gray-300 */
+  --color-text-on-primary: #FFFFFF; /* white */
+
+  /* -- Bordes y Divisiones -- */
+  --color-border-default: #F3F4F6; /* gray-100 */
+  --color-border-default-dark: #374151; /* gray-700 */
+}
+
+/*
+  ================================================================
+  TEMA DE TAILWIND
+  ================================================================
+*/
 @theme {
-    --color-primary : var(--color-indigo-600);
-    --color-secondary : var(--color-orange-600);
-    --color-info : var(--color-blue-600);
+    --color-primary: var(--color-brand-orange);
+    --color-bg-canvas: var(--color-brand-light);
+    --color-bg-canvas-dark: var(--color-brand-dark);
 }
