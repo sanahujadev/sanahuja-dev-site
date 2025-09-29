@@ -6,7 +6,13 @@
     "nav": {
         "home": "Inicio",
         "about": "Sobre mí",
-        "services": "Servicios",
+        "services": {
+            "label": "Servicios",
+            "badge": "¡Destacado!"
+        },
         "contact": "Contacto"
+    },
+    "cta": {
+      "getStarted": "Contáctame"
     }
 }
