@@ -1,0 +1,33 @@
+{
+  "features": {
+    "section_title": "Cómo Trabajo",
+    "headline": "Tecnología y estrategia unidas para tu éxito digital",
+    "description": "Combinamos las últimas tecnologías web con estrategias probadas para garantizar que tu presencia online sea efectiva y rentable.",
+    "cards": [
+      {
+        "image_alt": "Ilustración de diseño responsive",
+        "title": "Diseño Adaptativo",
+        "description": "Tu web se verá perfecta en cualquier dispositivo: móvil, tablet y ordenador. Experiencia de usuario optimizada.",
+        "cta_text": "Ver demostración"
+      },
+      {
+        "image_alt": "Ilustración de seguridad web",
+        "title": "Seguridad Garantizada",
+        "description": "Protección SSL, backups diarios y actualizaciones de seguridad continuas. Tu tranquilidad es nuestra prioridad.",
+        "cta_text": "Más detalles"
+      },
+      {
+        "image_alt": "Ilustración de SEO",
+        "title": "Visibilidad Inmediata",
+        "description": "Optimización SEO básica incluida para que tus clientes te encuentren fácilmente en los buscadores.",
+        "cta_text": "Consultar SEO"
+      },
+      {
+        "image_alt": "Ilustración de soporte",
+        "title": "Soporte Directo",
+        "description": "Comunicación directa vía WhatsApp para resolver tus dudas rápidamente. Sin intermediarios.",
+        "cta_text": "Contactar"
+      }
+    ]
+  }
+}

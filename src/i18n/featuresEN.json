@@ -1,0 +1,33 @@
+{
+  "features": {
+    "section_title": "How I Work",
+    "headline": "Technology and Strategy United for Your Digital Success",
+    "description": "We combine the latest web technologies with proven strategies to ensure your online presence is effective and profitable.",
+    "cards": [
+      {
+        "image_alt": "Illustration of responsive design",
+        "title": "Adaptive Design",
+        "description": "Your website will look perfect on any device: mobile, tablet, and computer. Optimized user experience.",
+        "cta_text": "See Demo"
+      },
+      {
+        "image_alt": "Illustration of web security",
+        "title": "Guaranteed Security",
+        "description": "SSL protection, daily backups, and continuous security updates. Your peace of mind is our priority.",
+        "cta_text": "More Details"
+      },
+      {
+        "image_alt": "Illustration of SEO",
+        "title": "Immediate Visibility",
+        "description": "Basic SEO optimization included so your clients can easily find you in search engines.",
+        "cta_text": "Consult SEO"
+      },
+      {
+        "image_alt": "Illustration of support",
+        "title": "Direct Support",
+        "description": "Direct communication via WhatsApp to quickly resolve your questions. No intermediaries.",
+        "cta_text": "Contact"
+      }
+    ]
+  }
+}
