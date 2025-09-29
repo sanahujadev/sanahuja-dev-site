@@ -23,7 +23,13 @@
   --color-bg-canvas-translucent-dark: rgba(3,7,18,0.7);
   --color-primary-soft: rgba(var(--color-brand-orange-rgb), 0.2);
   --color-bg-emphasis-soft-dark: rgba(255,255,255,0.1);
-
+  
+  --color-bg-accent-soft: #E0E7FF; /* indigo-100 */
+  --color-bg-accent-soft-dark: rgba(49, 46, 129, 0.2);
+  --color-bg-surface-soft: #F9FAFB; /* gray-50 */
+  --color-bg-secondary-accent-soft: #CCFBF1; /* teal-100 */
+  --color-bg-secondary-accent-soft-dark: rgba(19, 78, 74, 0.2);
+  
   /* -- Texto -- */
   --color-text-default: #111827; /* gray-900 */
   --color-text-default-dark: #FFFFFF; /* white */
@@ -39,6 +45,23 @@
   --color-text-stronger: #1F2937; /* gray-800 */
   --color-text-info: #3B82F6; /* blue-500 */
   --color-text-info-dark: #93C5FD; /* blue-300 */
+
+  --color-text-accent-strong: #6366F1; /* indigo-500 */
+  --color-text-accent-strong-dark: #818CF8; /* indigo-400 */
+  --color-text-accent-darker: #A5B4FC; /* indigo-300 */
+  --color-text-secondary-accent: #0D9488; /* teal-600 */
+  --color-text-secondary-accent-dark: #2DD4BF; /* teal-400 */
+  --color-text-secondary-accent-darker: #5EEAD4; /* teal-300 */
+  /* -- Gradientes -- */
+  --color-accent-gradient-stop: #C084FC; /* purple-400 */
+  --color-primary-gradient-start-dark: #1D4ED8; /* blue-700 */
+  --color-secondary-gradient-start: #22D3EE; /* cyan-400 */
+  --color-secondary-gradient-stop: #7DD3FC; /* sky-300 */
+  --color-secondary-gradient-stop-dark: #4F46E5; /* indigo-600 */
+  --color-primary-softest: rgba(var(--color-brand-orange-rgb), 0.1);
+  --color-secondary: #FF6F00; /* orange-600 */
+  --color-border-darker: #1F2937; /* gray-800 */
+  --color-icon-accent: #0EA5E9; /* sky-500 */
   
   /* -- Bordes y Divisiones -- */
   --color-border-default: #F3F4F6; /* gray-100 */
@@ -64,6 +87,8 @@
     --color-primary: var(--color-brand-orange);
     --color-bg-canvas: var(--color-brand-light);
     --color-bg-canvas-dark: var(--color-brand-dark);
+
+    /* -- Texto -- */
     --color-text-muted: var(--color-text-muted);
     --color-text-muted-dark: var(--color-text-muted-dark);
     --color-text-subtle: var(--color-text-subtle);
@@ -79,6 +104,32 @@
     --color-text-info: var(--color-text-info);
     --color-text-info-dark: var(--color-text-info-dark);
 
+    --color-text-accent-strong: var(--color-text-accent-strong);
+    --color-text-accent-strong-dark: var(--color-text-accent-strong-dark);
+    --color-text-accent-darker: var(--color-text-accent-darker);
+    
+    --color-text-secondary-accent: var(--color-text-secondary-accent);
+    --color-text-secondary-accent-dark: var(--color-text-secondary-accent-dark);
+    --color-text-secondary-accent-darker: var(--color-text-secondary-accent-darker);
+    
+    /* -- Gradientes -- */
+    --color-accent-gradient-stop: var(--color-accent-gradient-stop);
+    --color-primary-gradient-start-dark: var(--color-primary-gradient-start-dark);
+    --color-secondary-gradient-start: var(--color-secondary-gradient-start);
+    --color-secondary-gradient-stop: var(--color-secondary-gradient-stop);
+    --color-secondary-gradient-stop-dark: var(--color-secondary-gradient-stop-dark);
+    --color-primary-softest: var(--color-primary-softest);
+    --color-dark: var(--color-brand-dark);
+    --color-secondary: var(--color-secondary);
+    --color-border-darker: var(--color-border-darker);
+    --color-icon-accent: var(--color-icon-accent);
+    --color-bg-surface-soft: var(--color-bg-surface-soft);
+    --color-bg-accent-soft: var(--color-bg-accent-soft);
+    --color-bg-accent-soft-dark: var(--color-bg-accent-soft-dark);
+    --color-bg-secondary-accent-soft: var(--color-bg-secondary-accent-soft);
+    --color-bg-secondary-accent-soft-dark: var(--color-bg-secondary-accent-soft-dark);
+
+    /* -- Fondos -- */
     --color-bg-surface: var(--color-bg-surface);
     --color-bg-surface-dark: var(--color-bg-surface-dark);
     --color-bg-emphasis: var(--color-bg-emphasis);
@@ -88,13 +139,16 @@
     --color-primary-soft: var(--color-primary-soft);
     --color-bg-emphasis-soft-dark: var(--color-bg-emphasis-soft-dark);
 
+    /* -- Bordes y Divisiones -- */
     --color-border-default: var(--color-border-default);
     --color-border-default-dark: var(--color-border-default-dark);
     --color-border-subtle: var(--color-border-subtle);
     --color-border-subtle-dark: var(--color-border-subtle-dark);
 
+    /* -- Iconos -- */
     --color-icon-default: var(--color-icon-default);
     --color-icon-default-dark: var(--color-icon-default-dark);
 
+    /* -- Sombras -- */
     --color-shadow-default: var(--color-shadow-default);
 }
