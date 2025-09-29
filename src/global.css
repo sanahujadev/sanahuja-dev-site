@@ -8,74 +8,80 @@
 
 :root {
   /* Colores de tu Marca */
-  --color-brand-dark: #212121;
+  --color-brand-dark: #212121; 
   --color-brand-light: #E0E0E0;
-  --color-brand-orange: #FF6F00;
+  --color-brand-orange: #FF6F00; /*Primary Orange 600*/
   --color-brand-orange-rgb: 255, 111, 0;
 
-  /* -- Fondos -- */
-  --color-bg-surface: #FFFFFF; /* white */
-  --color-bg-surface-dark: #1F2937; /* gray-800 */
+  --color-brand-indigo: #6366F1; /*Secondary Indigo 500*/
+  --color-brand-teal: #14B8A6; /*Third Teal 500*/
+  --color-brand-blue: #3B82F6; /*Fourth Blue 500*/
 
-  --color-bg-emphasis: #111827; /* gray-900 */
-  --color-bg-emphasis-dark: #FFFFFF; /* white */
-  --color-bg-canvas-translucent: rgba(255,255,255,0.7);
-  --color-bg-canvas-translucent-dark: rgba(3,7,18,0.7);
-  --color-primary-soft: rgba(var(--color-brand-orange-rgb), 0.2);
-  --color-bg-emphasis-soft-dark: rgba(255,255,255,0.1);
-  
-  --color-bg-accent-soft: #E0E7FF; /* indigo-100 */
-  --color-bg-accent-soft-dark: rgba(49, 46, 129, 0.2);
-  --color-bg-surface-soft: #F9FAFB; /* gray-50 */
-  --color-bg-secondary-accent-soft: #CCFBF1; /* teal-100 */
-  --color-bg-secondary-accent-soft-dark: rgba(19, 78, 74, 0.2);
+  /* -- Fondos -- */
+  --color-bg-surface: #FFFFFF; /* white */ /*Light*/
+  --color-bg-surface-dark: #1E293B88; /* Slate-800 */ /*Tarjetas Dark*/
+  --color-bg-emphasis: #0F172A88; /* Slate-900 */ /*Tarjetas Dark*/
+  --color-bg-emphasis-dark: #FFFFFF; /* white */ /*Light*/
+
+  --color-bg-canvas-translucent: rgba(255,255,255,0.7); /*Light*/
+  --color-bg-canvas-translucent-dark: rgba(3,7,18,0.7); /*Dark*/
+  --color-primary-soft: rgba(var(--color-brand-orange-rgb), 0.2); /*Primary*/
+  --color-bg-emphasis-soft-dark: rgba(255,255,255,0.1); /*Light*/
+
+  --color-bg-accent-soft: #FCE8B2; /* orange-100 */ /*Primary 100*/
+  --color-bg-accent-soft-dark: rgba(249,115,22, 0.3); /*Primary 600*/
+  --color-bg-surface-soft: #F9FAFB; /* gray-50 */ /*Light*/
+  --color-bg-secondary-accent-soft: #CCFBF1; /* teal-100 */ /*Light*/ /*Third 100*/
+  --color-bg-secondary-accent-soft-dark: rgba(19, 78, 74, 0.2); /*Teal 900*/ /*Third 900*/
   
   /* -- Texto -- */
-  --color-text-default: #111827; /* gray-900 */
-  --color-text-default-dark: #FFFFFF; /* white */
-  --color-text-muted: #4B5563; /* gray-600 */
-  --color-text-muted-dark: #D1D5DB; /* gray-300 */
-  --color-text-subtle: #6B7280; /* gray-500 */
-  --color-text-subtle-dark: #9CA3AF; /* gray-400 */
-  --color-text-strong: #374151; /* gray-700 */
-  --color-text-muted-darker: #E5E7EB; /* gray-200 */
-  --color-text-accent: #6B21A8; /* purple-700 */
-  --color-text-accent-dark: #FDBA74; /* orange-300 */
-  --color-text-on-primary: #FFFFFF; /* white */
-  --color-text-stronger: #1F2937; /* gray-800 */
-  --color-text-info: #3B82F6; /* blue-500 */
-  --color-text-info-dark: #93C5FD; /* blue-300 */
+  --color-text-default: #111827; /* gray-900 */ /* On Light */
+  --color-text-default-dark: #FFFFFF; /* white */ /* On Dark */
+  --color-text-muted: #4B5563; /* gray-600 */  /* On Light */
+  --color-text-muted-dark: #D1D5DB; /* gray-300 */ /* On Dark */
+  --color-text-subtle: #6B7280; /* gray-500 */ /* On Light */
+  --color-text-subtle-dark: #9CA3AF; /* gray-400 */ /* On Dark */
+  --color-text-strong: #374151; /* gray-700 */ /* On Light */
+  --color-text-muted-darker: #E5E7EB; /* gray-200 */ /* On Light */
+  --color-text-on-primary: #FFFFFF; /* white */  /* On Dark */
+  --color-text-stronger: #1F2937; /* gray-800 */ /* On Light */
 
-  --color-text-accent-strong: #6366F1; /* indigo-500 */
-  --color-text-accent-strong-dark: #818CF8; /* indigo-400 */
-  --color-text-accent-darker: #A5B4FC; /* indigo-300 */
-  --color-text-secondary-accent: #0D9488; /* teal-600 */
-  --color-text-secondary-accent-dark: #2DD4BF; /* teal-400 */
-  --color-text-secondary-accent-darker: #5EEAD4; /* teal-300 */
+  --color-text-accent: #C05621; /* orange-700 */ /*Primary*/
+  --color-text-accent-dark: #A5B4FC; /* indigo-300 */ /*Secoundary*/
+  --color-text-info: #3B82F6; /* blue-500 */ /* On Light Fourth*/
+  --color-text-info-dark: #93C5FD; /* blue-300 */ /* On Dark Secondary or Third*/
+  --color-text-accent-strong: #C05621; /* orange-500 */ /* On Light Primary*/
+  --color-text-accent-strong-dark: #FDBA74; /* orange-300 */ /* On Dark Primary*/
+  --color-text-accent-darker: #FDBA74; /* orange-300 */ /* On Light Primary*/
+  --color-text-secondary-accent: #0D9488; /* teal-600 */ /* On Light Third*/
+  --color-text-secondary-accent-dark: #2DD4BF; /* teal-400 */ /* On Dark Third*/
+  --color-text-secondary-accent-darker: #5EEAD4; /* teal-300 */ /* On Dark Third*/
+
   /* -- Gradientes -- */
-  --color-accent-gradient-stop: #C084FC; /* purple-400 */
-  --color-primary-gradient-start-dark: #1D4ED8; /* blue-700 */
-  --color-secondary-gradient-start: #22D3EE; /* cyan-400 */
-  --color-secondary-gradient-stop: #7DD3FC; /* sky-300 */
-  --color-secondary-gradient-stop-dark: #4F46E5; /* indigo-600 */
-  --color-primary-softest: rgba(var(--color-brand-orange-rgb), 0.1);
-  --color-secondary: #FF6F00; /* orange-600 */
-  --color-border-darker: #1F2937; /* gray-800 */
-  --color-icon-accent: #0EA5E9; /* sky-500 */
+  --color-accent-gradient-stop: #FBBF24; /* amber-400 */ /*On Light Gradient*/
+  --color-primary-gradient-start-dark: #3730A3; /* Indigo-800 */ /*On Dark Gradient*/
+  --color-secondary-gradient-start: #2DD4BF; /* teal-400 */ /* Secondary or Third*/
+  --color-secondary-gradient-stop: #60A5FA; /* blue-400 */ /* Secondary or Third*/
+  --color-secondary-gradient-stop-dark: #6366F1; /* indigo-500 */ /* Secondary or Third*/
+
+  --color-primary-softest: rgba(var(--color-brand-orange-rgb), 0.1); /*Primary*/
+  --color-secondary: #4F46E5; /* indigo-600 */ /*Reemplazar luego, secundary o third*/
   
   /* -- Bordes y Divisiones -- */
   --color-border-default: #F3F4F6; /* gray-100 */
   --color-border-default-dark: #374151; /* gray-700 */
-
-  --color-border-subtle: rgba(0,0,0,0.05);
-  --color-border-subtle-dark: rgba(255,255,255,0.05);
-
+  --color-border-darker: #1F2937; /* gray-800 */
+  
+  --color-border-subtle: rgba(0,0,0,0.05); /* Light */
+  --color-border-subtle-dark: rgba(255,255,255,0.05); /* Dark */
+  
   /* -- Iconos -- */
-  --color-icon-default: #030712; /* gray-950 */
-  --color-icon-default-dark: #FFFFFF; /* white */
+  --color-icon-default: #030712; /* gray-950 */ /* Light */
+  --color-icon-default-dark: #FFFFFF; /* white */ /* Dark */
+  --color-icon-accent: #0EA5E9; /* sky-500 */ /*Secondary or Third*/
 
   /* -- Sombras -- */
-  --color-shadow-default: rgba(75, 85, 99, 0.1);
+  --color-shadow-default: rgba(75, 85, 99, 0.1); /* gray-600 */
 }
 
 /*
