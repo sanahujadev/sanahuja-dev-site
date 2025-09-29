@@ -25,3 +25,9 @@ pnpm-debug.log*
 
 # Gemini file
 GEMINI.md
+
+# images
+*.png
+*.jpg
+*.jpeg
+*.webp
