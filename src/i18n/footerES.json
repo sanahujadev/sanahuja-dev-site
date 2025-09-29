@@ -1,0 +1,21 @@
+{
+  "menu": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "contact": "Contacto",
+    "services": "Servicios",
+    "terms": "Términos y condiciones"
+  },
+  "social": {
+    "github": "Github",
+    "linkedin": "LinkedIn"
+  },
+  "content": {
+    "tagline": "No solo creo sitios web: te acompaño en tu camino digital, porque tu éxito también es el mío",
+    "copyright": "SanahujaDev /&gt; &copy;",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
+    "help": "¿Necesitas ayuda?",
+    "contact": "Contáctame"
+  }
+}

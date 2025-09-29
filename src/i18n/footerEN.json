@@ -1,0 +1,21 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "services": "Services",
+    "terms": "Terms of Use"
+  },
+  "social": {
+    "github": "Github",
+    "linkedin": "LinkedIn"
+  },
+  "content": {
+    "tagline": "I don't just create websites: I accompany you on your digital journey, because your success is also mine.",
+    "copyright": "SanahujaDev /&gt; &copy;",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "help": "Need help?",
+    "contact": "Contact Me"
+  }
+}
