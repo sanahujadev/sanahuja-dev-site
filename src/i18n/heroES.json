@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "headline": "No solo creo sitios web, construyo tu futuro digital. <span class='text-primary dark:text-primary'>Tu éxito es mi éxito.</span> 🚀",
+    "description": "Como socio IT estratégico, guío a profesionales y empresas para construir una presencia digital potente y duradera. Construyamos algo grande juntos.",
+    "cta": {
+      "primary": "Colaboremos",
+      "secondary": "Ver Mi Trabajo"
+    }
+  },
+  "valuePropositions": [
+    {
+      "title": "Soporte Prioritario",
+      "tagline": "Tu línea de emergencia técnica.",
+      "description": "Acceso directo por WhatsApp para resolver emergencias técnicas en menos de 2 horas. Tu tranquilidad es nuestra prioridad absoluta."
+    },
+    {
+      "title": "Backup y Seguridad",
+      "tagline": "Siempre a salvo, siempre seguro.",
+      "description": "Copias de seguridad diarias automáticas y protección avanzada contra malware. Tu información siempre está segura con nosotros."
+    },
+    {
+      "title": "Optimización Móvil",
+      "tagline": "Perfecto en cualquier pantalla.",
+      "description": "Garantizamos que tu web se vea y funcione perfectamente en todos los dispositivos móviles, tablets y ordenadores."
+    }
+  ],
+  "clients": {
+    "headline": "Con la Confianza de Profesionales e Innovadores",
+    "logoAlt": "Logo de cliente"
+  }
+}
