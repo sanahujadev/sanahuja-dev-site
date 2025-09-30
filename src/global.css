@@ -12,6 +12,7 @@
   --color-brand-light: #E0E0E0;
   --color-brand-orange: #FF6F00; /*Primary Orange 600*/
   --color-brand-orange-rgb: 255, 111, 0;
+  --color-brand-orange-300: #FEC87D; /*Primary Orange 200*/
 
   --color-brand-indigo: #6366F1; /*Secondary Indigo 500*/
   --color-brand-teal: #14B8A6; /*Third Teal 500*/
@@ -91,6 +92,7 @@
 */
 @theme {
     --color-primary: var(--color-brand-orange);
+    --color-primary-300: var(--color-brand-orange-300);
     --color-bg-canvas: var(--color-brand-light);
     --color-bg-canvas-dark: var(--color-brand-dark);
 
@@ -157,4 +159,21 @@
 
     /* -- Sombras -- */
     --color-shadow-default: var(--color-shadow-default);
+}
+
+/* Styles for theme-aware logos */
+.astro-logo path {
+  fill: #000000; /* Black for light mode */
+}
+
+.dark .astro-logo path {
+  fill: #FFFFFF; /* White for dark mode */
+}
+
+.nextjs-logo path {
+  fill: #000000; /* Black for light mode */
+}
+
+.dark .nextjs-logo path {
+  fill: #FFFFFF; /* White for dark mode */
 }

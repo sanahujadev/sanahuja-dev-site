@@ -6,9 +6,16 @@ import en from "./../i18n/featuresEN.json";
 const { currentLocale } = Astro;
 const t = currentLocale === "es" ? es : en;
 
+const imgPath = [
+  "images/icons/icon-responsive.png",
+  "images/icons/icon-secured.png",
+  "images/icons/icon-seo.png",
+  "images/icons/icon-message.png",
+];
+
 ---
 
-<div id="features" class="py-16 md:py-24">
+<div id="features">
   <Container>
     <div class="md:w-2/3 lg:w-1/2">
       {/* Visually hidden title for accessibility, as planned */}
@@ -27,12 +34,12 @@ const t = currentLocale === "es" ? es : en;
     </div>
 
     {/* The Magic Happens Here: Dynamic Card Grid */}
-    <div class="mt-16 grid divide-x divide-y divide-border-default dark:divide-border-default-dark overflow-hidden rounded-3xl border border-border-default dark:border-border-default-dark sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0">
+    <div class="mt-16 grid divide-x divide-y divide-border-default dark:divide-border-default-dark overflow-hidden rounded-3xl border border-border-default text-text-muted dark:border-border-default-dark sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
         {t.features.cards.map((card, index) => (
-            <div class={`group relative bg-bg-surface dark:bg-bg-surface-dark transition hover:z-[1] hover:shadow-2xl hover:shadow-shadow-default ${index === 3 ? 'lg:bg-bg-surface-soft dark:lg:bg-bg-emphasis' : ''}`}>
+            <div class={`group relative bg-bg-surface dark:bg-bg-surface-dark transition hover:z-[1] hover:shadow-2xl hover:shadow-shadow-default ${index === 3 ? 'bg-bg-surface-soft dark:bg-bg-emphasis' : ''}`}>
                 <div class={`relative space-y-8 py-12 p-8 transition duration-300 ${index === 3 ? 'group-hover:bg-bg-surface dark:group-hover:bg-bg-surface-dark' : ''}`}>
                     <img
-                        src={`/images/icons/feature-0${index + 1}.png`} {/* Assumed path, update as needed */}
+                        src={imgPath[index]}
                         class="w-12"
                         width="512"
                         height="512"
