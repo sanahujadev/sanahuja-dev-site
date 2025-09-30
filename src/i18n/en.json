@@ -6,13 +6,18 @@
     "nav": {
         "home": "Home",
         "about": "About Me",
+        "contact": "Contact",
         "services": {
             "label": "Services",
             "badge": "Featured!"
-        },
-        "contact": "Contact"
+        }
     },
     "cta": {
         "getStarted": "Contact Me"
-    }
+    },
+    "aria": {
+        "logo": "Logo of SanahujaDev",
+        "menuToggle": "Toggle main menu"
+    },
+    "brandName": "SanahujaDev/>"
 }

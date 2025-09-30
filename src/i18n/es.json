@@ -6,13 +6,18 @@
     "nav": {
         "home": "Inicio",
         "about": "Sobre mí",
+        "contact": "Contacto",
         "services": {
             "label": "Servicios",
             "badge": "¡Destacado!"
-        },
-        "contact": "Contacto"
+        }
     },
     "cta": {
       "getStarted": "Contáctame"
-    }
+    },
+    "aria": {
+        "logo": "Logo de SanahujaDev",
+        "menuToggle": "Alternar menú principal"
+    },
+    "brandName": "SanahujaDev/>"
 }

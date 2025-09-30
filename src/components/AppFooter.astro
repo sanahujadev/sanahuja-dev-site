@@ -1,8 +1,8 @@
 ---
 import Container from "./Container.astro";
 // Let's assume the files are correctly located for this example
-import es from "../../i18n/footerES.json"; 
-import en from "../../i18n/footerEN.json";
+import es from "../i18n/footerES.json"; 
+import en from "../i18n/footerEN.json";
 
 const { currentLocale } = Astro;
 const t = currentLocale === "es" ? es : en;
