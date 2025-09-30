@@ -1,0 +1,80 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes para los dispositivos -->
+    <linearGradient id="deviceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#222222"/>
+    </linearGradient>
+    
+    <!-- Sombras suaves -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    
+    <!-- Patrón de líneas para pantallas -->
+    <pattern id="screenPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="20" height="20" fill="#E0E0E0" opacity="0.1"/>
+      <path d="M0 10 L20 10 M10 0 L10 20" stroke="#FF6F00" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Fondo transparente -->
+  <rect width="100%" height="100%" fill="none"/>
+
+  <!-- LAPTOP (fondo) -->
+  <g filter="url(#shadow)">
+    <!-- Cuerpo principal -->
+    <rect x="40" y="80" width="120" height="70" rx="8" fill="url(#deviceGradient)"/>
+    <!-- Base -->
+    <rect x="60" y="150" width="80" height="6" rx="3" fill="url(#deviceGradient)"/>
+    <!-- Pantalla laptop -->
+    <rect x="45" y="85" width="110" height="60" rx="4" fill="#E0E0E0"/>
+    <!-- Contenido pantalla laptop -->
+    <rect x="45" y="85" width="110" height="60" rx="4" fill="url(#screenPattern)"/>
+    <rect x="50" y="95" width="100" height="8" rx="4" fill="#FF6F00"/>
+    <rect x="50" y="110" width="80" height="4" rx="2" fill="#6366F1"/>
+    <rect x="50" y="120" width="60" height="4" rx="2" fill="#14B8A6"/>
+    <rect x="50" y="130" width="90" height="4" rx="2" fill="#3B82F6"/>
+    
+    <!-- Bordes dobles para contraste -->
+    <rect x="45" y="85" width="110" height="60" rx="4" fill="none" stroke="#E0E0E0" stroke-width="1.5"/>
+    <rect x="45" y="85" width="110" height="60" rx="4" fill="none" stroke="#222222" stroke-width="0.5"/>
+  </g>
+
+  <!-- TABLET (medio) -->
+  <g filter="url(#shadow)" transform="translate(-15, -20)">
+    <!-- Cuerpo tablet -->
+    <rect x="30" y="50" width="80" height="110" rx="12" fill="url(#deviceGradient)"/>
+    <!-- Pantalla tablet -->
+    <rect x="35" y="55" width="70" height="100" rx="8" fill="#E0E0E0"/>
+    <!-- Contenido pantalla tablet -->
+    <rect x="35" y="55" width="70" height="100" rx="8" fill="url(#screenPattern)"/>
+    <rect x="45" y="70" width="50" height="6" rx="3" fill="#FF6F00"/>
+    <rect x="45" y="85" width="40" height="4" rx="2" fill="#6366F1"/>
+    <rect x="45" y="95" width="30" height="4" rx="2" fill="#14B8A6"/>
+    <rect x="45" y="105" width="45" height="4" rx="2" fill="#3B82F6"/>
+    <rect x="45" y="115" width="35" height="4" rx="2" fill="#FF6F00"/>
+    
+    <!-- Bordes dobles para contraste -->
+    <rect x="35" y="55" width="70" height="100" rx="8" fill="none" stroke="#E0E0E0" stroke-width="1.5"/>
+    <rect x="35" y="55" width="70" height="100" rx="8" fill="none" stroke="#222222" stroke-width="0.5"/>
+  </g>
+
+  <!-- SMARTPHONE (frente) -->
+  <g filter="url(#shadow)" transform="translate(25, -10)">
+    <!-- Cuerpo smartphone -->
+    <rect x="120" y="40" width="50" height="90" rx="10" fill="url(#deviceGradient)"/>
+    <!-- Pantalla smartphone -->
+    <rect x="125" y="45" width="40" height="80" rx="6" fill="#E0E0E0"/>
+    <!-- Contenido pantalla smartphone -->
+    <rect x="125" y="45" width="40" height="80" rx="6" fill="url(#screenPattern)"/>
+    <rect x="135" y="60" width="20" height="4" rx="2" fill="#FF6F00"/>
+    <rect x="135" y="70" width="15" height="3" rx="1.5" fill="#6366F1"/>
+    <rect x="135" y="78" width="12" height="3" rx="1.5" fill="#14B8A6"/>
+    <rect x="135" y="86" width="18" height="3" rx="1.5" fill="#3B82F6"/>
+    
+    <!-- Bordes dobles para contraste -->
+    <rect x="125" y="45" width="40" height="80" rx="6" fill="none" stroke="#E0E0E0" stroke-width="1.5"/>
+    <rect x="125" y="45" width="40" height="80" rx="6" fill="none" stroke="#222222" stroke-width="0.5"/>
+  </g>
+</svg>
