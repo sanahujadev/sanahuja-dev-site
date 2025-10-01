@@ -1,0 +1,25 @@
+---
+// --- The component's "script" lives in the frontmatter ---
+interface Props {
+  src: string | null;
+  name: string;
+  alt: string;
+}
+// We receive the props just like in Preact
+const { src, name, alt } = Astro.props;
+---
+
+{src ? (
+  <img 
+    class="w-12 h-12 rounded-full object-cover" 
+    src={src} 
+    alt={alt} 
+    width="48" 
+    height="48" 
+    loading="lazy" 
+  />
+) : (
+  <div class="w-12 h-12 rounded-full bg-bg-accent-soft flex items-center justify-center text-text-accent-strong font-bold text-xl">
+    <span>{name.charAt(0).toUpperCase()}</span>
+  </div>
+)}

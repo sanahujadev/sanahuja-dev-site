@@ -1,4 +1,4 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="200" height="200" viewBox="20 20  160 160" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Gradientes para el escudo -->
     <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
