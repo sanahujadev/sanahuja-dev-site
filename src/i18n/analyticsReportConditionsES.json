@@ -1,0 +1,47 @@
+{
+  "title": "Condiciones del Servicio: Informe de Visibilidad Web Mensual",
+  "intro": {
+    "title": "Introducción",
+    "description": "Este servicio está diseñado para clientes que desean entender el rendimiento de su web y el retorno de su inversión, sin la complejidad de las herramientas de analítica tradicionales."
+  },
+  "what_is_it": {
+    "title": "1. ¿Qué es el Informe de Visibilidad Web?",
+    "description": "Es un informe mensual en formato PDF, claro y conciso, que traduce los datos de analítica de tu web en respuestas directas a las preguntas que de verdad importan. Actuamos como tu intérprete de datos, para que puedas tomar decisiones informadas sobre tu negocio."
+  },
+  "included": {
+    "title": "2. Servicios Incluidos",
+    "description": "La cuota mensual de este servicio cubre:",
+    "items": [
+      {
+        "title": "Instalación y Configuración",
+        "description": "Instalamos y configuramos una herramienta de analítica web centrada en la privacidad y la simplicidad (Plausible Analytics), una alternativa ligera a Google Analytics."
+      },
+      {
+        "title": "Seguimiento de Objetivos",
+        "description": "Configuramos el seguimiento de un objetivo clave para tu negocio, habitualmente el envío de formularios de contacto."
+      },
+      {
+        "title": "Informe Mensual en PDF",
+        "description": "Cada principio de mes recibirás un informe fácil de entender que responde a preguntas como: ¿Cuántas personas han visitado la web?, ¿Cómo han encontrado la web (buscadores, redes sociales, etc.)?, ¿Cuáles son las páginas más populares?, ¿Desde qué países nos visitan?, ¿Cuántas personas han rellenado el formulario de contacto?"
+      }
+    ]
+  },
+  "excluded": {
+    "title": "3. Servicios Excluidos",
+    "description": "Este servicio se centra en la simplicidad y el reporte, por lo que no incluye:",
+    "items": [
+      "Análisis de datos en profundidad o consultoría de marketing digital.",
+      "Gestión de campañas de publicidad (Google Ads, Facebook Ads, etc.).",
+      "Configuración o gestión de herramientas complejas como Google Analytics 4 o Google Tag Manager.",
+      "Informes con una frecuencia mayor a la mensual o informes personalizados bajo demanda."
+    ]
+  },
+  "pricing": {
+    "title": "4. Precio del Servicio",
+    "description": "Este servicio se ofrece como un complemento mensual, idealmente junto al plan de Mantenimiento Web Esencial.",
+    "items": [
+      "**Precio:** 15€ + IGIC al mes.",
+      "La suscripción a la herramienta de analítica (Plausible Analytics) está incluida en el precio, no tienes que preocuparte por nada."
+    ]
+  }
+}

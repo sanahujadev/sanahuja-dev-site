@@ -3,10 +3,31 @@
   "subtitle": "We offer a variety of services to help you build and maintain your digital presence.",
   "services": [
     {
-      "title": "Essential Web Maintenance",
+      "title": "Essential Web Maintenance 25€/month",
       "description": "Ensures the proper functioning and online availability of your website.",
       "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       "url": "/en/services/maintenance",
+      "urlInnerText": "Conditions"
+    },
+    {
+      "title": "Online Reputation Management 25€/month",
+      "description": "Active and professional management of online reviews and ratings to build a positive brand image and foster customer trust.",
+      "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
+      "url": "/en/services/reputation",
+      "urlInnerText": "Conditions"
+    },
+    {
+      "title": "Support & Content Hour Pack 25€/hour",
+      "description": "The flexible solution to keep your website alive. Ideal for content updates, minor design tweaks, or technical consultations. Purchase a pack of hours and use them as you need them.",
+      "image": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1774&q=80",
+      "url": "/en/services/support-pack",
+      "urlInnerText": "Conditions"
+    },
+    {
+      "title": "Web Visibility Report 15€/month",
+      "description": "Understand your website's performance without the complexity. Receive a monthly PDF report that tells you how many people visit you, how they find you, and what they're interested in.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "url": "/en/services/analytics-report",
       "urlInnerText": "Conditions"
     }
   ],

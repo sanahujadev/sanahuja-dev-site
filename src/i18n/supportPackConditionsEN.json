@@ -1,0 +1,65 @@
+{
+  "title": "Terms of Service: Support & Content Hour Pack",
+  "intro": {
+    "title": "Introduction",
+    "description": "This document details the terms and operation of the prepaid hour packs, designed to offer you flexibility and a preferential price for updates and maintenance of your website."
+  },
+  "what_is_it": {
+    "title": "1. What is an Hour Pack?",
+    "description": "It is a package of hours that you purchase in advance and can use to request small to medium updates on your website. It gives you the flexibility to make changes without needing a new quote for each task."
+  },
+  "included": {
+    "title": "2. Included Services (Examples)",
+    "description": "The hours can be used for tasks such as:",
+    "items": [
+      "Updating text, hours, or contact information.",
+      "Changing, adding, or removing images, videos, or projects in your portfolio.",
+      "Publishing new blog posts (content provided by the client).",
+      "Creating or modifying banners and pop-ups for offers or announcements.",
+      "Minor style (CSS) or layout adjustments.",
+      "Technical consultations about the functioning of your website."
+    ]
+  },
+  "excluded": {
+    "title": "3. Excluded Services",
+    "description": "The hour pack is not designed for the following, which would require a separate quote:",
+    "items": [
+      "Development of new complex sections or functionalities (e.g., an online store, a booking system).",
+      "Complete redesign of the website or major sections.",
+      "Content creation from scratch (copywriting, logo design, video editing).",
+      "On-Page SEO or WPO tasks, as they are offered as separate boost services.",
+      "Support for third-party software not originally installed (e.g., a CRM)."
+    ]
+  },
+  "how_it_works": {
+    "title": "4. Methodology and Workflow",
+    "description": "To ensure transparency and control, we follow a simple process:",
+    "items": [
+      {
+        "title": "Request",
+        "description": "The client sends their detailed request via email."
+      },
+      {
+        "title": "Estimation",
+        "description": "Within 24-48 business hours, the necessary time is estimated (in minimum fractions of 15 minutes) and communicated to the client for approval."
+      },
+      {
+        "title": "Execution",
+        "description": "Once the client gives their approval, the work is carried out."
+      },
+      {
+        "title": "Report",
+        "description": "After completing the task, the client is notified and informed of the remaining hour balance in their pack."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "5. Packs and Preferential Prices",
+    "description": "Choose the pack that best suits your needs. The hours are priced at a reduced rate compared to the standard fee (40€/hour).",
+    "items": [
+      "**4-Hour Pack:** €100 (€25/hour). Valid for 6 months.",
+      "**10-Hour Pack:** €200 (€20/hour). Valid for 12 months.",
+      "The hours are non-transferable and must be used within their validity period. The client will be notified before the pack expires."
+    ]
+  }
+}

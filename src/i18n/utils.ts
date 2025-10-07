@@ -14,6 +14,12 @@ import solutionEN from "./solutionEN.json";
 import solutionES from "./solutionES.json";
 import maintenanceConditionsEN from "./maintenanceConditionsEN.json";
 import maintenanceConditionsES from "./maintenanceConditionsES.json";
+import reputationConditionsEN from "./reputationConditionsEN.json";
+import reputationConditionsES from "./reputationConditionsES.json";
+import supportPackConditionsEN from "./supportPackConditionsEN.json";
+import supportPackConditionsES from "./supportPackConditionsES.json";
+import analyticsReportConditionsEN from "./analyticsReportConditionsEN.json";
+import analyticsReportConditionsES from "./analyticsReportConditionsES.json";
 import servicesIndexEN from "./servicesIndexEN.json";
 import servicesIndexES from "./servicesIndexES.json";
 import en from "./en.json";
@@ -30,6 +36,9 @@ const translations = {
 		footer: footerEN,
 		services: maintenanceConditionsEN,
 		servicesIndex: servicesIndexEN,
+		reputation: reputationConditionsEN,
+		supportPack: supportPackConditionsEN,
+		analyticsReport: analyticsReportConditionsEN,
 	},
 	es: {
 		common: es,
@@ -41,6 +50,9 @@ const translations = {
 		footer: footerES,
 		services: maintenanceConditionsES,
 		servicesIndex: servicesIndexES,
+		reputation: reputationConditionsES,
+		supportPack: supportPackConditionsES,
+		analyticsReport: analyticsReportConditionsES,
 	},
 	"404": {
 		common: es,
@@ -52,6 +64,9 @@ const translations = {
 		footer: footerES,
 		services: null,
 		servicesIndex: null,
+		reputation: null,
+		supportPack: null,
+		analyticsReport: null,
 	},
 	"500": {
 		common: es,
@@ -63,6 +78,9 @@ const translations = {
 		footer: footerES,
 		services: null,
 		servicesIndex: null,
+		reputation: null,
+		supportPack: null,
+		analyticsReport: null,
 	},
 };
 
@@ -71,4 +89,7 @@ export const getTranslations = (lang: "en" | "es" | "404" | "500") => {
 };
 
 export type MaintenanceConditions = typeof maintenanceConditionsEN;
+export type ReputationConditions = typeof reputationConditionsEN;
+export type SupportPackConditions = typeof supportPackConditionsEN;
+export type AnalyticsReportConditions = typeof analyticsReportConditionsEN;
 export type ServicesIndex = typeof servicesIndexEN;

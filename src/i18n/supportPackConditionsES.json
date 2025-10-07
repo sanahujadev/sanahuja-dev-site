@@ -1,0 +1,65 @@
+{
+  "title": "Condiciones del Servicio: Bolsa de Horas de Soporte y Contenido",
+  "intro": {
+    "title": "Introducción",
+    "description": "Este documento detalla los términos y el funcionamiento de los paquetes de horas prepago, diseñados para ofrecerte flexibilidad y un precio preferencial para las actualizaciones y el mantenimiento de tu sitio web."
+  },
+  "what_is_it": {
+    "title": "1. ¿Qué es la Bolsa de Horas?",
+    "description": "Es un paquete de horas que compras por adelantado y que puedes utilizar para solicitar pequeñas y medianas actualizaciones en tu sitio web. Te da la flexibilidad de hacer cambios sin necesidad de un nuevo presupuesto para cada tarea."
+  },
+  "included": {
+    "title": "2. Servicios Incluidos (Ejemplos)",
+    "description": "Las horas pueden ser utilizadas para tareas como:",
+    "items": [
+      "Actualización de textos, horarios o información de contacto.",
+      "Cambio, adición o eliminación de imágenes, vídeos o proyectos en tu portafolio.",
+      "Publicación de nuevas entradas en el blog (contenido proporcionado por el cliente).",
+      "Creación o modificación de banners y pop-ups para ofertas o anuncios.",
+      "Pequeños ajustes de estilo (CSS) o de maquetación.",
+      "Consultas técnicas sobre el funcionamiento de tu web."
+    ]
+  },
+  "excluded": {
+    "title": "3. Servicios Excluidos",
+    "description": "La bolsa de horas no está diseñada para lo siguiente, que requeriría un presupuesto aparte:",
+    "items": [
+      "Desarrollo de nuevas secciones o funcionalidades complejas (ej. una tienda online, un sistema de reservas).",
+      "Rediseño completo de la web o de secciones importantes.",
+      "Creación de contenido desde cero (redacción de textos, diseño de logotipos, edición de vídeo).",
+      "Tareas de SEO On-Page o WPO, ya que se ofrecen como servicios de impulso separados.",
+      "Soporte para software de terceros no instalado originalmente (ej. un CRM)."
+    ]
+  },
+  "how_it_works": {
+    "title": "4. Metodología y Flujo de Trabajo",
+    "description": "Para garantizar la transparencia y el control, seguimos un proceso sencillo:",
+    "items": [
+      {
+        "title": "Solicitud",
+        "description": "El cliente envía su petición detallada por correo electrónico."
+      },
+      {
+        "title": "Estimación",
+        "description": "En un plazo de 24-48h laborables, se estima el tiempo necesario (en fracciones mínimas de 15 minutos) y se comunica al cliente para su aprobación."
+      },
+      {
+        "title": "Ejecución",
+        "description": "Una vez el cliente da su conformidad, se realiza el trabajo."
+      },
+      {
+        "title": "Reporte",
+        "description": "Tras finalizar la tarea, se notifica al cliente y se le informa del saldo de horas restante en su bolsa."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "5. Paquetes y Precios Preferenciales",
+    "description": "Elige el paquete que mejor se adapte a tus necesidades. Las horas tienen un precio reducido en comparación con la tarifa estándar (40€/hora).",
+    "items": [
+      "**Paquete 4 Horas:** 100€ (25€/hora). Válido durante 6 meses.",
+      "**Paquete 10 Horas:** 200€ (20€/hora). Válido durante 12 meses.",
+      "Las horas no son transferibles y deben usarse dentro de su período de validez. Se notificará al cliente antes de que el paquete expire."
+    ]
+  }
+}

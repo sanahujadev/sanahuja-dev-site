@@ -1,0 +1,77 @@
+--- 
+import { getTranslations, type SupportPackConditions } from '../../../i18n/utils';
+import Layout from '../../../layouts/Layout.astro';
+import Container from '../../../components/Container.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang as 'en' | 'es');
+const services = t.supportPack as SupportPackConditions;
+---
+
+<Layout t={t} lang={lang}>
+  <Container>
+    <div class="py-20 text-text-strong dark:text-text-default-dark">
+      <h1 class="text-4xl font-bold text-center">{services.title}</h1>
+
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold">{services.intro.title}</h2>
+        <p class="mt-4">{services.intro.description}</p>
+      </div>
+
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold">{services.what_is_it.title}</h2>
+        <p class="mt-4">{services.what_is_it.description}</p>
+      </div>
+
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold">{services.included.title}</h2>
+        <p class="mt-4">{services.included.description}</p>
+        <ul class="mt-4 list-disc list-outside pl-5 space-y-2">
+          {services.included.items.map(item => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold">{services.excluded.title}</h2>
+        <p class="mt-4">{services.excluded.description}</p>
+        <ul class="mt-4 list-disc list-outside pl-5 space-y-2">
+          {services.excluded.items.map(item => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold">{services.how_it_works.title}</h2>
+        <p class="mt-4">{services.how_it_works.description}</p>
+        <ul class="mt-4 list-disc list-outside pl-5 space-y-2">
+          {services.how_it_works.items.map(item => (
+            <li>
+              <strong>{item.title}:</strong> {item.description}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold">{services.pricing.title}</h2>
+        <p class="mt-4">{services.pricing.description}</p>
+        <ul class="mt-4 list-disc list-outside pl-5 space-y-2">
+          {services.pricing.items.map(item => (
+            <li class="[text-wrap:balance]">{item}</li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </Container>
+</Layout>

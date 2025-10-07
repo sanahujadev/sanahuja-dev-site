@@ -3,10 +3,31 @@
   "subtitle": "Ofrecemos una variedad de servicios para ayudarte a construir y mantener tu presencia digital.",
   "services": [
     {
-      "title": "Mantenimiento Web Esencial",
+      "title": "Mantenimiento Web Esencial 25€/mes",
       "description": "Garantiza el correcto funcionamiento y la disponibilidad online de tu sitio web.",
       "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       "url": "/es/services/maintenance",
+      "urlInnerText": "Condiciones"
+    },
+    {
+      "title": "Gestión de Reputación Online 25€/mes",
+      "description": "Gestión activa y profesional de las reseñas y valoraciones online para construir una imagen de marca positiva y fomentar la confianza de los clientes.",
+      "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
+      "url": "/es/services/reputation",
+      "urlInnerText": "Condiciones"
+    },
+    {
+      "title": "Bolsa de Horas de Soporte y Contenido 25€/hora",
+      "description": "La solución flexible para mantener tu web viva. Ideal para actualizaciones de contenido, pequeños ajustes de diseño o consultas técnicas. Compra un paquete de horas y úsalas cuando lo necesites.",
+      "image": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1774&q=80",
+      "url": "/es/services/support-pack",
+      "urlInnerText": "Condiciones"
+    },
+    {
+      "title": "Informe de Visibilidad Web 15€/mes",
+      "description": "Entiende el rendimiento de tu web sin complicaciones. Recibe un informe mensual en PDF que te dice cuántos te visitan, cómo te encuentran y qué les interesa.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "url": "/es/services/analytics-report",
       "urlInnerText": "Condiciones"
     }
   ],

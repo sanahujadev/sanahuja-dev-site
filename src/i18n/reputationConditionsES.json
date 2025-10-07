@@ -1,0 +1,64 @@
+{
+  "title": "Condiciones del Servicio: Gestión de Reputación Online y Reseñas",
+  "intro": {
+    "title": "Introducción",
+    "description": "Este documento detalla los términos del servicio opcional de gestión de reseñas, diseñado para clientes que deseen mantener una presencia online profesional y una comunicación activa con sus clientes."
+  },
+  "object": {
+    "title": "1. Objeto del Servicio",
+    "description": "El objetivo de este servicio es gestionar de forma activa y profesional las reseñas y valoraciones online recibidas por el cliente en las plataformas acordadas. El fin es construir y mantener una imagen de marca positiva, fomentar la confianza de futuros clientes y gestionar la retroalimentación de manera constructiva."
+  },
+  "included": {
+    "title": "2. Servicios Incluidos",
+    "description": "La cuota mensual de este servicio cubre las siguientes acciones:",
+    "items": [
+      {
+        "title": "Monitorización Activa",
+        "description": "Supervisión periódica (en días laborables) de las plataformas designadas para detectar nuevas reseñas."
+      },
+      {
+        "title": "Respuesta a Reseñas Positivas (4-5 estrellas)",
+        "description": "Agradecimiento personalizado a los clientes por su valoración, reforzando aspectos positivos del negocio y manteniendo la voz de la marca."
+      },
+      {
+        "title": "Gestión de Reseñas Negativas (1-3 estrellas)",
+        "description": "Implementación de un protocolo de respuesta que incluye el análisis de la crítica, la consulta con el cliente para obtener contexto y la elaboración de una respuesta profesional, empática y orientada a la resolución."
+      },
+      {
+        "title": "Reporte de Reseñas Inapropiadas",
+        "description": "Identificación y reporte a las plataformas de aquellas reseñas que infrinjan sus políticas de uso (spam, discurso de odio, contenido falso). Nota: No se garantiza la eliminación de la reseña por parte de la plataforma."
+      },
+      {
+        "title": "Informe Mensual Básico",
+        "description": "Envío de un resumen mensual con el número de reseñas gestionadas, la valoración media y un destaque de la reseña más significativa."
+      }
+    ]
+  },
+  "methodology": {
+    "title": "3. Metodología de Trabajo y Obligaciones del Cliente",
+    "description": "Para garantizar la eficacia del servicio, se establece el siguiente flujo de trabajo, que requiere la colaboración activa del cliente:",
+    "items": [
+      "Sesión Inicial (Onboarding): Se realizará una única reunión inicial para definir la voz y el tono de la marca, así como para establecer los puntos clave a comunicar y recoger información esencial sobre el negocio.",
+      "Protocolo para Reseñas Negativas (Crítico): Al detectar una reseña negativa, se notificará al cliente en un plazo máximo de 24 horas laborables, solicitando información y contexto sobre el caso. El cliente se compromete a proporcionar la información necesaria para elaborar la respuesta en un plazo máximo de 48 horas laborables. La respuesta final se publicará tras recibir y analizar la información del cliente. El retraso por parte del cliente en facilitar la información exime de responsabilidad sobre la demora en la respuesta pública.",
+      "Tiempos de Respuesta: El objetivo es responder a todas las reseñas en un plazo de 3-5 días laborables desde su publicación, siempre que el protocolo anterior se cumpla.",
+      "Canal de Comunicación: Toda la comunicación relacionada con la gestión de reseñas se centralizará a través de correo electrónico para asegurar un registro y seguimiento adecuados."
+    ]
+  },
+  "excluded": {
+    "title": "4. Servicios Excluidos",
+    "description": "Este servicio se limita estrictamente a la gestión de reseñas y NO INCLUYE:",
+    "items": [
+      "Gestión de Comentarios o Mensajes Directos: No se gestionarán comentarios en publicaciones de redes sociales (Facebook, Instagram, etc.) ni mensajes privados o directos.",
+      "Servicio de Atención al Cliente General: No se gestionarán consultas, quejas o solicitudes que lleguen por otros canales (email, teléfono, WhatsApp).",
+      "Generación de Nuevas Reseñas: El servicio se centra en gestionar las reseñas existentes, no en implementar campañas para solicitar nuevas valoraciones.",
+      "Gestión de Crisis de Reputación Mayores: Situaciones que excedan el ámbito de las reseñas online (ej. noticias en prensa, viralización negativa) no están cubiertas."
+    ]
+  },
+  "platforms": {
+    "title": "5. Plataformas y Precio",
+    "items": [
+      "Plataformas Incluidas: El servicio cubrirá un máximo de dos (2) plataformas a elegir por el cliente de la siguiente lista: Google Business Profile, Microsoft Bing Places, TripAdvisor, u otra plataforma relevante acordada.",
+      "Precio del Servicio: El precio de este servicio es de 25€ + IGIC al mes."
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Terms of Service: Monthly Web Visibility Report",
+  "intro": {
+    "title": "Introduction",
+    "description": "This service is designed for clients who want to understand their website's performance and return on investment, without the complexity of traditional analytics tools."
+  },
+  "what_is_it": {
+    "title": "1. What is the Web Visibility Report?",
+    "description": "It is a clear and concise monthly PDF report that translates your website's analytics data into direct answers to the questions that truly matter. We act as your data interpreter, so you can make informed decisions about your business."
+  },
+  "included": {
+    "title": "2. Included Services",
+    "description": "The monthly fee for this service covers:",
+    "items": [
+      {
+        "title": "Installation and Configuration",
+        "description": "We install and configure a privacy-focused and simple analytics tool (Plausible Analytics), a lightweight alternative to Google Analytics."
+      },
+      {
+        "title": "Goal Tracking",
+        "description": "We set up tracking for one key business goal, usually contact form submissions."
+      },
+      {
+        "title": "Monthly PDF Report",
+        "description": "At the beginning of each month, you will receive an easy-to-understand report that answers questions like: How many people visited the website?, How did they find the website (search engines, social media, etc.)?, What are the most popular pages?, From which countries do they visit us?, How many people have filled out the contact form?"
+      }
+    ]
+  },
+  "excluded": {
+    "title": "3. Excluded Services",
+    "description": "This service focuses on simplicity and reporting, so it does not include:",
+    "items": [
+      "In-depth data analysis or digital marketing consulting.",
+      "Management of advertising campaigns (Google Ads, Facebook Ads, etc.).",
+      "Configuration or management of complex tools like Google Analytics 4 or Google Tag Manager.",
+      "Reports with a frequency greater than monthly or custom on-demand reports."
+    ]
+  },
+  "pricing": {
+    "title": "4. Price of the Service",
+    "description": "This service is offered as a monthly add-on, ideally alongside the Essential Web Maintenance plan.",
+    "items": [
+      "**Price:** €15 + IGIC per month.",
+      "The subscription to the analytics tool (Plausible Analytics) is included in the price, you don't have to worry about anything."
+    ]
+  }
+}

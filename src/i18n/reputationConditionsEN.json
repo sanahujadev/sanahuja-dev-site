@@ -1,0 +1,64 @@
+{
+  "title": "Terms of Service: Online Reputation and Review Management",
+  "intro": {
+    "title": "Introduction",
+    "description": "This document details the terms of the optional review management service, designed for clients who wish to maintain a professional online presence and active communication with their customers."
+  },
+  "object": {
+    "title": "1. Object of the Service",
+    "description": "The objective of this service is to actively and professionally manage the online reviews and ratings received by the client on the agreed platforms. The goal is to build and maintain a positive brand image, foster the trust of future customers, and manage feedback constructively."
+  },
+  "included": {
+    "title": "2. Services Included",
+    "description": "The monthly fee for this service covers the following actions:",
+    "items": [
+      {
+        "title": "Active Monitoring",
+        "description": "Regular monitoring (on business days) of the designated platforms to detect new reviews."
+      },
+      {
+        "title": "Response to Positive Reviews (4-5 stars)",
+        "description": "Personalized thank you to customers for their rating, reinforcing positive aspects of the business and maintaining the brand voice."
+      },
+      {
+        "title": "Management of Negative Reviews (1-3 stars)",
+        "description": "Implementation of a response protocol that includes analyzing the criticism, consulting with the client to obtain context, and drafting a professional, empathetic, and resolution-oriented response."
+      },
+      {
+        "title": "Reporting Inappropriate Reviews",
+        "description": "Identification and reporting to the platforms of those reviews that violate their usage policies (spam, hate speech, false content). Note: The removal of the review by the platform is not guaranteed."
+      },
+      {
+        "title": "Basic Monthly Report",
+        "description": "Sending a monthly summary with the number of reviews managed, the average rating, and a highlight of the most significant review."
+      }
+    ]
+  },
+  "methodology": {
+    "title": "3. Work Methodology and Client Obligations",
+    "description": "To ensure the effectiveness of the service, the following workflow is established, which requires the active collaboration of the client:",
+    "items": [
+      "Initial Session (Onboarding): A single initial meeting will be held to define the brand's voice and tone, as well as to establish key points to communicate and gather essential information about the business.",
+      "Protocol for Negative Reviews (Critical): Upon detecting a negative review, the client will be notified within a maximum of 24 business hours, requesting information and context about the case. The client agrees to provide the necessary information to prepare the response within a maximum of 48 business hours. The final response will be published after receiving and analyzing the client's information. The client's delay in providing the information exempts from responsibility for the delay in the public response.",
+      "Response Times: The goal is to respond to all reviews within 3-5 business days of their publication, provided that the above protocol is met.",
+      "Communication Channel: All communication related to review management will be centralized through email to ensure proper recording and follow-up."
+    ]
+  },
+  "excluded": {
+    "title": "4. Excluded Services",
+    "description": "This service is strictly limited to review management and DOES NOT INCLUDE:",
+    "items": [
+      "Management of Comments or Direct Messages: Comments on social media posts (Facebook, Instagram, etc.) or private or direct messages will not be managed.",
+      "General Customer Service: Inquiries, complaints, or requests that arrive through other channels (email, phone, WhatsApp) will not be managed.",
+      "Generation of New Reviews: The service focuses on managing existing reviews, not on implementing campaigns to request new ratings.",
+      "Management of Major Reputation Crises: Situations that exceed the scope of online reviews (e.g., press news, negative viralization) are not covered."
+    ]
+  },
+  "platforms": {
+    "title": "5. Platforms and Price",
+    "items": [
+      "Platforms Included: The service will cover a maximum of two (2) platforms to be chosen by the client from the following list: Google Business Profile, Microsoft Bing Places, TripAdvisor, or another relevant agreed-upon platform.",
+      "Service Price: The price of this service is €25 + IGIC per month."
+    ]
+  }
+}
