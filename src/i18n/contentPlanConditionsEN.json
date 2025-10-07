@@ -1,0 +1,82 @@
+{
+  "title": "Service Conditions: Monthly Authority Plan",
+  "introduction": "The Monthly Authority Plan is a monthly service designed to keep your website active, relevant, and engaging through the regular publication of SEO-optimized articles. It is intended for professionals and businesses who want to maintain a lively digital presence without dedicating time to writing or content management.",
+  "sections": [
+    {
+      "title": "What does the Monthly Authority Plan consist of?",
+      "content": "The service includes the creation, writing, and publication of a monthly blog article, optimized for search engines (SEO) and tailored to your target audience. The goal is to improve your online visibility, rank for new searches, and strengthen your brand authority in the long term."
+    },
+    {
+      "title": "Included Services",
+      "items": [
+        "1 original and SEO-optimized article (between 600 and 900 words).",
+        "SEO opportunity analysis: detection of a relevant topic based on customer searches and objectives.",
+        "Professional writing, adapted to the brand's tone and structured for readability and conversion.",
+        "Basic review of main keywords and meta tags (title, description).",
+        "Selection and insertion of a royalty-free featured image.",
+        "Publication on the client's website.",
+        "1 round of revision or minor adjustments (style, tone corrections, or small changes requested by the client).",
+        "Basic quarterly SEO review to analyze content evolution and new opportunities. It will not be a detailed report like the monthly report, but a monitoring of the blog's success."
+      ]
+    },
+    {
+      "title": "Excluded Services",
+      "content": "The Monthly Authority Plan does not include the following services, which can be quoted separately or carried out using the Hour Pack:",
+      "items": [
+        "Writing more than one monthly article or texts longer than 1,000 words.",
+        "Creation of custom graphics or infographics.",
+        "Exhaustive SEO studies or technical website audits.",
+        "Translation or adaptation of content to other languages.",
+        "Simultaneous publications on social media (can be requested separately).",
+        "Complete proofreading or advanced editing (editorial style).",
+        "Backlink management or link building strategies.",
+        "Design changes, complex layout, or implementation of new templates."
+      ]
+    },
+    {
+      "title": "Methodology and Workflow",
+      "content": "To ensure clarity, consistency, and measurable results, we follow this process:",
+      "items": [
+        "SEO opportunity detection: Relevant topics are identified based on trends, keywords, comments or reviews, and client objectives.",
+        "Monthly topic proposal: A brief proposal is sent for approval.",
+        "Writing and revision: After approval, the article is written and sent for review (1 round included).",
+        "Publication: The article is published directly on the website or delivered in an editable format (Word or Google Docs).",
+        "Optional quarterly report: Every three months, a brief performance review and new SEO opportunities can be included."
+      ]
+    },
+    {
+      "title": "Price and Conditions",
+      "items": [
+        "Base price: from €75/month, with automatic monthly billing.",
+        "Recommended minimum duration: 3 months (to ensure results and strategy coherence).",
+        "Cancellation: can be requested 15 days before the next month.",
+        "Delivery: within the first 10 days of the corresponding month, unless otherwise agreed.",
+        "Additional revisions: will be charged at €25/hour (equivalent to the Hour Pack)."
+      ]
+    },
+    {
+      "title": "Equivalence with the Hour Pack",
+      "table": {
+        "headers": ["Concept", "Estimated time", "Cost if done with Hour Pack (€25/h)"],
+        "rows": [
+          ["SEO research and planning", "0.5h", "€12.50"],
+          ["Article writing and revision (600–900 words)", "2h", "€50.00"],
+          ["Image Creation and Editing", "0.5h", "€12.50"],
+          ["Review with the website owner", "0.5h", "€12.50"],
+          ["Content preparation in CDN and upload to the web", "0.5h", "€12.50"]
+        ],
+        "footer": ["Estimated total", "4h", "€100.00"]
+      },
+      "summary": "💡 This means that the cost of the Monthly Authority Plan is equivalent to 4 hours of your Hour Pack, but with the advantage of:\n- Automatic monthly deliveries without additional management.\n- Proactive proposal of SEO topics.\n- Guarantee of quality and consistency.\n- Simplified workflow with no need to manually request tasks.\n- 25% discount on content creation without the basic plan."
+    },
+    {
+      "title": "Recommendations",
+      "content": "The Monthly Authority Plan is the ideal complement for those who already have:",
+      "items": [
+        "Essential Web Maintenance, to ensure the technical availability of the site.",
+        "Web Visibility Report, to measure the real impact of each publication."
+      ],
+      "conclusion": "Together, these services guarantee a secure, active, and constantly growing site."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Optional Add-ons for Your Website",
+  "introduction": "Our maintenance plan is the foundation for ensuring the stability and security of your website. These optional services are add-ons designed to enhance your digital presence by adding specific functionalities according to your needs. Choose the ones you need, when you need them, to build a tailor-made solution.",
+  "services": [
+    {
+      "name": "Anti-Spam Contact Form Management",
+      "description": "Every message from a customer is an opportunity. We make sure you never miss one. We secure your contact form to be a direct and safe communication channel, protecting it from spam and ensuring the delivery of every message.",
+      "includes": [
+        "Constant technical monitoring of the form.",
+        "Dual automatic notification system (one email for you, another for your client's confirmation).",
+        "Implementation of an anti-spam shield (like Google reCAPTCHA).",
+        "Periodic tests to verify correct operation."
+      ],
+      "ideal_for": "Businesses that rely on direct contact to generate customers and opportunities.",
+      "price": "+€5/month"
+    },
+    {
+      "name": "24/7 Booking Calendar Integration",
+      "description": "Turn your website into a sales assistant that works 24/7. We integrate a professional booking system (like Calendly or similar) so your clients can check your availability and schedule an appointment instantly, without intermediaries and at any time.",
+      "includes": [
+        "Configuration and visual integration of the calendar on your website.",
+        "Initial synchronization of your schedules and service types.",
+        "Technical maintenance of the connection to ensure its operation.",
+        "(The daily management of appointments and communication with clients remains yours)."
+      ],
+      "ideal_for": "Professionals who sell their time: consultants, therapists, trainers, stylists, etc.",
+      "price": "+€15/month"
+    },
+    {
+      "name": "Automatic Social Media Feed Integration",
+      "description": "Your website should reflect your brand's activity. We connect your main social network (Instagram, Facebook, etc.) so that your latest posts appear automatically on your site. This keeps your website dynamic and with fresh content, without any effort on your part.",
+      "includes": [
+        "Secure connection with the social network's platform.",
+        "Design of a publication feed that elegantly integrates with your website.",
+        "Monthly review to ensure the content flow is constant and correct."
+      ],
+      "ideal_for": "Brands with a strong social presence looking to unify their digital ecosystem.",
+      "price": "+€10/month"
+    },
+    {
+      "name": "Cookie Banner Management (GDPR Compliance)",
+      "description": "Transparency builds trust. We take care of installing, configuring, and maintaining your cookie consent banner to ensure it complies with current regulations (GDPR). Delegate the legal complexity and focus on your business.",
+      "includes": [
+        "Installation and customization of the consent banner.",
+        "Configuration so that tracking scripts are only activated with the user's explicit permission.",
+        "Annual review and updates if the legislation changes."
+      ],
+      "ideal_for": "All websites, without exception. It is a fundamental element for operating legally and transparently.",
+      "price": "+€10/month"
+    },
+    {
+      "name": "Monthly Analytics Snapshot",
+      "description": "We add an executive summary to your maintenance report with the 3 most important metrics: total visits, your most popular page, and where your traffic comes from.",
+      "includes": [
+        "A visual, clear, and concise section integrated into your monthly report.",
+        "Key metrics: total visits, most viewed page, and main traffic source.",
+        "Comparison with the previous month to quickly identify trends."
+      ],
+      "ideal_for": "Owners who want to measure the pulse of their business with clear and actionable information.",
+      "price": "+€5/month"
+    }
+  ]
+}

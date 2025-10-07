@@ -1,0 +1,69 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getTranslations, type ContentPlanConditions } from '../../../i18n/utils';
+import Container from '../../../components/Container.astro';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'es' } }];
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang as 'en' | 'es');
+const conditions = t.contentPlanConditions as ContentPlanConditions;
+---
+
+<Layout t={t} lang={lang}>
+  <main class="space-y-8 mb-40 pt-20">
+    <Container>
+      <div class="space-y-12">
+        <div class="text-center">
+          <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark md:text-5xl">
+            {conditions.title}
+          </h1>
+          <p class="mt-4 text-xl text-text-strong dark:text-text-muted-dark">
+            {conditions.introduction}
+          </p>
+        </div>
+
+        {conditions.sections.map((section) => (
+          <section class="space-y-4">
+            <h2 class="text-3xl font-bold text-text-stronger dark:text-text-default-dark">{section.title}</h2>
+            {section.content && <p class="text-lg text-text-muted dark:text-text-muted-dark">{section.content}</p>}
+            {section.items && (
+              <ul class="list-disc list-inside space-y-2 text-lg text-text-muted dark:text-text-muted-dark">
+                {section.items.map((item) => <li>{item}</li>)}
+              </ul>
+            )}
+            {section.table && (
+              <div class="overflow-x-auto">
+                <table class="min-w-full text-left text-lg text-text-muted dark:text-text-muted-dark">
+                  <thead class="border-b border-border-default dark:border-border-default-dark">
+                    <tr>
+                      {section.table.headers.map(header => <th scope="col" class="px-6 py-4 font-semibold">{header}</th>)}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {section.table.rows.map(row => (
+                      <tr class="border-b border-border-default dark:border-border-default-dark">
+                        {row.map((cell, index) => <td class={`px-6 py-4 ${index === 0 ? 'font-semibold' : ''}`}>{cell}</td>)}
+                      </tr>
+                    ))}
+                  </tbody>
+                  <tfoot class="font-bold">
+                     <tr class="border-t-2 border-border-default dark:border-border-default-dark">
+                        <td class="px-6 py-4">{section.table.footer[0]}</td>
+                        <td class="px-6 py-4">{section.table.footer[1]}</td>
+                        <td class="px-6 py-4">{section.table.footer[2]}</td>
+                     </tr>
+                  </tfoot>
+                </table>
+              </div>
+            )}
+            {section.summary && <p class="mt-4 text-lg text-text-muted dark:text-text-muted-dark whitespace-pre-line">{section.summary}</p>}
+            {section.conclusion && <p class="mt-4 text-lg text-text-strong dark:text-text-muted-dark">{section.conclusion}</p>}
+          </section>
+        ))}
+      </div>
+    </Container>
+  </main>
+</Layout>

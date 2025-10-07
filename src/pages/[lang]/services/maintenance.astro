@@ -18,13 +18,15 @@ const services = t.services as MaintenanceConditions;
 <Layout t={t} lang={lang}>
   <Container>
     <div class="py-20 text-text-strong dark:text-text-default-dark">
-      <h1 class="text-4xl font-bold text-center">{services.title}</h1>
-
-      <div class="mt-12">
-        <h2 class="text-2xl font-bold">{services.intro.title}</h2>
-        <p class="mt-4">{services.intro.description}</p>
+      <div class="text-center">
+          <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark md:text-5xl">
+            {services.intro.title}
+          </h1>
+          <p class="mt-4 text-xl text-text-strong dark:text-text-muted-dark">
+            {services.intro.description}
+          </p>
       </div>
-
+      
       <div class="mt-12">
         <h2 class="text-2xl font-bold">{services.service.title}</h2>
         <p class="mt-4">{services.service.description}</p>

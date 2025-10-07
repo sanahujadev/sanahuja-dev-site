@@ -24,11 +24,25 @@
       "urlInnerText": "Condiciones"
     },
     {
-      "title": "Informe de Visibilidad Web 15€/mes",
+      "title": "Informe de Visibilidad Web 25€/mes",
       "description": "Entiende el rendimiento de tu web sin complicaciones. Recibe un informe mensual en PDF que te dice cuántos te visitan, cómo te encuentran y qué les interesa.",
       "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
       "url": "/es/services/analytics-report",
       "urlInnerText": "Condiciones"
+    },
+    {
+      "title": "Plan de Autoridad Mensual 75€/mes",
+      "description": "Servicio mensual para mantener tu web activa con artículos de blog optimizados para SEO, sin que tengas que dedicar tiempo a la redacción.",
+      "image": "https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "url": "/es/services/content-plan",
+      "urlInnerText": "Condiciones"
+    },
+    {
+      "title": "Ampliaciones Opcionales",
+      "description": "Potencia tu web con funcionalidades específicas. Elige entre gestión de formularios, agendas de reserva, feeds de redes sociales y más.",
+      "image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "url": "/es/services/add-ons",
+      "urlInnerText": "Ver Ampliaciones"
     }
   ],
   "offer": {

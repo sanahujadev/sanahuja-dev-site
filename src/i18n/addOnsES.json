@@ -1,0 +1,63 @@
+{
+  "title": "Ampliaciones Opcionales para tu Web",
+  "introduction": "Nuestro plan de mantenimiento es la base para garantizar la estabilidad y seguridad de tu sitio web. Estos servicios opcionales son ampliaciones diseñadas para potenciar tu presencia digital, añadiendo funcionalidades específicas según tus necesidades. Elige las que necesites, cuando las necesites, para construir una solución a tu medida.",
+  "services": [
+    {
+      "name": "Gestión de Formulario de Contacto Anti-Spam",
+      "description": "Cada mensaje de un cliente es una oportunidad. Nos aseguramos de que nunca pierdas una. Blindamos tu formulario de contacto para que sea un canal de comunicación directo y seguro, protegiéndolo del spam y garantizando la entrega de cada mensaje.",
+      "includes": [
+        "Monitorización técnica constante del formulario.",
+        "Sistema de doble notificación automática (un email para ti, otro de confirmación para tu cliente).",
+        "Implementación de un escudo anti-spam (como Google reCAPTCHA).",
+        "Pruebas periódicas para verificar el correcto funcionamiento."
+      ],
+      "ideal_for": "Negocios que dependen del contacto directo para generar clientes y oportunidades.",
+      "price": "+5 €/mes"
+    },
+    {
+      "name": "Integración de Agenda de Reservas 24/7",
+      "description": "Convierte tu web en un asistente comercial que trabaja 24/7. Integramos un sistema de reservas profesional (como Calendly o similar) para que tus clientes puedan consultar tu disponibilidad y agendar una cita al instante, sin intermediarios y a cualquier hora.",
+      "includes": [
+        "Configuración e integración visual de la agenda en tu web.",
+        "Sincronización inicial de tus horarios y tipos de servicio.",
+        "Mantenimiento técnico de la conexión para garantizar su funcionamiento.",
+        "(La gestión diaria de las citas y la comunicación con los clientes sigue siendo tuya)."
+      ],
+      "ideal_for": "Profesionales que venden su tiempo: consultores, terapeutas, formadores, estilistas, etc.",
+      "price": "+15 €/mes"
+    },
+    {
+      "name": "Integración Automática de Redes Sociales",
+      "description": "Tu web debe reflejar la actividad de tu marca. Conectamos tu red social principal (Instagram, Facebook, etc.) para que tus últimas publicaciones aparezcan de forma automática en tu sitio. Esto mantiene tu web dinámica y con contenido fresco, sin ningún esfuerzo por tu parte.",
+      "includes": [
+        "Conexión segura con la plataforma de la red social.",
+        "Diseño de un feed de publicaciones que se integre de forma elegante con tu web.",
+        "Revisión mensual para asegurar que el flujo de contenido es constante y correcto."
+      ],
+      "ideal_for": "Marcas con una fuerte presencia social que buscan unificar su ecosistema digital.",
+      "price": "+10 €/mes"
+    },
+    {
+      "name": "Gestión de Banner de Cookies (Cumplimiento RGPD)",
+      "description": "La transparencia genera confianza. Nos encargamos de instalar, configurar y mantener tu banner de consentimiento de cookies para asegurar que cumple con la normativa vigente (RGPD). Delega la complejidad legal y céntrate en tu negocio.",
+      "includes": [
+        "Instalación y personalización del banner de consentimiento.",
+        "Configuración para que los scripts de rastreo solo se activen con el permiso explícito del usuario.",
+        "Revisión anual y actualizaciones si la legislación cambia."
+      ],
+      "ideal_for": "Todas las webs, sin excepción. Es un elemento fundamental para operar de forma legal y transparente.",
+      "price": "+10 €/mes"
+    },
+    {
+      "name": "Snapshot Mensual de Analítica",
+      "description": "Añadimos a tu informe de mantenimiento un resumen ejecutivo con las 3 métricas más importantes: el total de visitas, tu página más popular y de dónde procede tu tráfico.",
+      "includes": [
+        "Un apartado visual, claro y conciso integrado en tu informe mensual.",
+        "Métricas clave: total de visitas, página más vista y fuente de tráfico principal.",
+        "Comparativa con el mes anterior para identificar tendencias rápidamente."
+      ],
+      "ideal_for": "Propietarios que desean medir el pulso de su negocio con información clara y accionable.",
+      "price": "+5 €/mes"
+    }
+  ]
+}

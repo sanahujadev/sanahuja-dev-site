@@ -22,6 +22,10 @@ import analyticsReportConditionsEN from "./analyticsReportConditionsEN.json";
 import analyticsReportConditionsES from "./analyticsReportConditionsES.json";
 import servicesIndexEN from "./servicesIndexEN.json";
 import servicesIndexES from "./servicesIndexES.json";
+import contentPlanConditionsEN from "./contentPlanConditionsEN.json";
+import contentPlanConditionsES from "./contentPlanConditionsES.json";
+import addOnsEN from "./addOnsEN.json";
+import addOnsES from "./addOnsES.json";
 import en from "./en.json";
 import es from "./es.json";
 
@@ -39,6 +43,8 @@ const translations = {
 		reputation: reputationConditionsEN,
 		supportPack: supportPackConditionsEN,
 		analyticsReport: analyticsReportConditionsEN,
+		contentPlanConditions: contentPlanConditionsEN,
+		addOns: addOnsEN,
 	},
 	es: {
 		common: es,
@@ -53,6 +59,8 @@ const translations = {
 		reputation: reputationConditionsES,
 		supportPack: supportPackConditionsES,
 		analyticsReport: analyticsReportConditionsES,
+		contentPlanConditions: contentPlanConditionsES,
+		addOns: addOnsES,
 	},
 	"404": {
 		common: es,
@@ -67,6 +75,8 @@ const translations = {
 		reputation: null,
 		supportPack: null,
 		analyticsReport: null,
+		contentPlanConditions: null,
+		addOns: null,
 	},
 	"500": {
 		common: es,
@@ -81,6 +91,8 @@ const translations = {
 		reputation: null,
 		supportPack: null,
 		analyticsReport: null,
+		contentPlanConditions: null,
+		addOns: null,
 	},
 };
 
@@ -92,4 +104,6 @@ export type MaintenanceConditions = typeof maintenanceConditionsEN;
 export type ReputationConditions = typeof reputationConditionsEN;
 export type SupportPackConditions = typeof supportPackConditionsEN;
 export type AnalyticsReportConditions = typeof analyticsReportConditionsEN;
+export type ContentPlanConditions = typeof contentPlanConditionsEN;
+export type AddOns = typeof addOnsEN;
 export type ServicesIndex = typeof servicesIndexEN;

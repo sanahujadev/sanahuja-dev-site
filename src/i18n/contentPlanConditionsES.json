@@ -1,0 +1,82 @@
+{
+  "title": "Condiciones del Servicio: Plan de Autoridad Mensual",
+  "introduction": "El Plan de Autoridad Mensual es un servicio mensual diseñado para mantener tu sitio web activo, relevante y atractivo mediante la publicación periódica de artículos optimizados para SEO. Está pensado para profesionales y empresas que desean mantener una presencia digital viva, sin dedicar tiempo a la redacción o gestión de contenidos.",
+  "sections": [
+    {
+      "title": "¿En qué consiste el Plan de Autoridad Mensual?",
+      "content": "El servicio incluye la creación, redacción y publicación de un artículo de blog mensual, optimizado para los motores de búsqueda (SEO) y adaptado a tu público objetivo. El objetivo es mejorar tu visibilidad online, posicionarte en nuevas búsquedas y reforzar la autoridad de tu marca a largo plazo."
+    },
+    {
+      "title": "Servicios Incluidos",
+      "items": [
+        "1 artículo original y optimizado SEO (entre 600 y 900 palabras).",
+        "Análisis de oportunidad SEO: detección de un tema relevante basado en las búsquedas y objetivos del cliente.",
+        "Redacción profesional, adaptada al tono de la marca y con estructura orientada a legibilidad y conversión.",
+        "Revisión básica de keywords y metaetiquetas principales (título, descripción).",
+        "Selección e inserción de una imagen destacada libre de derechos.",
+        "Publicación en la web del cliente.",
+        "1 ronda de revisión o ajustes menores (correcciones de estilo, tono o pequeños cambios solicitados por el cliente).",
+        "Revisión SEO trimestral básica para analizar la evolución del contenido y nuevas oportunidades. No será un informe detallado como el informe mensual, pero si un seguimiento del éxito del blog."
+      ]
+    },
+    {
+      "title": "Servicios No Incluidos",
+      "content": "El Plan de Autoridad Mensual no incluye los siguientes servicios, que podrán presupuestarse aparte o realizarse mediante la Bolsa de Horas:",
+      "items": [
+        "Redacción de más de un artículo mensual o textos de más de 1.000 palabras.",
+        "Creación de gráficos personalizados o infografías.",
+        "Estudios SEO exhaustivos o auditorías técnicas del sitio web.",
+        "Traducción o adaptación del contenido a otros idiomas.",
+        "Publicaciones simultáneas en redes sociales (pueden solicitarse aparte).",
+        "Revisión ortotipográfica completa o edición avanzada (estilo editorial).",
+        "Gestión de backlinks o estrategias de link building.",
+        "Cambios de diseño, maquetación compleja o implementación de plantillas nuevas."
+      ]
+    },
+    {
+      "title": "Metodología y Flujo de Trabajo",
+      "content": "Para garantizar claridad, consistencia y resultados medibles, seguimos el siguiente proceso:",
+      "items": [
+        "Detección de oportunidad SEO: Se identifican temas relevantes basados en tendencias, palabras clave, comentarios o reseñas y los objetivos del cliente.",
+        "Propuesta de tema mensual: Se envía una propuesta breve para aprobación.",
+        "Redacción y revisión: Tras la aprobación, se redacta el artículo y se envía para su revisión (1 ronda incluida).",
+        "Publicación: El artículo se publica directamente en la web o se entrega en formato editable (Word o Google Docs).",
+        "Informe trimestral opcional: Cada tres meses se puede incluir una breve revisión de rendimiento y nuevas oportunidades SEO."
+      ]
+    },
+    {
+      "title": "Precio y Condiciones",
+      "items": [
+        "Precio base: desde 75€/mes, con facturación mensual automática.",
+        "Duración mínima recomendada: 3 meses (para garantizar resultados y coherencia de estrategia).",
+        "Cancelación: puede solicitarse con 15 días de antelación al siguiente mes.",
+        "Entrega: dentro de los primeros 10 días del mes correspondiente, salvo acuerdo distinto.",
+        "Revisiones adicionales: se tarificarán a 25€/hora (equivalente a la Bolsa de Horas)."
+      ]
+    },
+    {
+      "title": "Equivalencia con la Bolsa de Horas",
+      "table": {
+        "headers": ["Concepto", "Tiempo estimado", "Coste si se realiza con Bolsa de Horas (25€/h)"],
+        "rows": [
+          ["Investigación y planificación SEO", "0.5h", "12,50€"],
+          ["Redacción y revisión del artículo (600–900 palabras)", "2h", "50,00€"],
+          ["Creación y Edición de Imagen", "0.5h", "12,50€"],
+          ["Revisión con el dueño de la web", "0.5h", "12,50€"],
+          ["Preparación de contenido en CDN y subida a la web", "0.5h", "12.50€"]
+        ],
+        "footer": ["Total estimado", "4h", "100,00€"]
+      },
+      "summary": "💡 Esto significa que el coste del Plan de Autoridad Mensual equivale a 4 horas de tu Bolsa de Horas, pero con la ventaja de:\n- Entregas mensuales automáticas sin gestión adicional.\n- Propuesta proactiva de temas SEO.\n- Garantía de calidad y consistencia.\n- Flujo de trabajo simplificado y sin necesidad de solicitar tareas manualmente.\n- 25% de descuento sobre la creación del contenido sin el plan básico."
+    },
+    {
+      "title": "Recomendaciones",
+      "content": "El Plan de Autoridad Mensual es el complemento ideal para quienes ya cuentan con:",
+      "items": [
+        "Mantenimiento Web Esencial, para asegurar la disponibilidad técnica del sitio.",
+        "Informe de Visibilidad Web, para medir el impacto real de cada publicación."
+      ],
+      "conclusion": "En conjunto, estos servicios garantizan un sitio seguro, activo y en crecimiento constante."
+    }
+  ]
+}
