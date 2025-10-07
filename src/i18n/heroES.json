@@ -4,7 +4,9 @@
     "description": "Como socio IT estratégico, guío a profesionales y empresas para construir una presencia digital potente y duradera. Construyamos algo grande juntos.",
     "cta": {
       "primary": "Colaboremos",
-      "secondary": "Ver Mi Trabajo"
+      "secondary": "Ver Mi Trabajo",
+      "primaryNavigate": "/#contact",
+      "secondaryNavigate": "/#about"
     }
   },
   "valuePropositions": [

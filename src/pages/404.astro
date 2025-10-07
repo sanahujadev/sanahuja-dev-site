@@ -1,0 +1,13 @@
+---
+import HeroSection from '../components/HeroSection.astro';
+import { getTranslations } from '../i18n/utils';
+import Layout from '../layouts/Layout.astro';
+
+const t = getTranslations('404');
+---
+
+<Layout t={t} lang="es">
+  <main class="space-y-40 mb-40">
+    <HeroSection t={t.hero} />
+  </main>
+</Layout>

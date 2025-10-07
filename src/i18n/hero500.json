@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "headline": "Error del servidor. <span class='text-primary dark:text-primary'>500</span> ⚙️",
+    "description": "Algo ha salido mal en nuestros servidores. Estamos trabajando para solucionarlo.",
+    "cta": {
+      "primary": "Volver al inicio",
+      "secondary": "Reintentar",
+      "primaryNavigate": "/",
+      "secondaryNavigate": "."
+    }
+  },
+  "valuePropositions": [],
+  "clients": {
+    "headline": "",
+    "logoAlt": ""
+  }
+}

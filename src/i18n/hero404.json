@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "headline": "Página no encontrada. <span class='text-primary dark:text-primary'>404</span> 🧭",
+    "description": "Parece que te has perdido. La página que buscas no existe o ha sido movida.",
+    "cta": {
+      "primary": "Volver al inicio",
+      "secondary": "Contactar",
+      "primaryNavigate": "/",
+      "secondaryNavigate": "/#contact"
+    }
+  },
+  "valuePropositions": [],
+  "clients": {
+    "headline": "Puedes volver a la página principal y seguir explorando",
+    "logoAlt": "Logo de tecnología"
+  }
+}

@@ -4,7 +4,9 @@
     "description": "As a strategic IT Partner, I guide professionals and businesses to build a powerful and lasting digital presence. Let's build something great together.",
     "cta": {
       "primary": "Let's Collaborate",
-      "secondary": "See My Work"
+      "secondary": "See My Work",
+      "primaryNavigate": "/#contact",
+      "secondaryNavigate": "/#about"
     }
   },
   "valuePropositions": [

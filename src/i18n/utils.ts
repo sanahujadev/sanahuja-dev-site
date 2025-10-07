@@ -6,6 +6,8 @@ import footerEN from "./footerEN.json";
 import footerES from "./footerES.json";
 import heroEN from "./heroEN.json";
 import heroES from "./heroES.json";
+import hero404 from "./hero404.json";
+import hero500 from "./hero500.json";
 import reviewsEN from "./reviewsEN.json";
 import reviewsES from "./reviewsES.json";
 import solutionEN from "./solutionEN.json";
@@ -32,8 +34,26 @@ const translations = {
 		cta: ctaES,
 		footer: footerES,
 	},
+	"404": {
+		common: es,
+		hero: hero404,
+		features: null,
+		reviews: null,
+		solution: null,
+		cta: null,
+		footer: footerES,
+	},
+	"500": {
+		common: es,
+		hero: hero500,
+		features: null,
+		reviews: null,
+		solution: null,
+		cta: null,
+		footer: footerES,
+	},
 };
 
-export const getTranslations = (lang: "en" | "es") => {
+export const getTranslations = (lang: "en" | "es" | "404" | "500") => {
 	return translations[lang];
 };
