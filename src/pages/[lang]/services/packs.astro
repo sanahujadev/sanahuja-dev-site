@@ -1,0 +1,59 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getTranslations, type Packs } from '../../../i18n/utils';
+import Container from '../../../components/Container.astro';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'es' } }];
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang as 'en' | 'es');
+const packsData = t.packs as Packs;
+---
+
+<Layout t={t} lang={lang}>
+  <main class="mb-40 pt-20">
+    <Container>
+      <div class="text-center">
+        <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark md:text-5xl">
+          {packsData.title}
+        </h1>
+        <p class="mt-4 text-xl lg:mx-auto lg:w-8/12 text-text-strong dark:text-text-muted-dark">
+          {packsData.subtitle}
+        </p>
+      </div>
+
+      <div class="mt-16 grid gap-8 lg:grid-cols-3 items-start">
+        {packsData.packs.map(pack => (
+          <div class={`relative p-8 rounded-3xl border ${pack.highlight ? 'border-primary dark:border-primary-dark' : 'border-border-default dark:border-border-default-dark'} bg-bg-surface dark:bg-bg-surface-dark shadow-lg ${pack.highlight ? 'shadow-primary/20' : 'shadow-shadow-default'}`}>
+            {pack.highlight && (
+              <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                  <span class="px-3 py-1 text-sm font-semibold tracking-wider text-white bg-primary rounded-full uppercase dark:bg-primary-dark">
+                      {packsData.recommended}
+                  </span>
+              </div>
+            )}
+            <h2 class="text-2xl font-bold text-text-stronger dark:text-text-default-dark">{pack.name}</h2>
+            <p class="mt-2 text-text-muted dark:text-text-muted-dark">{pack.description}</p>
+            <div class="mt-6">
+              <span class="text-4xl font-bold text-primary dark:text-primary-dark">{pack.price}</span>
+              <span class="ml-2 text-text-muted dark:text-text-muted-dark">{pack.value}</span>
+            </div>
+            <ul class="mt-6 space-y-3 text-text-muted dark:text-text-muted-dark">
+              {pack.features.map(feature => (
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-primary dark:text-primary-dark flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span class="ml-3">{feature}</span>
+                </li>
+              ))}
+            </ul>
+            <a href="#" class={`mt-8 block w-full text-center px-6 py-3 rounded-lg font-semibold ${pack.highlight ? 'bg-primary text-white dark:bg-primary-dark' : 'bg-bg-offset dark:bg-bg-offset-dark text-text-stronger dark:text-text-default-dark hover:bg-gray-200 dark:hover:bg-gray-700'}`}>
+              {pack.buttonText}
+            </a>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </main>
+</Layout>

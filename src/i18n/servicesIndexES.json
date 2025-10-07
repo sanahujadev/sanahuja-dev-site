@@ -43,6 +43,13 @@
       "image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
       "url": "/es/services/add-ons",
       "urlInnerText": "Ver Ampliaciones"
+    },
+    {
+      "title": "Paquetes de Servicios",
+      "description": "Ahorra con nuestras soluciones integradas. Combina servicios y obtén el máximo valor para tu proyecto.",
+      "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "url": "/es/services/packs",
+      "urlInnerText": "Ver Paquetes"
     }
   ],
   "offer": {

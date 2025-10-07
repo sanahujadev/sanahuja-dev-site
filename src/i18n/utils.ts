@@ -26,6 +26,8 @@ import contentPlanConditionsEN from "./contentPlanConditionsEN.json";
 import contentPlanConditionsES from "./contentPlanConditionsES.json";
 import addOnsEN from "./addOnsEN.json";
 import addOnsES from "./addOnsES.json";
+import packsEN from "./packsEN.json";
+import packsES from "./packsES.json";
 import en from "./en.json";
 import es from "./es.json";
 
@@ -45,6 +47,7 @@ const translations = {
 		analyticsReport: analyticsReportConditionsEN,
 		contentPlanConditions: contentPlanConditionsEN,
 		addOns: addOnsEN,
+		packs: packsEN,
 	},
 	es: {
 		common: es,
@@ -61,6 +64,7 @@ const translations = {
 		analyticsReport: analyticsReportConditionsES,
 		contentPlanConditions: contentPlanConditionsES,
 		addOns: addOnsES,
+		packs: packsES,
 	},
 	"404": {
 		common: es,
@@ -77,6 +81,7 @@ const translations = {
 		analyticsReport: null,
 		contentPlanConditions: null,
 		addOns: null,
+		packs: null,
 	},
 	"500": {
 		common: es,
@@ -93,6 +98,7 @@ const translations = {
 		analyticsReport: null,
 		contentPlanConditions: null,
 		addOns: null,
+		packs: null,
 	},
 };
 
@@ -106,4 +112,5 @@ export type SupportPackConditions = typeof supportPackConditionsEN;
 export type AnalyticsReportConditions = typeof analyticsReportConditionsEN;
 export type ContentPlanConditions = typeof contentPlanConditionsEN;
 export type AddOns = typeof addOnsEN;
+export type Packs = typeof packsEN;
 export type ServicesIndex = typeof servicesIndexEN;

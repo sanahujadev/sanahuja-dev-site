@@ -1,0 +1,52 @@
+{
+  "title": "Service Packs",
+  "subtitle": "Integrated, discounted solutions to take your digital presence to the next level. Choose the pack that best suits your goals.",
+  "packs": [
+    {
+      "name": "Digital Image Partner Pack",
+      "price": "€110/month",
+      "value": "Real value: €135/month",
+      "description": "The ideal solution to boost your brand image and consistently create authority content.",
+      "features": [
+        "Essential Web Maintenance",
+        "Online Reputation Management",
+        "Monthly Authority Plan",
+        "Contact Form Management",
+        "Social Media Integration"
+      ],
+      "buttonText": "Sign Up"
+    },
+    {
+      "name": "Digital Technical Partner Pack",
+      "price": "€105/month",
+      "value": "Real value: €130/month",
+      "description": "The perfect combination of content and analytics to make data-driven decisions.",
+      "features": [
+        "Essential Web Maintenance",
+        "Web Visibility Report",
+        "Cookie Banner Management",
+        "Authority Plan with per-post analytics",
+        "Monthly Analytics Snapshot"
+      ],
+      "buttonText": "Sign Up",
+      "highlight": true
+    },
+    {
+      "name": "All-in-One Pack",
+      "price": "€130/month",
+      "value": "Real value: €165/month",
+      "description": "The comprehensive and definitive solution for complete growth and management.",
+      "features": [
+        "Essential Web Maintenance",
+        "Online Reputation Management",
+        "Web Visibility Report",
+        "Monthly Authority Plan",
+        "Social Media Integration",
+        "Cookie Banner Management",
+        "Monthly Analytics Snapshot"
+      ],
+      "buttonText": "Sign Up"
+    }
+  ],
+  "recommended": "Recommended"
+}

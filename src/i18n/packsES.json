@@ -1,0 +1,52 @@
+{
+  "title": "Paquetes de Servicios",
+  "subtitle": "Soluciones integradas y con descuento para llevar tu presencia digital al siguiente nivel. Elige el paquete que mejor se adapte a tus objetivos.",
+  "packs": [
+    {
+      "name": "Pack Socio de Imagen Digital",
+      "price": "110€/mes",
+      "value": "Valor real: 135€/mes",
+      "description": "La solución ideal para potenciar tu imagen de marca y crear contenido de autoridad de forma consistente.",
+      "features": [
+        "Mantenimiento Web Esencial",
+        "Gestión de Reputación Online",
+        "Plan de Autoridad Mensual",
+        "Gestión de Formulario de Contacto",
+        "Integración de Redes Sociales"
+      ],
+      "buttonText": "Contratar"
+    },
+    {
+      "name": "Pack Socio Técnico Digital",
+      "price": "105€/mes",
+      "value": "Valor real: 130€/mes",
+      "description": "La combinación perfecta de contenido y analítica para tomar decisiones basadas en datos.",
+      "features": [
+        "Mantenimiento Web Esencial",
+        "Informe de Visibilidad Web",
+        "Gestión de Banner de Cookies",
+        "Plan de Autoridad con analítica por post",
+        "Snapshot Mensual de Analítica"
+      ],
+      "buttonText": "Contratar",
+      "highlight": true
+    },
+    {
+      "name": "Pack Todo en Uno",
+      "price": "130€/mes",
+      "value": "Valor real: 165€/mes",
+      "description": "La solución integral y definitiva para un crecimiento y gestión completos.",
+      "features": [
+        "Mantenimiento Web Esencial",
+        "Gestión de Reputación Online",
+        "Informe de Visibilidad Web",
+        "Plan de Autoridad Mensual",
+        "Integración de Redes Sociales",
+        "Gestión de Banner de Cookies",
+        "Snapshot Mensual de Analítica"
+      ],
+      "buttonText": "Contratar"
+    }
+  ],
+  "recommended": "Recomendado"
+}

@@ -43,6 +43,13 @@
       "image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
       "url": "/en/services/add-ons",
       "urlInnerText": "See Add-ons"
+    },
+    {
+      "title": "Service Packs",
+      "description": "Save money with our integrated solutions. Combine services and get the maximum value for your project.",
+      "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "url": "/en/services/packs",
+      "urlInnerText": "See Packs"
     }
   ],
   "offer": {
