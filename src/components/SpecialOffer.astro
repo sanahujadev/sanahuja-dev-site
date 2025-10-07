@@ -1,0 +1,22 @@
+---
+import Container from './Container.astro';
+
+const { offer } = Astro.props;
+---
+
+<div class="py-16 bg-primary-softest dark:bg-bg-emphasis-soft-dark">
+  <Container>
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-primary dark:text-primary-dark md:text-4xl">{offer.title}</h2>
+      <p class="mt-4 text-xl text-text-strong dark:text-text-default-dark">{offer.description}</p>
+      <div class="mt-8">
+        <h3 class="text-xl font-bold text-text-stronger dark:text-text-default-dark">{offer.conditions.title}</h3>
+        <ul class="mt-4 space-y-2 text-left max-w-2xl mx-auto list-none list-outside md:pl-5 text-text-strong dark:text-text-default-dark">
+          {offer.conditions.map((item: string) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </Container>
+</div>

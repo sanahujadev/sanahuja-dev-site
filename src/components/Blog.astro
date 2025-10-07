@@ -1,72 +1,45 @@
 ---
 import Container from "./Container.astro"
 
+const { posts, title, subtitle } = Astro.props;
+
+type Post = {
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+  urlInnerText: string;
+};
 ---
 
 <div id="blog">
   <Container>
       <div class="mb-12 space-y-2 text-center">
-        <h2 class="text-3xl font-bold text-text-stronger md:text-4xl dark:text-text-default-dark">Latest Articles</h2>
-        <p class="lg:mx-auto lg:w-6/12 text-text-muted dark:text-text-muted-dark">
-          Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia
-          aliquid explicabo? Excepturi, voluptate?
+        <h2 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark">{title}</h2>
+        <p class="lg:mx-auto lg:w-6/12 text-xl text-text-strong dark:text-text-muted-dark">
+          {subtitle}
         </p>
       </div>
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div class="group p-6 sm:p-8 rounded-3xl bg-bg-surface border border-border-default dark:shadow-none dark:border-border-default-dark dark:bg-bg-surface-dark bg-opacity-50 shadow-2xl shadow-shadow-default">
-          <div class="relative overflow-hidden rounded-xl">
-            <img src="https://images.unsplash.com/photo-1661749711934-492cd19a25c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
+        {posts.map((post: Post) => (
+          <div class="group p-6 sm:p-8 rounded-3xl bg-bg-surface border border-border-default dark:shadow-none dark:border-border-default-dark dark:bg-bg-surface-dark bg-opacity-50 shadow-2xl shadow-shadow-default">
+            <div class="relative overflow-hidden rounded-xl">
+              <img src={post.image}
+              alt={post.title} loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
+            </div>
+            <div class="mt-6 relative">
+              <h3 class="text-2xl font-semibold text-text-stronger dark:text-text-default-dark">
+                {post.title}
+              </h3>
+              <p class="mt-6 mb-8 text-text-muted dark:text-text-muted-dark">
+                {post.description}
+              </p>
+              <a class="inline-block" href={post.url}>
+                <span class="text-text-info dark:text-text-info-dark">{post.urlInnerText}</span>
+              </a>
+            </div>
           </div>
-          <div class="mt-6 relative">
-            <h3 class="text-2xl font-semibold text-text-stronger dark:text-text-default-dark">
-              De fuga fugiat lorem ispum laboriosam expedita.
-            </h3>
-            <p class="mt-6 mb-8 text-text-muted dark:text-text-muted-dark">
-              Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
-            </p>
-            <a class="inline-block" href="#">
-              <span class="text-text-info dark:text-text-info-dark">Read more</span>
-            </a>
-          </div>
-          
-        </div>
-        <div class="group p-6 sm:p-8 rounded-3xl bg-bg-surface border border-border-default dark:shadow-none dark:border-border-default-dark dark:bg-bg-surface-dark bg-opacity-50 shadow-2xl shadow-shadow-default">
-          <div class="relative overflow-hidden rounded-xl">
-            <img src="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
-          </div>
-          <div class="mt-6 relative">
-            <h3 class="text-2xl font-semibold text-text-stronger dark:text-text-default-dark">
-              De fuga fugiat lorem ispum laboriosam expedita.
-            </h3>
-            <p class="mt-6 mb-8 text-text-muted dark:text-text-muted-dark">
-              Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
-            </p>
-            <a class="inline-block" href="#">
-              <span class="text-text-info dark:text-text-info-dark">Read more</span>
-            </a>
-          </div>
-          
-        </div>
-        <div class="group p-6 sm:p-8 rounded-3xl bg-bg-surface border border-border-default dark:shadow-none dark:border-border-default-dark dark:bg-bg-surface-dark bg-opacity-50 shadow-2xl shadow-shadow-default">
-          <div class="relative overflow-hidden rounded-xl">
-            <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
-          </div>
-          <div class="mt-6 relative">
-            <h3 class="text-2xl font-semibold text-text-stronger dark:text-text-default-dark">
-              De fuga fugiat lorem ispum laboriosam expedita.
-            </h3>
-            <p class="mt-6 mb-8 text-text-muted dark:text-text-muted-dark">
-              Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
-            </p>
-            <a class="inline-block" href="#">
-              <span class="text-text-info dark:text-text-info-dark">Read more</span>
-            </a>
-          </div>
-          
-        </div>
+        ))}
       </div>
   </Container>
 </div>

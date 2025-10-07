@@ -1,0 +1,96 @@
+{
+  "title": "Servicios de Mantenimiento Web",
+  "intro": {
+    "title": "Condiciones del Servicio: Mantenimiento Web Esencial",
+    "description": "A continuación se detallan los términos y condiciones del servicio de mantenimiento mensual para sitios web estáticos y landing pages."
+  },
+  "service": {
+    "title": "1. Objeto del Servicio",
+    "description": "El presente servicio, con una cuota mensual de 20€ + IVA, tiene como objetivo garantizar el correcto funcionamiento y la disponibilidad online de un (1) único sitio web estático o landing page del cliente. Este plan está diseñado para ofrecer tranquilidad y soporte técnico fundamental, asegurando la estabilidad de la presencia digital del cliente."
+  },
+  "included": {
+    "title": "2. Servicios Incluidos en la Cuota Mensual",
+    "description": "La cuota mensual cubre de forma exclusiva las siguientes tareas de gestión y supervisión:",
+    "items": [
+      {
+        "title": "Gestión del Dominio",
+        "description": "Supervisión de la fecha de vencimiento y gestión de la renovación del nombre de dominio principal asociado al sitio web. Nota: El coste de la renovación del dominio no está incluido y será facturado al cliente por separado."
+      },
+      {
+        "title": "Gestión de Certificados SSL",
+        "description": "Supervisión y gestión de la renovación del certificado de seguridad SSL para garantizar que el sitio web funcione under HTTPS. Nota: El coste de certificados SSL premium o específicos no está incluido."
+      },
+      {
+        "title": "Soporte Básico de Hosting",
+        "description": "Intermediación y resolución de incidencias directamente con el proveedor de hosting contratado por el cliente (caídas del servidor, errores 500, etc.). No incluye la ampliación de recursos del plan de hosting."
+      },
+      {
+        "title": "Copias de Seguridad",
+        "description": "Realización de una copia de seguridad completa del sitio web con periodicidad mensual."
+      },
+      {
+        "title": "Monitorización de Disponibilidad",
+        "description": "Supervisión básica para detectar y actuar ante posibles caídas del servicio."
+      },
+      {
+        "title": "Alta Inicial en Perfiles de Negocio Locales",
+        "description": "Realización del alta inicial del negocio en las plataformas Google Business Profile y Microsoft Bing Places. Esto facilita que el negocio aparezca en los resultados de búsqueda locales y en los mapas (Google Maps, Bing Maps), mostrando información clave como la dirección, el horario y el enlace al sitio web. Nota: Este servicio consiste en una única configuración inicial. El cliente deberá proporcionar toda la información precisa y será responsable de completar el proceso de verificación final (ej: mediante la recepción de un código por correo postal). No se incluye la gestión continua, la optimización (SEO Local), la publicación de contenidos ni la respuesta a reseñas de clientes."
+      }
+    ]
+  },
+  "excluded": {
+    "title": "3. Servicios Excluidos",
+    "description": "Para evitar malentendidos, es importante destacar que este servicio NO INCLUYE bajo ningún concepto:",
+    "items": [
+      "Modificaciones de Contenido: No se incluye la actualización, edición o eliminación de textos, imágenes, vídeos, enlaces o cualquier otro elemento de contenido del sitio web.",
+      "Cambios de Diseño o Estructura: No se realizarán cambios en la apariencia visual, la maquetación, la estructura de las páginas o la arquitectura de la información.",
+      "Desarrollo de Nuevas Funcionalidades: La creación de nuevas secciones, páginas, formularios de contacto o cualquier otra funcionalidad no está cubierta.",
+      "Servicios de Marketing y SEO: No se incluyen tareas de optimización para motores de búsqueda (SEO), gestión de campañas de marketing digital, analítica web o gestión de redes sociales.",
+      "Soporte para Correo Electrónico: La creación o gestión de cuentas de correo electrónico, así como la resolución de problemas relacionados con las mismas, no forma parte de este servicio.",
+      "Costes de Terceros: La cuota mensual no cubre los costes de renovación del dominio, del plan de hosting, de certificados SSL de pago, licencias de software, plugins premium o bancos de imágenes. Estos importes serán siempre responsabilidad del cliente.",
+      "Cualquier servicio no incluido en el Apartado 2 será considerado un trabajo adicional y requerirá un presupuesto independiente."
+    ]
+  },
+  "offer": {
+    "title": "4. Oferta Especial: Creación o Migración de Sitio Web con 90% de Descuento",
+    "description": "Al contratar el servicio de \"Mantenimiento Web Esencial\" por un periodo mínimo de 12 meses, el cliente podrá beneficiarse de un descuento del 90% en la creación o migración de su sitio web.",
+    "conditions": {
+      "title": "Condiciones de la Oferta:",
+      "items": [
+        "Estudio Previo Obligatorio: El alcance, las características y el precio final del proyecto de creación o migración se determinarán tras un estudio técnico previo de las necesidades del cliente. Este estudio es imprescindible para fijar el presupuesto final.",
+        "Precios Base de Referencia: Creación de nuevo sitio web: El precio base oscila entre 1.500€ y 3.000€. Migración y mejora de sitio existente: El precio base oscila entre 300€ y 1.500€.",
+        "Presupuesto Final: El precio final se detallará en un presupuesto formal y personalizado. El descuento del 90% se aplicará sobre este importe final acordado.",
+        "Permanencia: La aplicación de este descuento está condicionada a la contratación y permanencia en el servicio de mantenimiento mensual durante un mínimo de 12 meses consecutivos. En caso de baja anticipada, el cliente deberá abonar la parte proporcional del descuento disfrutado."
+      ]
+    }
+  },
+  "optional": {
+    "title": "5. Servicio Opcional: Gestión de Formulario de Contacto",
+    "description": "Por una cuota adicional de 5€ + IVA al mes, el cliente puede ampliar su \"Mantenimiento Web Esencial\" para incluir la gestión integral de un (1) formulario de contacto en su sitio web.",
+    "included": {
+      "title": "Servicios Incluidos en esta Ampliación:",
+      "items": [
+        {
+          "title": "Configuración y Mantenimiento",
+          "description": "Garantizamos el correcto funcionamiento técnico del formulario para la recepción de mensajes."
+        },
+        {
+          "title": "Notificación Doble",
+          "description": "El servicio asegura un sistema de doble notificación por cada envío exitoso del formulario: Email al Propietario: Se enviará un correo electrónico de forma inmediata a la dirección designada por el cliente (el dueño del negocio) con todos los datos enviados por el usuario. Email de Autoconfirmación: El usuario que ha rellenado el formulario recibirá un correo electrónico automático confirmando que su mensaje ha sido recibido correctamente y será atendido a la brevedad."
+        },
+        {
+          "title": "Soporte Anti-Spam",
+          "description": "Implementación y mantenimiento de medidas básicas de seguridad (como Google reCAPTCHA) para minimizar la recepción de correo no deseado a través del formulario."
+        }
+      ]
+    },
+    "conditions": {
+      "title": "Condiciones del Servicio Opcional:",
+      "items": [
+        "Este servicio cubre un único formulario. Formularios adicionales requerirán una ampliación de servicio separada.",
+        "La personalización del contenido de los correos automáticos (texto, logos, etc.) se realizará una única vez en la configuración inicial. Cambios posteriores podrán estar sujetos a un coste adicional.",
+        "Este servicio no incluye la gestión de la bandeja de entrada del cliente ni la respuesta a los mensajes recibidos."
+      ]
+    }
+  }
+}

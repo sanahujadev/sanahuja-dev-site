@@ -12,6 +12,10 @@ import reviewsEN from "./reviewsEN.json";
 import reviewsES from "./reviewsES.json";
 import solutionEN from "./solutionEN.json";
 import solutionES from "./solutionES.json";
+import maintenanceConditionsEN from "./maintenanceConditionsEN.json";
+import maintenanceConditionsES from "./maintenanceConditionsES.json";
+import servicesIndexEN from "./servicesIndexEN.json";
+import servicesIndexES from "./servicesIndexES.json";
 import en from "./en.json";
 import es from "./es.json";
 
@@ -24,6 +28,8 @@ const translations = {
 		solution: solutionEN.solution,
 		cta: ctaEN,
 		footer: footerEN,
+		services: maintenanceConditionsEN,
+		servicesIndex: servicesIndexEN,
 	},
 	es: {
 		common: es,
@@ -33,6 +39,8 @@ const translations = {
 		solution: solutionES.solution,
 		cta: ctaES,
 		footer: footerES,
+		services: maintenanceConditionsES,
+		servicesIndex: servicesIndexES,
 	},
 	"404": {
 		common: es,
@@ -42,6 +50,8 @@ const translations = {
 		solution: null,
 		cta: null,
 		footer: footerES,
+		services: null,
+		servicesIndex: null,
 	},
 	"500": {
 		common: es,
@@ -51,9 +61,14 @@ const translations = {
 		solution: null,
 		cta: null,
 		footer: footerES,
+		services: null,
+		servicesIndex: null,
 	},
 };
 
 export const getTranslations = (lang: "en" | "es" | "404" | "500") => {
 	return translations[lang];
 };
+
+export type MaintenanceConditions = typeof maintenanceConditionsEN;
+export type ServicesIndex = typeof servicesIndexEN;

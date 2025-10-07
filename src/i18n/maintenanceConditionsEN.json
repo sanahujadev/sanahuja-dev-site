@@ -1,0 +1,96 @@
+{
+  "title": "Web Maintenance Services",
+  "intro": {
+    "title": "Terms of Service: Essential Web Maintenance",
+    "description": "Below are the terms and conditions for the monthly maintenance service for static websites and landing pages."
+  },
+  "service": {
+    "title": "1. Object of the Service",
+    "description": "This service, with a monthly fee of €20 + VAT, aims to ensure the proper functioning and online availability of one (1) single static website or landing page of the client. This plan is designed to offer peace of mind and fundamental technical support, ensuring the stability of the client's digital presence."
+  },
+  "included": {
+    "title": "2. Services Included in the Monthly Fee",
+    "description": "The monthly fee exclusively covers the following management and supervision tasks:",
+    "items": [
+      {
+        "title": "Domain Management",
+        "description": "Monitoring of the expiration date and management of the renewal of the main domain name associated with the website. Note: The cost of domain renewal is not included and will be billed to the client separately."
+      },
+      {
+        "title": "SSL Certificate Management",
+        "description": "Monitoring and management of the renewal of the SSL security certificate to ensure the website operates under HTTPS. Note: The cost of premium or specific SSL certificates is not included."
+      },
+      {
+        "title": "Basic Hosting Support",
+        "description": "Intermediation and resolution of incidents directly with the hosting provider contracted by the client (server downtime, 500 errors, etc.). It does not include the expansion of hosting plan resources."
+      },
+      {
+        "title": "Backups",
+        "description": "Performing a full backup of the website on a monthly basis."
+      },
+      {
+        "title": "Availability Monitoring",
+        "description": "Basic monitoring to detect and act on possible service outages."
+      },
+      {
+        "title": "Initial Setup in Local Business Profiles",
+        "description": "Initial setup of the business on the Google Business Profile and Microsoft Bing Places platforms. This helps the business appear in local search results and on maps (Google Maps, Bing Maps), showing key information such as address, hours, and a link to the website. Note: This service consists of a single initial setup. The client must provide all accurate information and will be responsible for completing the final verification process (e.g., by receiving a code by postal mail). It does not include ongoing management, optimization (Local SEO), content publishing, or responding to customer reviews."
+      }
+    ]
+  },
+  "excluded": {
+    "title": "3. Excluded Services",
+    "description": "To avoid misunderstandings, it is important to note that this service DOES NOT INCLUDE under any circumstances:",
+    "items": [
+      "Content Modifications: It does not include updating, editing, or deleting texts, images, videos, links, or any other content element of the website.",
+      "Design or Structure Changes: No changes will be made to the visual appearance, layout, page structure, or information architecture.",
+      "Development of New Functionalities: The creation of new sections, pages, contact forms, or any other functionality is not covered.",
+      "Marketing and SEO Services: It does not include search engine optimization (SEO) tasks, digital marketing campaign management, web analytics, or social media management.",
+      "Email Support: The creation or management of email accounts, as well as the resolution of problems related to them, is not part of this service.",
+      "Third-Party Costs: The monthly fee does not cover the costs of domain renewal, hosting plan, paid SSL certificates, software licenses, premium plugins, or image banks. These amounts will always be the responsibility of the client.",
+      "Any service not included in Section 2 will be considered additional work and will require a separate quote."
+    ]
+  },
+  "offer": {
+    "title": "4. Special Offer: Website Creation or Migration with 90% Discount",
+    "description": "By contracting the \"Essential Web Maintenance\" service for a minimum period of 12 months, the client can benefit from a 90% discount on the creation or migration of their website.",
+    "conditions": {
+      "title": "Offer Conditions:",
+      "items": [
+        "Mandatory Preliminary Study: The scope, features, and final price of the creation or migration project will be determined after a preliminary technical study of the client's needs. This study is essential to set the final budget.",
+        "Reference Base Prices: New website creation: The base price ranges from €1,500 to €3,000. Migration and improvement of an existing site: The base price ranges from €300 to €1,500.",
+        "Final Budget: The final price will be detailed in a formal and personalized quote. The 90% discount will be applied to this final agreed amount.",
+        "Commitment Period: The application of this discount is conditional on contracting and remaining in the monthly maintenance service for a minimum of 12 consecutive months. In case of early cancellation, the client must pay the proportional part of the discount enjoyed."
+      ]
+    }
+  },
+  "optional": {
+    "title": "5. Optional Service: Contact Form Management",
+    "description": "For an additional fee of €5 + VAT per month, the client can extend their \"Essential Web Maintenance\" to include the comprehensive management of one (1) contact form on their website.",
+    "included": {
+      "title": "Services Included in this Extension:",
+      "items": [
+        {
+          "title": "Configuration and Maintenance",
+          "description": "We guarantee the correct technical functioning of the form for receiving messages."
+        },
+        {
+          "title": "Double Notification",
+          "description": "The service ensures a double notification system for each successful form submission: Email to the Owner: An email will be sent immediately to the address designated by the client (the business owner) with all the data sent by the user. Auto-confirmation Email: The user who filled out the form will receive an automatic email confirming that their message has been received correctly and will be attended to shortly."
+        },
+        {
+          "title": "Anti-Spam Support",
+          "description": "Implementation and maintenance of basic security measures (such as Google reCAPTCHA) to minimize the receipt of spam through the form."
+        }
+      ]
+    },
+    "conditions": {
+      "title": "Optional Service Conditions:",
+      "items": [
+        "This service covers a single form. Additional forms will require a separate service extension.",
+        "The customization of the content of the automatic emails (text, logos, etc.) will be done once at the initial setup. Subsequent changes may be subject to an additional cost.",
+        "This service does not include managing the client's inbox or responding to received messages."
+      ]
+    }
+  }
+}

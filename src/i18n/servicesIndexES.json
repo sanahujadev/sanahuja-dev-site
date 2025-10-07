@@ -1,0 +1,21 @@
+{
+  "title": "Nuestros Servicios",
+  "subtitle": "Ofrecemos una variedad de servicios para ayudarte a construir y mantener tu presencia digital.",
+  "services": [
+    {
+      "title": "Mantenimiento Web Esencial",
+      "description": "Garantiza el correcto funcionamiento y la disponibilidad online de tu sitio web.",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "url": "/es/services/maintenance",
+      "urlInnerText": "Condiciones"
+    }
+  ],
+  "offer": {
+    "title": "Oferta Especial: Creación o Migración de Sitio Web con 90% de Descuento",
+    "description": "Al contratar el servicio de \"Mantenimiento Web Esencial\" por un periodo mínimo de 12 meses, el cliente podrá beneficiarse de un descuento del 90% en la creación o migración de su sitio web.",
+    "conditions": [
+      "El servicio debe ser contratado por un periodo mínimo de 12 meses.",
+      "El descuento se aplica únicamente a la creación o migración del sitio web."
+    ]
+  }
+}

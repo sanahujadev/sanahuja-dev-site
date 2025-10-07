@@ -2,6 +2,24 @@
 import Container from "./Container.astro";
 
 const { t, lang } = Astro.props;
+const pathname = Astro.url.pathname;
+
+const langSwitchUrl = (() => {
+    // From English to Spanish
+    if (pathname.startsWith('/en')) {
+        // /en/page -> /es/page
+        return '/es' + pathname.substring(3);
+    }
+    
+    // From Spanish to English
+    if (pathname.startsWith('/es')) {
+        // /es/page -> /en/page
+        return '/en' + pathname.substring(3);
+    }
+    
+    // Default to Spanish
+    return '/es';
+})();
 
 const links = [
   {
@@ -17,12 +35,12 @@ const links = [
     label: t.nav.contact,
   },
   {
-    to: "/#services",
+    to: lang === 'es' ? '/es/services' : "/en/services",
     label: t.nav.services.label, // We access the 'label' property
     badge: t.nav.services.badge, // And we store the 'badge'
   },
   {
-    to: lang === 'es' ? '/en' : '/es',
+    to: langSwitchUrl,
     label: t.nav.language.label,
     badge: t.nav.language.badge,
   }
