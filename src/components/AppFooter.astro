@@ -1,11 +1,7 @@
 ---
 import Container from "./Container.astro";
-// Let's assume the files are correctly located for this example
-import es from "../i18n/footerES.json"; 
-import en from "../i18n/footerEN.json";
 
-const { currentLocale } = Astro;
-const t = currentLocale === "es" ? es : en;
+const { t } = Astro.props;
 
 // I see you have more social links in the HTML than in your JSON.
 // For this trick, I'll stick to what you've provided. C'est plus propre.

@@ -1,0 +1,26 @@
+---
+import { getTranslations } from "../../i18n/utils";
+import Layout from "../../layouts/Layout.astro";
+import HeroSection from "../../components/HeroSection.astro";
+import Features from "../../components/Features.astro";
+import Stats from "../../components/Stats.astro";
+import Testimonials from "../../components/Testimonials.astro";
+import CallToAction from "../../components/CallToAction.astro";
+
+export function getStaticPaths() {
+	return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang as "en" | "es" ?? "es");
+---
+
+<Layout t={t} lang={lang}>
+	<main class="space-y-40 mb-40">
+		<HeroSection t={t.hero} />
+		<Features t={t.features} />
+		<Stats t={t.solution} />
+		<Testimonials t={t.reviews} />
+		<CallToAction t={t.cta} />
+	</main>
+</Layout>

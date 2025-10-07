@@ -1,10 +1,13 @@
 ---
 import Container from "./Container.astro";
-import es from "./../i18n/heroES.json"; 
-import en from "./../i18n/heroEN.json";
 
-const { currentLocale } = Astro;
-const t = currentLocale === "es" ? es : en;
+const { t } = Astro.props;
+
+type valuePorpositionProps = {
+    title: string;
+    tagline: string;
+    description: string;
+};
 ---
 
 <div class="relative" id="home">
@@ -37,7 +40,7 @@ const t = currentLocale === "es" ? es : en;
             </div>
 
             <div class="py-8 mt-16 border-y border-border-default dark:border-border-darker flex flex-col sm:flex-row justify-between gap-8 sm:gap-4">
-                {t.valuePropositions.map((prop) => (
+                {t.valuePropositions.map((prop: valuePorpositionProps) => (
                     <div class="text-center sm:text-left sm:w-1/3">
                         <h6 class="text-lg font-semibold text-text-strong dark:text-text-default-dark">{prop.title}</h6>
                         <p class="text-sm font-semibold text-primary mt-1">{prop.tagline}</p>

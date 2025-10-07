@@ -4,22 +4,19 @@ import AppFooter from "../components/AppFooter.astro";
 import AppHeader from "../components/AppHeader.astro";
 import "./../global.css"
 
-import es from "./../i18n/es.json";
-import en from "./../i18n/en.json";
-
-const { currentLocale } = Astro;
-const t = currentLocale === "es" ? es : en;
+const { t, lang } = Astro.props;
+const common = t.common;
 ---
 
 <!DOCTYPE html>
-<html lang={currentLocale}>
+<html lang={common.lang}>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
-        <meta name="description" content={t.meta.description} />
-        <title>{t.meta.title}</title>
+        <meta name="description" content={common.meta.description} />
+        <title>{common.meta.title}</title>
 
         <AstroFont
             config={[
@@ -36,8 +33,8 @@ const t = currentLocale === "es" ? es : en;
         />
     </head>
     <body class="bg-bg-canvas dark:bg-bg-canvas-dark">
-        <AppHeader />
+        <AppHeader t={common} lang={lang} />
         <slot />
-        <AppFooter />
+        <AppFooter t={t.footer} />
     </body>
 </html>

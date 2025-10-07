@@ -10,6 +10,10 @@
         "services": {
             "label": "Servicios",
             "badge": "¡Destacado!"
+        },
+        "language": {
+            "label": "Available in",
+            "badge": "English"
         }
     },
     "cta": {
@@ -18,5 +22,7 @@
     "aria": {
         "logo": "Logo de SanahujaDev",
         "menuToggle": "Alternar menú principal"
-    }
+    },
+    "lang": "es",
+    "language": "Español"
 }

@@ -1,10 +1,7 @@
 ---
 import Container from "./Container.astro";
-import es from "./../i18n/solutionES.json"; 
-import en from "./../i18n/solutionEN.json";
 
-const { currentLocale } = Astro;
-const t = currentLocale === "es" ? es : en;
+const { t } = Astro.props;
 const pointsIcons = [
   { 
     bgColor: 'bg-bg-secondary-accent-soft dark:bg-bg-secondary-accent-soft-dark',
@@ -48,7 +45,7 @@ const pointsIcons = [
                         src="https://cdn.sanahuja.dev/sanahujadev/partners/jpg/partners-720w.jpg"
                         srcset="https://cdn.sanahuja.dev/sanahujadev/partners/jpg/partners-360w.jpg 360w, https://cdn.sanahuja.dev/sanahujadev/partners/jpg/partners-720w.jpg 720w, https://cdn.sanahuja.dev/sanahujadev/partners/jpg/partners-1280w.jpg 1280w, https://cdn.sanahuja.dev/sanahujadev/partners/jpg/partners-1920w.jpg 1920w"
                         sizes="(max-width: 767px) 90vw, (max-width: 1023px) 40vw, 50vw"
-                        alt={t.solution.image_alt}
+                        alt={t.image_alt}
                         loading="lazy"
                         decoding="async"
                         width="1920"
@@ -59,16 +56,16 @@ const pointsIcons = [
             </div>
             <div class="md:w-7/12 lg:w-1/2">
                 <h2 class="text-3xl font-bold text-text-default md:text-4xl dark:text-text-default-dark">
-                    {t.solution.headline}
+                    {t.headline}
                 </h2>
                 <div class="my-8 space-y-4 text-text-muted dark:text-text-muted-dark">
-                    {t.solution.description.map((paragraph) => (
+                    {t.description.map((paragraph) => (
                         <p>{paragraph}</p>
                     ))}
                 </div>
 
                 <div class="divide-y space-y-4 divide-border-default dark:divide-border-darker">
-                    {t.solution.points.map((point, index) => (
+                    {t.points.map((point, index) => (
                         <div class={`flex gap-4 md:items-center ${index > 0 ? 'pt-4' : 'mt-8'}`}>
                             <div class={`w-12 h-12 flex-shrink-0 flex gap-4 rounded-full ${pointsIcons[index].bgColor}`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class={`w-6 h-6 m-auto ${pointsIcons[index].iconColor}`}>

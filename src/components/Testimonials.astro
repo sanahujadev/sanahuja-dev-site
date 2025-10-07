@@ -1,11 +1,16 @@
 ---
 import Container from "./Container.astro"
 import Avatar from "./Avatar.astro";
-import es from "./../i18n/reviewsES.json"; 
-import en from "./../i18n/reviewsEN.json";
 
-const { currentLocale } = Astro;
-const t = currentLocale === "es" ? es : en;
+const { t } = Astro.props;
+
+type Review = {
+    name: string;
+    role: string;
+    text: string;
+    avatarSrc: string | null;
+    avatarAlt: string;
+};
 ---
 
 <div class="text-text-muted dark:text-text-muted-dark" id="reviews">
@@ -17,7 +22,7 @@ const t = currentLocale === "es" ? es : en;
     </div>
      {/* The magic happens here, mon cher. One elegant loop, zero repetition. */}
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {t.reviews.map(review => (
+      {t.reviews.map((review: Review) => (
         <div class="aspect-auto p-8 border border-border-default rounded-3xl bg-bg-surface dark:bg-bg-surface-dark dark:border-border-default-dark shadow-2xl shadow-shadow-default dark:shadow-none">
           <div class="flex gap-4">
             
