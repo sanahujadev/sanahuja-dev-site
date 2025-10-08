@@ -144,3 +144,29 @@ export type CoreFeatures = {
   title: string;
   features: CoreFeatureItem[];
 };
+
+export type Link = {
+  label: string;
+  url: string;
+};
+
+export type SocialLink = {
+  name: string;
+  label: string;
+  url: string;
+};
+
+export type Help = {
+  text: string;
+  contact: string;
+  url: string;
+};
+
+export type Footer = {
+  links: Link[];
+  social: SocialLink[];
+  legal: Link[];
+  tagline: string;
+  copyright: string;
+  help: Help;
+};

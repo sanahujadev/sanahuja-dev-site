@@ -9,6 +9,8 @@ type Post = {
   image: string;
   url: string;
   urlInnerText: string;
+  status: 'active' | 'soon';
+  badge?: string;
 };
 ---
 
@@ -22,22 +24,29 @@ type Post = {
       </div>
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post: Post) => (
-          <div class="group p-6 sm:p-8 rounded-3xl bg-bg-surface border border-border-default dark:shadow-none dark:border-border-default-dark dark:bg-bg-surface-dark bg-opacity-50 shadow-2xl shadow-shadow-default">
-            <div class="relative overflow-hidden rounded-xl">
-              <img src={post.image}
-              alt={post.title} loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
+          <div class="group p-6 sm:p-8 rounded-3xl bg-bg-surface border border-border-default dark:shadow-none dark:border-border-default-dark dark:bg-bg-surface-dark bg-opacity-50 shadow-2xl shadow-shadow-default relative">
+            <div class_={post.status === 'soon' ? 'filter grayscale pointer-events-none' : ''}>
+              <div class="relative overflow-hidden rounded-xl">
+                <img src={post.image}
+                alt={post.title} loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
+              </div>
+              <div class="mt-6 relative">
+                <h3 class="text-2xl font-semibold text-text-stronger dark:text-text-default-dark">
+                  {post.title}
+                </h3>
+                <p class="mt-6 mb-8 text-text-muted dark:text-text-muted-dark">
+                  {post.description}
+                </p>
+                <a class="inline-block" href={post.url}>
+                  <span class="text-text-info dark:text-text-info-dark">{post.urlInnerText}</span>
+                </a>
+              </div>
             </div>
-            <div class="mt-6 relative">
-              <h3 class="text-2xl font-semibold text-text-stronger dark:text-text-default-dark">
-                {post.title}
-              </h3>
-              <p class="mt-6 mb-8 text-text-muted dark:text-text-muted-dark">
-                {post.description}
-              </p>
-              <a class="inline-block" href={post.url}>
-                <span class="text-text-info dark:text-text-info-dark">{post.urlInnerText}</span>
-              </a>
-            </div>
+            {post.status === 'soon' && (
+              <div class="absolute top-4 right-4 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                {post.badge}
+              </div>
+            )}
           </div>
         ))}
       </div>

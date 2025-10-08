@@ -5,8 +5,8 @@
     "cta": {
       "primary": "Let's Collaborate",
       "secondary": "See My Work",
-      "primaryNavigate": "/#contact",
-      "secondaryNavigate": "/#about"
+      "primaryNavigate": "/en/contact",
+      "secondaryNavigate": "/en/about"
     }
   },
   "valuePropositions": [

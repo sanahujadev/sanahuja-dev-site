@@ -1,21 +1,23 @@
 {
-  "menu": {
-    "home": "Home",
-    "about": "About",
-    "contact": "Contact",
-    "services": "Services",
-    "terms": "Terms of Use"
-  },
-  "social": {
-    "github": "Github",
-    "linkedin": "LinkedIn"
-  },
-  "content": {
-    "tagline": "I don't just create websites: I accompany you on your digital journey, because your success is also mine.",
-    "copyright": "SanahujaDev /&gt; &copy;",
-    "terms": "Terms of Use",
-    "privacy": "Privacy Policy",
-    "help": "Need help?",
-    "contact": "Contact Me"
+  "links": [
+    { "label": "Home", "url": "/en/" },
+    { "label": "About", "url": "/en/about" },
+    { "label": "Services", "url": "/en/services" },
+    { "label": "Contact", "url": "/en/contact" }
+  ],
+  "social": [
+    { "name": "github", "label": "Github", "url": "https://github.com/sanahujadev/sanahujadev" },
+    { "name": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/josejsanahuja/" }
+  ],
+  "legal": [
+      { "label": "Terms of Use", "url": "/en/terms" },
+      { "label": "Privacy Policy", "url": "/en/privacy" }
+  ],
+  "tagline": "I don't just create websites: I accompany you on your digital journey, because your success is also mine.",
+  "copyright": "SanahujaDev /&gt; &copy;",
+  "help": {
+      "text": "Need help?",
+      "contact": "Contact Me",
+      "url": "/en/contact"
   }
 }

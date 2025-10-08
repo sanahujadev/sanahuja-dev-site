@@ -5,8 +5,8 @@
     "cta": {
       "primary": "Colaboremos",
       "secondary": "Ver Mi Trabajo",
-      "primaryNavigate": "/#contact",
-      "secondaryNavigate": "/#about"
+      "primaryNavigate": "/es/contact",
+      "secondaryNavigate": "/es/about"
     }
   },
   "valuePropositions": [
