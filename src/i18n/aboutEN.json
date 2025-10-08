@@ -1,0 +1,40 @@
+{
+  "about": {
+    "hero": {
+      "title": "From code to real impact: I transform ideas into digital engines.",
+      "imageUrl": "/placeholder.svg"
+    },
+    "philosophy": {
+      "title": "My Philosophy",
+      "content": "I believe a website is not a product, it's a promise. A promise of growth, visibility, and trust. My goal is not to deliver a project, but to accompany you so that it works, evolves, and sells. My success only exists if yours happens first."
+    },
+    "history": {
+      "title": "My Story: From Theory to the Trenches",
+      "content": "During three intense years of Computer Engineering at Simón Bolívar University, I acquired an analytical mindset and a problem-solving approach that I apply to web development today. But I discovered that the real learning is in building things that work in the real world. That's why I trained in over 108 specialized courses in modern web development, from front-end technologies to performance optimization. Then came my time on Fiverr, where I executed 13 international projects with a perfect 5★ rating. There I learned the most important thing: code is important, but trust is even more so.",
+      "counter": {
+        "certifications": "108+ Certifications",
+        "projects": "13+ Projects",
+        "reputation": "5★ Global Reputation"
+      }
+    },
+    "gallery": {
+      "title": "My Certifications",
+      "categories": {
+        "all": "All",
+        "react": "React & Next.js",
+        "node": "Node.js",
+        "db": "Databases",
+        "cloud": "Cloud",
+        "fundamentals": "Fundamentals",
+        "java_python": "Java & Python",
+        "devops": "DevOps & Tools",
+        "backend": "Architecture & Backend"
+      }
+    },
+    "humanSide": {
+      "title": "Beyond the Code",
+      "content": "I am a father of three and a hiking enthusiast. In the mountains, I learned that every step counts, that it's not just about reaching the summit, but about enjoying the process. I apply that same mentality to projects: planning, perseverance, and celebrating each step forward. I don't look for clients, I look for allies to walk together towards the goal.",
+      "imageUrl": "/placeholder.svg"
+    }
+  }
+}

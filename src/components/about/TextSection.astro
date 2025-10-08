@@ -1,0 +1,21 @@
+---
+import Container from "../Container.astro";
+
+const { text, reversed } = Astro.props;
+---
+
+<div class="py-16">
+  <Container>
+    <div class={`grid md:grid-cols-2 gap-12 items-center ${reversed ? 'md:grid-flow-col-dense' : ''}`}>
+      <div class={reversed ? 'md:col-start-2' : ''}>
+        <h2 class="text-3xl font-bold text-text-strong dark:text-text-default-dark">{text.title}</h2>
+        <p class="mt-4 text-lg text-text-muted dark:text-text-muted-dark whitespace-pre-line">{text.content}</p>
+      </div>
+      {text.imageUrl && (
+        <div class={reversed ? 'md:col-start-1' : ''}>
+          <img src={text.imageUrl} alt={text.title} class="rounded-3xl shadow-lg w-full" />
+        </div>
+      )}
+    </div>
+  </Container>
+</div>

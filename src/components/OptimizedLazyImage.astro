@@ -1,0 +1,25 @@
+---
+interface Props {
+    src: string;
+    alt: string;
+    class?: string;
+}
+
+const { src, alt, class: className } = Astro.props;
+
+const avifSrc = `${src}/avif/thumbnail.avif`;
+const webpSrc = `${src}/webp/thumbnail.webp`;
+const jpegSrc = `${src}/jpeg/thumbnail.jpeg`;
+---
+
+<picture>
+    <source srcset={avifSrc} type="image/avif" />
+    <source srcset={webpSrc} type="image/webp" />
+    <img 
+        src={jpegSrc} 
+        alt={alt} 
+        class={className}
+        loading="lazy"
+        decoding="async"
+    />
+</picture>

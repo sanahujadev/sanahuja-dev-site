@@ -25,3 +25,7 @@ pnpm-debug.log*
 
 # Gemini file
 GEMINI.md
+
+*.pdf
+
+public/diplomas

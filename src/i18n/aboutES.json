@@ -1,0 +1,40 @@
+{
+  "about": {
+    "hero": {
+      "title": "Del código al impacto real: transformo ideas en motores digitales.",
+      "imageUrl": "/placeholder.svg"
+    },
+    "philosophy": {
+      "title": "Mi Filosofía",
+      "content": "Creo que una web no es un producto, es una promesa. Promesa de crecimiento, de visibilidad y de confianza. Mi objetivo no es entregarte un proyecto, sino acompañarte para que funcione, evolucione y venda. Mi éxito solo existe si el tuyo ocurre primero."
+    },
+    "history": {
+      "title": "Mi Historia: De la teoría a la trinchera",
+      "content": "Durante tres intensos años de Ingeniería en Computación en la Universidad Simón Bolívar, adquirí una mentalidad analítica y un enfoque de resolución de problemas que hoy aplico al desarrollo web. Pero descubrí que el verdadero aprendizaje está en construir cosas que funcionen en el mundo real. Por eso me formé en más de 108 cursos especializados en desarrollo web moderno, desde tecnologías front-end hasta optimización de rendimiento. Luego llegó mi etapa en Fiverr, donde ejecuté 13 proyectos internacionales con calificación perfecta de 5★. Allí aprendí lo más importante: el código es importante, pero la confianza lo es aún más.",
+      "counter": {
+        "certifications": "108+ Certificaciones",
+        "projects": "13+ Proyectos",
+        "reputation": "5★ Reputación Global"
+      }
+    },
+    "gallery": {
+      "title": "Mis Certificaciones",
+      "categories": {
+        "all": "Todos",
+        "react": "React & Next.js",
+        "node": "Node.js",
+        "db": "Bases de Datos",
+        "cloud": "Cloud",
+        "fundamentals": "Fundamentos",
+        "java_python": "Java & Python",
+        "devops": "DevOps & Herramientas",
+        "backend": "Arquitectura & Backend"
+      }
+    },
+    "humanSide": {
+      "title": "Más Allá del Código",
+      "content": "Soy padre de tres hijos y un apasionado del senderismo. En la montaña aprendí que cada paso cuenta, que no se trata solo de llegar a la cima, sino de disfrutar el proceso. Esa misma mentalidad aplico a los proyectos: planificación, constancia y celebración de cada avance. No busco clientes, busco aliados para caminar juntos hacia la meta.",
+      "imageUrl": "/placeholder.svg"
+    }
+  }
+}

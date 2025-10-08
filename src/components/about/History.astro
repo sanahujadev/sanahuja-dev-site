@@ -1,0 +1,35 @@
+---
+import Container from "../Container.astro";
+import CertificateGallery from "./CertificateGallery.astro";
+
+const { history, gallery } = Astro.props;
+---
+
+<div class="py-16">
+  <Container>
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-text-strong dark:text-text-default-dark">{history.title}</h2>
+      <p class="mt-4 text-lg text-text-muted dark:text-text-muted-dark max-w-3xl mx-auto whitespace-pre-line">{history.content}</p>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="p-8 border border-border-default dark:border-border-default-dark rounded-lg">
+        <h3 class="text-4xl font-bold text-primary dark:text-primary-dark">{history.counter.certifications.split(' ')[0]}</h3>
+        <p class="mt-2 text-text-muted dark:text-text-muted-dark">{history.counter.certifications.split(' ').slice(1).join(' ')}</p>
+      </div>
+      <div class="p-8 border border-border-default dark:border-border-default-dark rounded-lg">
+        <h3 class="text-4xl font-bold text-primary dark:text-primary-dark">{history.counter.projects.split(' ')[0]}</h3>
+        <p class="mt-2 text-text-muted dark:text-text-muted-dark">{history.counter.projects.split(' ').slice(1).join(' ')}</p>
+      </div>
+      <div class="p-8 border border-border-default dark:border-border-default-dark rounded-lg">
+        <h3 class="text-4xl font-bold text-primary dark:text-primary-dark">{history.counter.reputation.split(' ')[0]}</h3>
+        <p class="mt-2 text-text-muted dark:text-text-muted-dark">{history.counter.reputation.split(' ').slice(1).join(' ')}</p>
+      </div>
+    </div>
+
+    <div class="mt-20">
+      <h2 class="text-3xl font-bold text-center text-text-strong dark:text-text-default-dark">{gallery.title}</h2>
+      <CertificateGallery categories={gallery.categories} />
+    </div>
+  </Container>
+</div>

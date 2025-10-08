@@ -32,6 +32,8 @@ import packsEN from "./packsEN.json";
 import packsES from "./packsES.json";
 import coreFeaturesEN from "./coreFeaturesEN.json";
 import coreFeaturesES from "./coreFeaturesES.json";
+import aboutEN from "./aboutEN.json";
+import aboutES from "./aboutES.json";
 import en from "./en.json";
 import es from "./es.json";
 
@@ -54,6 +56,7 @@ const translations = {
 		packs: packsEN,
 		responsiveDesign: responsiveDesignEN,
 		coreFeatures: coreFeaturesEN.coreFeatures,
+		about: aboutEN.about,
 	},
 	es: {
 		common: es,
@@ -73,6 +76,7 @@ const translations = {
 		packs: packsES,
 		responsiveDesign: responsiveDesignES,
 		coreFeatures: coreFeaturesES.coreFeatures,
+		about: aboutES.about,
 	},
 	"404": {
 		common: es,
@@ -92,6 +96,7 @@ const translations = {
 		packs: null,
 		responsiveDesign: null,
 		coreFeatures: null,
+		about: null,
 	},
 	"500": {
 		common: es,
@@ -111,6 +116,7 @@ const translations = {
 		packs: null,
 		responsiveDesign: null,
 		coreFeatures: null,
+		about: null,
 	},
 };
 
@@ -170,3 +176,5 @@ export type Footer = {
   copyright: string;
   help: Help;
 };
+
+export type About = typeof aboutEN.about;

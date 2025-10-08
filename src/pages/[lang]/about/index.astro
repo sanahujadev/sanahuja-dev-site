@@ -1,0 +1,28 @@
+---
+import { getTranslations, type About } from "../../../i18n/utils";
+import Layout from "../../../layouts/Layout.astro";
+import AboutHero from "../../../components/about/AboutHero.astro";
+import TextSection from "../../../components/about/TextSection.astro";
+import History from "../../../components/about/History.astro";
+import Testimonials from "../../../components/Testimonials.astro";
+import CallToAction from "../../../components/CallToAction.astro";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang as "en" | "es");
+const about = t.about as About;
+---
+
+<Layout t={t} lang={lang}>
+  <main class="space-y-20 mb-40 pt-20">
+    <AboutHero hero={about.hero} />
+    <TextSection text={about.philosophy} />
+    <History history={about.history} gallery={about.gallery} />
+    <Testimonials t={t.reviews} />
+    <TextSection text={about.humanSide} reversed />
+    <CallToAction t={t.cta} />
+  </main>
+</Layout>
