@@ -1,0 +1,49 @@
+{
+  "coreFeatures": {
+    "title": "Our Development Pillars",
+    "features": [
+      {
+        "icon": "/images/icons/icon-responsive.svg",
+        "title": "A Perfect Experience on Any Device",
+        "description": "It's not just about your website 'looking good' on a mobile device. It's about providing a seamless and fast user experience, regardless of the device. We achieve this through:",
+        "points": [
+          "**Mobile-First Approach:** We design for the smallest screens first, ensuring a solid foundation, and then scale up for larger devices.",
+          "**Performance Optimization:** We optimize images, and leverage modern frameworks to ensure your site loads quickly on any connection.",
+          "**Cross-Browser & Device Testing:** We rigorously test on a wide range of browsers and devices to guarantee a consistent experience for all your users.",
+          "**SEO Friendly:** A responsive design is a crucial factor for Google's mobile-first indexing, which we prioritize."
+        ],
+        "cta": {
+          "text": "See interactive demo",
+          "url": "/features/responsive-design"
+        }
+      },
+      {
+        "icon": "/images/icons/icon-secured.svg",
+        "title": "Security as a Foundation, Not an Extra",
+        "description": "Your peace of mind is our priority. That's why we integrate a multi-layered defense strategy:",
+        "points": [
+          "**Encrypted Connections:** All sites are delivered with SSL certificates to ensure private and secure communication.",
+          "**Advanced Form Protection:** We use serverless functions (e.g., AWS Lambda) to process form submissions with services like Resend, combined with Cloudflare Turnstile to block bots without annoying CAPTCHAs.",
+          "**Dependency Monitoring:** We constantly monitor and update all software dependencies to protect against the latest known vulnerabilities.",
+          "**Robust Security Headers:** We configure advanced HTTP headers (like CSP) to provide strong protection against common attacks such as Cross-Site Scripting (XSS)."
+        ],
+        "cta": null
+      },
+      {
+        "icon": "/images/icons/icon-seo.svg",
+        "title": "Built to Be Found",
+        "description": "A website that no one finds doesn't meet its objective. That's why all our projects include a solid foundation of technical SEO: Semantic HTML so search engines understand your content, performance optimization for better Google rankings, and essential meta tags and attributes for visibility from day one.",
+        "cta": null
+      },
+      {
+        "icon": "/images/icons/icon-message.svg",
+        "title": "A Partner in Your Digital Journey",
+        "description": "Your website's launch is just the beginning. We offer clear and direct communication to resolve any questions. All our projects include a 30-day warranty to fix any technical issues. And if you need long-term peace of mind, we have maintenance plans tailored to your needs.",
+        "cta": {
+          "text": "Contact for support",
+          "url": "/contact"
+        }
+      }
+    ]
+  }
+}

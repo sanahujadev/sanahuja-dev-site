@@ -16,21 +16,21 @@
         "title": "Guaranteed Security",
         "description": "SSL protection, daily backups, and continuous security updates. Your peace of mind is our priority.",
         "cta_text": "More Details",
-        "url": "#"
+        "url": "/en/services#core-features"
       },
       {
         "image_alt": "Illustration of SEO",
         "title": "Immediate Visibility",
         "description": "Basic SEO optimization included so your clients can easily find you in search engines.",
-        "cta_text": "Consult SEO",
-        "url": "#"
+        "cta_text": "More Details",
+        "url": "/en/services#core-features"
       },
       {
         "image_alt": "Illustration of support",
         "title": "Direct Support",
         "description": "Direct communication via WhatsApp to quickly resolve your questions. No intermediaries.",
         "cta_text": "Contact",
-        "url": "#"
+        "url": "/en/contact"
       }
     ]
   }

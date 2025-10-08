@@ -16,21 +16,21 @@
         "title": "Seguridad Garantizada",
         "description": "Protección SSL, backups diarios y actualizaciones de seguridad continuas. Tu tranquilidad es nuestra prioridad.",
         "cta_text": "Más detalles",
-        "url": "#"
+        "url": "/es/services#core-features"
       },
       {
         "image_alt": "Ilustración de SEO",
         "title": "Visibilidad Inmediata",
         "description": "Optimización SEO básica incluida para que tus clientes te encuentren fácilmente en los buscadores.",
-        "cta_text": "Consultar SEO",
-        "url": "#"
+        "cta_text": "Más detalles",
+        "url": "/es/services#core-features"
       },
       {
         "image_alt": "Ilustración de soporte",
         "title": "Soporte Directo",
         "description": "Comunicación directa vía WhatsApp para resolver tus dudas rápidamente. Sin intermediarios.",
         "cta_text": "Contactar",
-        "url": "#"
+        "url": "/es/contact"
       }
     ]
   }

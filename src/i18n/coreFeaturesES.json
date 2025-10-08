@@ -1,0 +1,49 @@
+{
+  "coreFeatures": {
+    "title": "Nuestros Pilares de Desarrollo",
+    "features": [
+      {
+        "icon": "/images/icons/icon-responsive.svg",
+        "title": "Una Experiencia Perfecta en Cualquier Dispositivo",
+        "description": "No se trata solo de que tu web 'se vea bien' en un móvil. Se trata de ofrecer una experiencia de usuario impecable y rápida, sin importar el dispositivo. Lo logramos a través de:",
+        "points": [
+          "**Enfoque Mobile-First:** Diseñamos primero para las pantallas más pequeñas, asegurando una base sólida, y desde ahí escalamos hacia dispositivos más grandes.",
+          "**Optimización del Rendimiento:** Optimizamos imágenes y usamos frameworks modernos para asegurar que tu sitio cargue rápidamente con cualquier tipo de conexión.",
+          "**Pruebas Multi-dispositivo:** Probamos rigurosamente en una amplia gama de navegadores y dispositivos para garantizar una experiencia consistente para todos tus usuarios.",
+          "**Amigable con el SEO:** Un buen diseño adaptativo es un factor crucial para la indexación 'mobile-first' de Google, algo que priorizamos."
+        ],
+        "cta": {
+          "text": "Ver la demo interactiva",
+          "url": "/features/responsive-design"
+        }
+      },
+      {
+        "icon": "/images/icons/icon-secured.svg",
+        "title": "La Seguridad como Cimiento, no como un Extra",
+        "description": "Tu tranquilidad es nuestra prioridad. Por eso, integramos una estrategia de defensa en múltiples capas:",
+        "points": [
+          "**Conexiones Cifradas:** Todos los sitios se entregan con certificados SSL para garantizar una comunicación privada y segura.",
+          "**Protección Avanzada de Formularios:** Usamos funciones serverless (ej. AWS Lambda) para procesar envíos con Resend, combinado con Cloudflare Turnstile para bloquear bots sin los molestos CAPTCHAs.",
+          "**Monitorización de Dependencias:** Mantenemos el software y las librerías actualizadas para proteger contra las últimas vulnerabilidades conocidas.",
+          "**Cabeceras de Seguridad Robustas:** Configuramos cabeceras HTTP avanzadas (como CSP) para una protección fuerte contra ataques comunes como Cross-Site Scripting (XSS)."
+        ],
+        "cta": null
+      },
+      {
+        "icon": "/images/icons/icon-seo.svg",
+        "title": "Construido para ser Encontrado",
+        "description": "Un sitio web que nadie encuentra no cumple su objetivo. Por eso, todos nuestros proyectos incluyen una base sólida de SEO técnico: HTML Semántico para que los motores de búsqueda entiendan tu contenido, optimización del rendimiento para un mejor ranking en Google y meta-etiquetas y atributos esenciales para la visibilidad desde el primer día.",
+        "cta": null
+      },
+      {
+        "icon": "/images/icons/icon-message.svg",
+        "title": "Un Socio en tu Viaje Digital",
+        "description": "El lanzamiento de tu web es solo el comienzo. Ofrecemos una comunicación clara y directa para resolver cualquier duda. Todos nuestros proyectos incluyen una garantía de 30 días para solucionar cualquier imprevisto técnico. Y si necesitas tranquilidad a largo plazo, disponemos de planes de mantenimiento adaptados a tus necesidades.",
+        "cta": {
+          "text": "Contactar para soporte",
+          "url": "/contact"
+        }
+      }
+    ]
+  }
+}

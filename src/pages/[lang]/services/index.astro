@@ -1,8 +1,9 @@
 ---
 import Blog from '../../../components/Blog.astro';
-import { getTranslations, type ServicesIndex } from '../../../i18n/utils';
+import { getTranslations, type ServicesIndex, type CoreFeatures as CoreFeaturesType } from '../../../i18n/utils';
 import Layout from '../../../layouts/Layout.astro';
 import SpecialOffer from '../../../components/SpecialOffer.astro';
+import CoreFeatures from '../../../components/CoreFeatures.astro';
 
 export function getStaticPaths() {
   return [
@@ -15,11 +16,13 @@ const { lang } = Astro.params;
 const t = getTranslations(lang as 'en' | 'es');
 const servicesIndex = t.servicesIndex as ServicesIndex;
 const offer = servicesIndex.offer;
+const coreFeatures = t.coreFeatures as CoreFeaturesType;
 ---
 
 <Layout t={t} lang={lang}>
   <main class="space-y-8 mb-40 pt-20">
     <SpecialOffer offer={offer} />
     <Blog title={servicesIndex.title} subtitle={servicesIndex.subtitle} posts={servicesIndex.services} />
+    <CoreFeatures features={coreFeatures} lang={lang} />
   </main>
 </Layout>

@@ -30,6 +30,8 @@ import addOnsEN from "./addOnsEN.json";
 import addOnsES from "./addOnsES.json";
 import packsEN from "./packsEN.json";
 import packsES from "./packsES.json";
+import coreFeaturesEN from "./coreFeaturesEN.json";
+import coreFeaturesES from "./coreFeaturesES.json";
 import en from "./en.json";
 import es from "./es.json";
 
@@ -51,6 +53,7 @@ const translations = {
 		addOns: addOnsEN,
 		packs: packsEN,
 		responsiveDesign: responsiveDesignEN,
+		coreFeatures: coreFeaturesEN.coreFeatures,
 	},
 	es: {
 		common: es,
@@ -69,6 +72,7 @@ const translations = {
 		addOns: addOnsES,
 		packs: packsES,
 		responsiveDesign: responsiveDesignES,
+		coreFeatures: coreFeaturesES.coreFeatures,
 	},
 	"404": {
 		common: es,
@@ -87,6 +91,7 @@ const translations = {
 		addOns: null,
 		packs: null,
 		responsiveDesign: null,
+		coreFeatures: null,
 	},
 	"500": {
 		common: es,
@@ -105,6 +110,7 @@ const translations = {
 		addOns: null,
 		packs: null,
 		responsiveDesign: null,
+		coreFeatures: null,
 	},
 };
 
@@ -122,3 +128,19 @@ export type Packs = typeof packsEN;
 export type ServicesIndex = typeof servicesIndexEN;
 export type Features = typeof featuresEN.features;
 export type ResponsiveDesign = typeof responsiveDesignEN.responsiveDesign;
+
+export type CoreFeatureItem = {
+  icon: string;
+  title: string;
+  description: string;
+  points?: string[];
+  cta: {
+    text: string;
+    url: string;
+  } | null;
+};
+
+export type CoreFeatures = {
+  title: string;
+  features: CoreFeatureItem[];
+};
