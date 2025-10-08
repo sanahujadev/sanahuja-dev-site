@@ -1,0 +1,87 @@
+---
+import Container from "../../../components/Container.astro";
+import { getTranslations, type ResponsiveDesign } from "../../../i18n/utils";
+import Layout from "../../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+	return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang as "en" | "es" ?? "es");
+
+const rD = t.responsiveDesign?.responsiveDesign as ResponsiveDesign;
+---
+
+<Layout t={t} lang={lang}>
+    <main class="py-20">
+        <Container>
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark md:text-5xl">
+                {rD.title}
+                </h1>
+                <p class="mt-4 text-xl lg:mx-auto lg:w-8/12 text-text-strong dark:text-text-muted-dark">
+                {rD.intro}
+                </p>
+            </div>
+
+            <div id="demo-controls" class="mt-8 hidden md:flex justify-center gap-4">
+                <button id="btn-mobile" class="px-4 py-2 rounded-md bg-primary text-white">{rD.buttons.mobile}</button>
+                <button id="btn-tablet" class="px-4 py-2 rounded-md bg-primary text-white">{rD.buttons.tablet}</button>
+                <button id="btn-desktop" class="px-4 py-2 rounded-md bg-primary text-white">{rD.buttons.desktop}</button>
+            </div>
+            
+            <div id="iframe-container" class="mt-8 border border-border-default dark:border-border-default-dark rounded-lg overflow-hidden mx-auto hidden md:block">
+                <iframe id="responsive-iframe" src={`/${lang}/`} class="w-full h-[70vh] transition-all duration-300 ease-in-out" title="Responsive Design Demonstration"></iframe>
+            </div>
+
+            <div id="mobile-warning" class="md:hidden text-center">
+                <p class="text-text-muted dark:text-text-muted-dark">{rD.mobileWarning}</p>
+                <button id="show-demo-btn" class="mt-4 px-4 py-2 rounded-md bg-primary text-white">{rD.showDemoButton}</button>
+            </div>
+        </Container>
+    </main>
+
+    <script>
+        const iframeContainer = document.getElementById('iframe-container');
+        const demoControls = document.getElementById('demo-controls');
+        const mobileWarning = document.getElementById('mobile-warning');
+        const showDemoBtn = document.getElementById('show-demo-btn');
+
+        showDemoBtn?.addEventListener('click', () => {
+            if (iframeContainer && demoControls && mobileWarning) {
+                mobileWarning.style.display = 'none';
+                iframeContainer.style.display = 'block';
+                demoControls.style.display = 'flex';
+            }
+        });
+
+        const iframeContainerStyle = iframeContainer?.style;
+        const btnMobile = document.getElementById('btn-mobile');
+        const btnTablet = document.getElementById('btn-tablet');
+        const btnDesktop = document.getElementById('btn-desktop');
+
+        btnMobile?.addEventListener('click', () => {
+            if (iframeContainerStyle) {
+                iframeContainerStyle.width = '375px';
+            }
+        });
+
+        btnTablet?.addEventListener('click', () => {
+            if (iframeContainerStyle) {
+                iframeContainerStyle.width = '768px';
+            }
+        });
+
+        btnDesktop?.addEventListener('click', () => {
+            if (iframeContainerStyle) {
+                iframeContainerStyle.width = '1200px';
+            }
+        });
+
+        // Set initial width for desktop
+        if (iframeContainerStyle) {
+            iframeContainerStyle.width = '100%';
+        }
+    </script>
+</Layout>

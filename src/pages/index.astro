@@ -1,4 +1,10 @@
 ---
-// src/pages/index.astro
-return Astro.redirect('/es/');
+import RedirectLayout from '../layouts/RedirectLayout.astro';
+
+const targetUrl = '/es/';
 ---
+<RedirectLayout lang="es">
+    <meta slot="meta" http-equiv="refresh" content={`0;url=${targetUrl}`} />
+    <link slot="meta" rel="canonical" href={targetUrl} />
+    <a slot="link" href={targetUrl} class="text-primary dark:text-primary-dark">haz clic aquí</a>
+</RedirectLayout>

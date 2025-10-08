@@ -1,0 +1,13 @@
+{
+  "responsiveDesign": {
+    "title": "Responsive Design Demonstration",
+    "intro": "Below, you can see the home page of this website embedded in an iframe. You can resize your browser window to see how the content adapts to different screen sizes. This is a demonstration of responsive design in action.",
+    "buttons": {
+      "mobile": "Mobile",
+      "tablet": "Tablet",
+      "desktop": "Desktop"
+    },
+    "mobileWarning": "On mobile devices, it is not recommended to view this demo as it may not display correctly. What we recommend is that you find the chance to see this demo in a Desktop. However, you can activate it if you still wish to see it by clicking the button.",
+    "showDemoButton": "Show Demo"
+  }
+}

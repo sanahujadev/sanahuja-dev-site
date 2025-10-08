@@ -1,0 +1,16 @@
+---
+import RedirectLayout from '../../../layouts/RedirectLayout.astro';
+
+export function getStaticPaths() {
+	return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
+}
+const { lang } = Astro.params;
+const targetUrl = `/${lang}/#features`;
+
+const linkText = lang === 'en' ? 'click here' : 'haz clic aquí';
+---
+<RedirectLayout lang={lang}>
+    <meta slot="meta" http-equiv="refresh" content={`0;url=${targetUrl}`} />
+    <link slot="meta" rel="canonical" href={targetUrl} />
+    <a slot="link" href={targetUrl} class="text-primary dark:text-primary-dark">{linkText}</a>
+</RedirectLayout>

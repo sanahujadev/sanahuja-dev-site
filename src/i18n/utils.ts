@@ -8,6 +8,8 @@ import heroEN from "./heroEN.json";
 import heroES from "./heroES.json";
 import hero404 from "./hero404.json";
 import hero500 from "./hero500.json";
+import responsiveDesignEN from "./responsiveDesignEN.json";
+import responsiveDesignES from "./responsiveDesignES.json";
 import reviewsEN from "./reviewsEN.json";
 import reviewsES from "./reviewsES.json";
 import solutionEN from "./solutionEN.json";
@@ -48,6 +50,7 @@ const translations = {
 		contentPlanConditions: contentPlanConditionsEN,
 		addOns: addOnsEN,
 		packs: packsEN,
+		responsiveDesign: responsiveDesignEN,
 	},
 	es: {
 		common: es,
@@ -65,6 +68,7 @@ const translations = {
 		contentPlanConditions: contentPlanConditionsES,
 		addOns: addOnsES,
 		packs: packsES,
+		responsiveDesign: responsiveDesignES,
 	},
 	"404": {
 		common: es,
@@ -82,6 +86,7 @@ const translations = {
 		contentPlanConditions: null,
 		addOns: null,
 		packs: null,
+		responsiveDesign: null,
 	},
 	"500": {
 		common: es,
@@ -99,6 +104,7 @@ const translations = {
 		contentPlanConditions: null,
 		addOns: null,
 		packs: null,
+		responsiveDesign: null,
 	},
 };
 
@@ -114,3 +120,5 @@ export type ContentPlanConditions = typeof contentPlanConditionsEN;
 export type AddOns = typeof addOnsEN;
 export type Packs = typeof packsEN;
 export type ServicesIndex = typeof servicesIndexEN;
+export type Features = typeof featuresEN.features;
+export type ResponsiveDesign = typeof responsiveDesignEN.responsiveDesign;

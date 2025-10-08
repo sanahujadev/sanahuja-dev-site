@@ -1,0 +1,13 @@
+{
+  "responsiveDesign": {
+    "title": "Demostración de Diseño Adaptativo",
+    "intro": "A continuación, puedes ver la página de inicio de este sitio web incrustada en un iframe. Puedes redimensionar la ventana de tu navegador para ver cómo el contenido se adapta a diferentes tamaños de pantalla. Esta es una demostración de diseño adaptativo en acción.",
+    "buttons": {
+      "mobile": "Móvil",
+      "tablet": "Tablet",
+      "desktop": "PC"
+    },
+    "mobileWarning": "En dispositivos móviles, no se recomienda ver esta demostración ya que puede no visualizarse correctamente. Lo que sí recomendamos, es que encuentres la oportunidad de ver esta demostración en un PC. Sin embargo, puedes activarla si aún deseas verla haciendo clic en el botón.",
+    "showDemoButton": "Mostrar Demo"
+  }
+}

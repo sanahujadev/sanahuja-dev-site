@@ -177,3 +177,11 @@
 .dark .nextjs-logo path {
   fill: #FFFFFF; /* White for dark mode */
 }
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  overflow-x: hidden;
+}
