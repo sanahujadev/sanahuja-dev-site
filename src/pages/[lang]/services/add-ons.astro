@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import { getTranslations, type AddOns } from '../../../i18n/utils';
 import Container from '../../../components/Container.astro';
+import ResponsiveImage from '../../../components/ResponsiveImage.astro';
 
 export function getStaticPaths() {
   return [{ params: { lang: 'en' } }, { params: { lang: 'es' } }];
@@ -15,13 +16,26 @@ const addOns = t.addOns as AddOns;
 <Layout t={t} lang={lang}>
   <main class="space-y-8 mb-40 pt-20">
     <Container>
-      <div class="text-center">
-        <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark md:text-5xl">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="">
+        <h1 class="text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark md:text-5xl">
           {addOns.title}
         </h1>
-        <p class="mt-4 text-xl lg:mx-auto lg:w-8/12 text-text-strong dark:text-text-muted-dark">
+        <p class="mt-4 text-xl lg:mx-auto lg: text-text-strong dark:text-text-muted-dark">
           {addOns.introduction}
         </p>
+      </div>
+      <div>
+        <ResponsiveImage
+            basePath="sanahujadev"
+            imageName="services-add-ons"
+            fallbackFormat="jpeg"
+            alt="SanahujaDev"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            width="720"
+            class="rounded-3xl shadow-lg w-full max-w-lg mx-auto"
+        />
+      </div>
       </div>
 
       <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

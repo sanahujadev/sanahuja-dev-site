@@ -2,6 +2,7 @@
   "about": {
     "hero": {
       "title": "From code to real impact: I transform ideas into digital engines.",
+      "description": "My mission is to make your website work, always. I don't just develop sites, I build digital futures.",
       "imageUrl": "/placeholder.svg"
     },
     "philosophy": {
@@ -33,7 +34,7 @@
     },
     "humanSide": {
       "title": "Beyond the Code",
-      "content": "I am a father of three and a hiking enthusiast. In the mountains, I learned that every step counts, that it's not just about reaching the summit, but about enjoying the process. I apply that same mentality to projects: planning, perseverance, and celebrating each step forward. I don't look for clients, I look for allies to walk together towards the goal.",
+      "content": "I am a father of three and a hiking enthusiast. In the mountains, I learned that every step counts, that it's not just about reaching the summit, but about enjoying the process. This philosophy extends to my work: meticulous planning, unwavering perseverance, and celebrating every milestone. I believe in building strong partnerships, not just client relationships, to achieve shared digital goals. My approach is to walk alongside you, ensuring your project's success is a journey we undertake together.",
       "imageUrl": "/placeholder.svg"
     }
   }
