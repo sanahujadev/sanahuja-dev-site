@@ -8,7 +8,7 @@ type Review = {
     name: string;
     role: string;
     text: string;
-    avatarSrc: string | null;
+    avatarImageName: string | null;
     avatarAlt: string;
 };
 ---
@@ -27,7 +27,7 @@ type Review = {
           <div class="flex gap-4">
             
             {/* Our Avatar component plays its hand, handling the image or monogram with grace */}
-            <Avatar src={review.avatarSrc} name={review.name} alt={review.avatarAlt} />
+                        <Avatar imageName={review.avatarImageName} name={review.name} alt={review.avatarAlt} />
 
             <div>
               <h6 class="text-lg font-medium text-text-strong dark:text-text-default-dark">{review.name}</h6>

@@ -2,42 +2,42 @@
   "headline": "We have some fans.",
   "reviews": [
     {
-      "avatarSrc": "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/fefbcd4bb1cced424770bafd007566a4-1695162931654/d37d3e3b-64c9-4f35-9d81-0499e0c9a50a.jpeg",
+      "avatarImageName": "fiverr-client-joaco",
       "avatarAlt": "Avatar of Joaco B.",
       "name": "Joaco B.",
       "role": "Valued Client",
       "text": "He was very attentive and was very aware of the doubts and revisions I had of the order. Highly recommended."
     },
     {
-      "avatarSrc": null,
+      "avatarImageName": null,
       "avatarAlt": "Avatar of Alerco",
       "name": "Alerco",
       "role": "Valued Client",
       "text": "The relationship with José Javier and his work are extraordinary."
     },
     {
-      "avatarSrc": null,
+      "avatarImageName": null,
       "avatarAlt": "Avatar of ihatemyclass",
       "name": "ihatemyclass",
       "role": "Valued Client",
       "text": "Fantastic job, even though I did not express availability at the beginning, they did a fantastic job! Excellent work ! Understand weel english, easy to work with."
     },
     {
-      "avatarSrc": "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/b92426ba6b135aee200d728feeb50aa7-1738148759283/c26600a2-c94c-4cb7-91dc-5d84895239bf.jpg",
+      "avatarImageName": "fiverr-client-antoine",
       "avatarAlt": "Avatar of Antoine R.",
       "name": "Antoine R.",
       "role": "Valued Client",
       "text": "excellent work, as always."
     },
     {
-      "avatarSrc": null,
+      "avatarImageName": null,
       "avatarAlt": "Avatar of Fengjason",
       "name": "Fengjason",
       "role": "Valued Client",
       "text": "This is my second order with Señor Jose, really really great experience. He have helped me beyond what is agreed on and will definitely recommend him to my fellow fiverr users!! Muchas gracias señor!!!"
     },
     {
-      "avatarSrc": null,
+      "avatarImageName": null,
       "avatarAlt": "Avatar of Thomas 8.",
       "name": "Thomas 8.",
       "role": "Valued Client",

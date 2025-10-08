@@ -1,25 +1,28 @@
 ---
-// --- The component's "script" lives in the frontmatter ---
 interface Props {
-  src: string | null;
+  imageName: string | null;
   name: string;
   alt: string;
+  class?: string;
 }
-// We receive the props just like in Preact
-const { src, name, alt } = Astro.props;
+const { imageName, name, alt, class: className } = Astro.props;
+const cdnBaseUrl = 'https://cdn.sanahuja.dev/sanahujadev/';
 ---
 
-{src ? (
-  <img 
-    class="w-12 h-12 rounded-full object-cover" 
-    src={src} 
-    alt={alt} 
-    width="48" 
-    height="48" 
-    loading="lazy" 
-  />
+{imageName ? (
+  <picture>
+    <source srcset={`${cdnBaseUrl}${imageName}/original.webp`} type="image/webp" />
+    <img
+      class:list={["w-12 h-12 rounded-full object-cover", className]}
+      src={`${cdnBaseUrl}${imageName}/jpeg/${imageName}-360w.jpeg`}
+      alt={alt}
+      width="48"
+      height="48"
+      loading="lazy"
+    />
+  </picture>
 ) : (
-  <div class="w-12 h-12 rounded-full bg-bg-accent-soft flex items-center justify-center text-text-accent-strong font-bold text-xl">
+  <div class:list={["w-12 h-12 rounded-full bg-bg-accent-soft flex items-center justify-center text-text-accent-strong font-bold text-xl", className]}>
     <span>{name.charAt(0).toUpperCase()}</span>
   </div>
 )}

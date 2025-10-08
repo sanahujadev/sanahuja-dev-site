@@ -1,24 +1,24 @@
 {
   "avatars": [
-    { 
-      "src": "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/fefbcd4bb1cced424770bafd007566a4-1695162931654/d37d3e3b-64c9-4f35-9d81-0499e0c9a50a.jpeg", 
-      "alt": "Foto de Joaco B., cliente satisfecho" 
+    {
+      "imageName": "fiverr-client-joaco",
+      "alt": "Foto de Joaco B., un cliente satisfecho"
     },
-    { 
-      "src": null, 
-      "alt": "A Foto de Alerco, cliente satisfecho" 
+    {
+      "imageName": null,
+      "alt": "A Foto de Alerco, un cliente satisfecho"
     },
-    { 
-      "src": "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/b92426ba6b135aee200d728feeb50aa7-1738148759283/c26600a2-c94c-4cb7-91dc-5d84895239bf.jpg", 
-      "alt": "Foto de Antoine R., cliente satisfecho" 
+    {
+      "imageName": "fiverr-client-antoine",
+      "alt": "Foto de Antoine R., un cliente satisfecho"
     },
-    { 
-      "src": null, 
-      "alt": "Foto de Fengjason, cliente satisfecho" 
+    {
+      "imageName": null,
+      "alt": "Foto de Fengjason, un cliente satisfecho"
     },
-    { 
-      "src": null,
-      "alt": "T Foto de un cliente satisfecho" 
+    {
+      "imageName": null,
+      "alt": "T Foto de un cliente satisfecho"
     }
   ],
   "headline": "Más que un desarrollador, tu socio IT.",

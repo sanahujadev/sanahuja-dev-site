@@ -2,42 +2,42 @@
   "headline": "Tenemos fans.",
   "reviews": [
     {
-      "avatarSrc": "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/fefbcd4bb1cced424770bafd007566a4-1695162931654/d37d3e3b-64c9-4f35-9d81-0499e0c9a50a.jpeg",
+      "avatarImageName": "fiverr-client-joaco",
       "avatarAlt": "Avatar de Joaco B.",
       "name": "Joaco B.",
       "role": "Cliente Valorado",
       "text": "Fue muy atento y estuvo muy pendiente a las dudas y revisiones que tuve del pedido. Altamente recomendado."
     },
     {
-      "avatarSrc": null,
+      "avatarImageName": null,
       "avatarAlt": "Avatar de Alerco",
       "name": "Alerco",
       "role": "Cliente Valorado",
       "text": "La relación con José Javier y su trabajo son extraordinarios."
     },
     {
-      "avatarSrc": null,
+      "avatarImageName": null,
       "avatarAlt": "Avatar de ihatemyclass",
       "name": "ihatemyclass",
       "role": "Cliente Valorado",
       "text": "¡Trabajo fantástico! Aunque no expresé mi disponibilidad al principio, hicieron un trabajo excelente. Entienden bien el inglés y es fácil trabajar con ellos."
     },
     {
-      "avatarSrc": "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/b92426ba6b135aee200d728feeb50aa7-1738148759283/c26600a2-c94c-4cb7-91dc-5d84895239bf.jpg",
+      "avatarImageName": "fiverr-client-antoine",
       "avatarAlt": "Avatar de Antoine R.",
       "name": "Antoine R.",
       "role": "Cliente Valorado",
       "text": "Excelente trabajo, como siempre."
     },
     {
-      "avatarSrc": null,
+      "avatarImageName": null,
       "avatarAlt": "Avatar de Fengjason",
       "name": "Fengjason",
       "role": "Cliente Valorado",
       "text": "Este es mi segundo pedido con el Señor José, una experiencia realmente genial. ¡Me ha ayudado más allá de lo acordado y definitivamente lo recomendaré! ¡Muchas gracias, señor!"
     },
     {
-      "avatarSrc": null,
+      "avatarImageName": null,
       "avatarAlt": "Avatar de Thomas 8.",
       "name": "Thomas 8.",
       "role": "Cliente Valorado",
