@@ -26,12 +26,12 @@
   "actions": [
     { 
       "text": "Hablemos de tu Proyecto", 
-      "href": "#contact",
+      "href": "/es/contact",
       "variant": "primary"
     },
     { 
       "text": "Ver mi Trabajo", 
-      "href": "#portfolio",
+      "href": "/es/about",
       "variant": "secondary" 
     }
   ]

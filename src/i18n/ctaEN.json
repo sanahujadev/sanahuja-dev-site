@@ -26,12 +26,12 @@
   "actions": [
     { 
       "text": "Let's Talk About Your Project", 
-      "href": "#contact",
+      "href": "/en/contact",
       "variant": "primary"
     },
     { 
       "text": "See My Work", 
-      "href": "#portfolio",
+      "href": "/en/about",
       "variant": "secondary" 
     }
   ]

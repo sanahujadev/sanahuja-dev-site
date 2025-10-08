@@ -1,7 +1,9 @@
 ---
+import type { StatsSolition } from "../i18n/utils";
 import Container from "./Container.astro";
+import ResponsiveImage from "./ResponsiveImage.astro";
 
-const { t } = Astro.props;
+const { t } = Astro.props as { t: StatsSolition };
 const pointsIcons = [
   { 
     bgColor: 'bg-bg-secondary-accent-soft dark:bg-bg-secondary-accent-soft-dark',
@@ -30,29 +32,16 @@ const pointsIcons = [
       
         <div class="space-y-6 justify-between md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
             <div class="md:w-5/12 lg:w-1/2">
-                <picture>
-                    <source
-                        type="image/avif"
-                        srcset="https://cdn.sanahuja.dev/sanahujadev/partners/avif/partners-360w.avif 360w, https://cdn.sanahuja.dev/sanahujadev/partners/avif/partners-720w.avif 720w, https://cdn.sanahuja.dev/sanahujadev/partners/avif/partners-1280w.avif 1280w, https://cdn.sanahuja.dev/sanahujadev/partners/avif/partners-1920w.avif 1920w"
-                        sizes="(max-width: 767px) 90vw, (max-width: 1023px) 40vw, 50vw"
-                    />
-                    <source
-                        type="image/webp"
-                        srcset="https://cdn.sanahuja.dev/sanahujadev/partners/webp/partners-360w.webp 360w, https://cdn.sanahuja.dev/sanahujadev/partners/webp/partners-720w.webp 720w, https://cdn.sanahuja.dev/sanahujadev/partners/webp/partners-1280w.webp 1280w, https://cdn.sanahuja.dev/sanahujadev/partners/webp/partners-1920w.webp 1920w"
-                        sizes="(max-width: 767px) 90vw, (max-width: 1023px) 40vw, 50vw"
-                    />
-                    <img
-                        src="https://cdn.sanahuja.dev/sanahujadev/partners/jpg/partners-720w.jpg"
-                        srcset="https://cdn.sanahuja.dev/sanahujadev/partners/jpg/partners-360w.jpg 360w, https://cdn.sanahuja.dev/sanahujadev/partners/jpg/partners-720w.jpg 720w, https://cdn.sanahuja.dev/sanahujadev/partners/jpg/partners-1280w.jpg 1280w, https://cdn.sanahuja.dev/sanahujadev/partners/jpg/partners-1920w.jpg 1920w"
-                        sizes="(max-width: 767px) 90vw, (max-width: 1023px) 40vw, 50vw"
-                        alt={t.image_alt}
-                        loading="lazy"
-                        decoding="async"
-                        width="1920"
-                        height="1080"
-                        class="max-h-160 w-full object-contain"
-                    />
-                </picture>
+                                <ResponsiveImage
+                    basePath="sanahujadev"
+                    imageName="partners"
+                    fallbackFormat="jpg"
+                    alt={t.image_alt}
+                    sizes="(max-width: 767px) 90vw, (max-width: 1023px) 40vw, 50vw"
+                    width="1920"
+                    height="1080"
+                    class="max-h-160 w-full object-contain"
+                />
             </div>
             <div class="md:w-7/12 lg:w-1/2">
                 <h2 class="text-3xl font-bold text-text-default md:text-4xl dark:text-text-default-dark">

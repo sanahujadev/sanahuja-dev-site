@@ -7,7 +7,8 @@
   ],
   "social": [
     { "name": "github", "label": "Github", "url": "https://github.com/sanahujadev/sanahujadev" },
-    { "name": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/josejsanahuja/" }
+    { "name": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/josejsanahuja/" },
+    { "name": "freelancer", "label": "Fiverr", "url": "https://www.fiverr.com/josejsanahuja/create-a-full-stack-application" }
   ],
   "legal": [
       { "label": "Términos y condiciones", "url": "/es/terms" },

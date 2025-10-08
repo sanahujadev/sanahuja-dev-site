@@ -1,5 +1,6 @@
 ---
 import Container from "../Container.astro";
+import ResponsiveImage from "../ResponsiveImage.astro";
 
 const { hero } = Astro.props;
 ---
@@ -11,7 +12,15 @@ const { hero } = Astro.props;
         <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark">{hero.title}</h1>
       </div>
       <div>
-        <img src={hero.imageUrl} alt="SanahujaDev" class="rounded-3xl shadow-lg w-full" />
+                <ResponsiveImage
+            basePath="sanahujadev"
+            imageName="fotoperfil"
+            fallbackFormat="jpeg"
+            alt="SanahujaDev"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            width="720"
+            class="rounded-3xl shadow-lg w-full max-w-lg mx-auto"
+        />
       </div>
     </div>
   </Container>

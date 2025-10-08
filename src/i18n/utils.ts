@@ -178,3 +178,5 @@ export type Footer = {
 };
 
 export type About = typeof aboutEN.about;
+export type CallToAction = typeof ctaEN;
+export type StatsSolition = typeof solutionEN.solution;

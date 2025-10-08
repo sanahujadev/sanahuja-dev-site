@@ -1,5 +1,6 @@
 ---
 import Container from "../Container.astro";
+import ResponsiveImage from "../ResponsiveImage.astro";
 
 const { text, reversed } = Astro.props;
 ---
@@ -13,7 +14,14 @@ const { text, reversed } = Astro.props;
       </div>
       {text.imageUrl && (
         <div class={reversed ? 'md:col-start-1' : ''}>
-          <img src={text.imageUrl} alt={text.title} class="rounded-3xl shadow-lg w-full" />
+          <ResponsiveImage
+            basePath="sanahujadev/hijos"
+            imageName="hijos"
+            fallbackFormat="jpeg"
+            alt={text.title}
+            sizes="(max-width: 768px) 100vw, 50vw"
+            class="rounded-3xl shadow-lg w-full max-w-lg mx-auto"
+          />
         </div>
       )}
     </div>

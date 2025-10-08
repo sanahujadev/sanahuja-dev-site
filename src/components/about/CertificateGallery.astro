@@ -15,13 +15,15 @@ const { categories } = Astro.props;
         })}
     </div>
 
-    <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {diplomas.map(diploma => (
-            <a href={diploma.pdfUrl} target="_blank" rel="noopener noreferrer" class="gallery-item block border border-border-default dark:border-border-default-dark rounded-lg overflow-hidden transition hover:scale-105" data-category={diploma.category}>
-                <OptimizedLazyImage src={diploma.thumbnailBaseUrl} alt={diploma.title} class="w-full h-auto object-cover"/>
-                <p class="p-2 text-sm text-center bg-bg-surface dark:bg-bg-surface-dark">{diploma.title}</p>
-            </a>
-        ))}
+    <div class="max-h-[800px] overflow-y-auto pr-4 custom-scrollbar">
+        <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {diplomas.map(diploma => (
+                <a href={diploma.pdfUrl} target="_blank" rel="noopener noreferrer" class="gallery-item block border border-border-default dark:border-border-default-dark rounded-lg overflow-hidden transition hover:scale-105" data-category={diploma.category}>
+                    <OptimizedLazyImage src={diploma.thumbnailBaseUrl} alt={diploma.title} class="w-full h-auto object-cover"/>
+                    <p class="p-2 text-sm text-center bg-bg-surface dark:bg-bg-surface-dark">{diploma.title}</p>
+                </a>
+            ))}
+        </div>
     </div>
 </div>
 
@@ -32,6 +34,16 @@ const { categories } = Astro.props;
     .filter-btn.active {
         background-color: var(--color-primary);
         color: white;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: var(--color-primary);
+        border-radius: 10px;
     }
 </style>
 

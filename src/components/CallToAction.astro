@@ -1,8 +1,9 @@
 ---
 import Container from "./Container.astro"
 import Avatar from "./Avatar.astro";
+import type { CallToAction } from "../i18n/utils";
 
-const { t } = Astro.props;
+const { t } = Astro.props as { t: CallToAction };
 
 const buttonClasses: { [key: string]: string } = {
   primary: "relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max",

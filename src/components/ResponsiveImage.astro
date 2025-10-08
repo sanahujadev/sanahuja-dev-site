@@ -1,0 +1,42 @@
+--- 
+const {
+  imageName,
+  alt,
+  sizes,
+  class: className,
+  loading = 'lazy',
+  decoding = 'async',
+  width,
+  height,
+  basePath,
+  fallbackFormat = 'jpeg'
+} = Astro.props;
+
+const widths = [360, 720, 1280, 1920];
+const formats: Array<'avif' | 'webp' | 'jpeg'> = ['avif', 'webp'];
+const cdnBaseUrl = 'https://cdn.sanahuja.dev/';
+
+const generateSrcset = (format: 'avif' | 'webp' | 'jpeg') => {
+  return widths.map(w => `${cdnBaseUrl}${basePath}/${imageName}/${format}/${imageName}-${w}w.${format} ${w}w`).join(', ');
+};
+---
+<picture>
+  {formats.map(format => (
+    <source
+      type={`image/${format}`}
+      srcset={generateSrcset(format)}
+      sizes={sizes}
+    />
+  ))}
+  <img
+    src={`${cdnBaseUrl}${basePath}/${imageName}/${fallbackFormat}/${imageName}-${widths[1]}w.${fallbackFormat}`}
+    srcset={generateSrcset(fallbackFormat)}
+    sizes={sizes}
+    alt={alt}
+    loading={loading}
+    decoding={decoding}
+    width={width}
+    height={height}
+    class={className}
+  />
+</picture>

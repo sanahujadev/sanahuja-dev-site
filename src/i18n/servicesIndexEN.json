@@ -5,7 +5,7 @@
     {
       "title": "Essential Web Maintenance €25/month",
       "description": "Ensures the proper functioning and online availability of your website.",
-      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      "imageName": "services-maintenance",
       "url": "/en/services/maintenance",
       "urlInnerText": "Conditions",
       "status": "active"
@@ -13,7 +13,7 @@
     {
       "title": "Online Reputation Management €25/month",
       "description": "Active and professional management of online reviews and ratings to build a positive brand image and foster customer trust.",
-      "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
+      "imageName": "services-reputation",
       "url": "/en/services/reputation",
       "urlInnerText": "Conditions",
       "status": "active"
@@ -21,7 +21,7 @@
     {
       "title": "Support & Content Hour Pack €25/hour",
       "description": "The flexible solution to keep your website alive. Ideal for content updates, minor design tweaks, or technical consultations. Purchase a pack of hours and use them as you need them.",
-      "image": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1774&q=80",
+      "imageName": "services-support-pack",
       "url": "/en/services/support-pack",
       "urlInnerText": "Conditions",
       "status": "active"
@@ -29,7 +29,7 @@
     {
       "title": "Web Visibility Report €25/month",
       "description": "Understand your website's performance without the complexity. Receive a monthly PDF report that tells you how many people visit you, how they find you, and what they're interested in.",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "imageName": "services-analytics-report",
       "url": "/en/services/analytics-report",
       "urlInnerText": "Conditions",
       "status": "active"
@@ -37,7 +37,7 @@
     {
       "title": "Monthly Authority Plan €75/month",
       "description": "A monthly service to keep your website active with SEO-optimized blog articles, without you having to spend time on writing.",
-      "image": "https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "imageName": "services-content-plan",
       "url": "/en/services/content-plan",
       "urlInnerText": "Conditions",
       "status": "active"
@@ -45,7 +45,7 @@
     {
       "title": "Optional Add-ons",
       "description": "Enhance your website with specific features. Choose from contact form management, booking calendars, social media feeds, and more.",
-      "image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "imageName": "services-add-ons",
       "url": "/en/services/add-ons",
       "urlInnerText": "See Add-ons",
       "status": "active"
@@ -53,7 +53,7 @@
     {
       "title": "Service Packs",
       "description": "Save money with our integrated solutions. Combine services and get the maximum value for your project.",
-      "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "imageName": "services-packs",
       "url": "/en/services/packs",
       "urlInnerText": "See Packs",
       "status": "active"
@@ -61,7 +61,7 @@
     {
       "title": "E-commerce Solutions",
       "description": "Complete online stores so you can sell your products and services 24/7. Integrated with secure payment gateways.",
-      "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      "imageName": "services-ecommerce",
       "url": "#",
       "urlInnerText": "",
       "status": "soon",
@@ -70,7 +70,7 @@
     {
       "title": "CMS Integration",
       "description": "We connect your site to a Content Management System (CMS) so you can edit your website's content yourself, easily and without code.",
-      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80",
+      "imageName": "services-cms",
       "url": "#",
       "urlInnerText": "",
       "status": "soon",
