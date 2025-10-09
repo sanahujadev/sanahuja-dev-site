@@ -23,7 +23,8 @@
       "name": "Nombre Completo",
       "email": "Email",
       "message": "Mensaje",
-      "submit": "Enviar Mensaje"
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando..."
     }
   }
 }

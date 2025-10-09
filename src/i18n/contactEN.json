@@ -23,7 +23,8 @@
       "name": "Full Name",
       "email": "Email",
       "message": "Message",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "submitting": "Sending..."
     }
   }
 }

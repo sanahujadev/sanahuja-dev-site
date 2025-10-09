@@ -7,3 +7,5 @@ actualizar mi linkedIn
 cabeceras anticross-site
 
 hacer lo de hacienda...
+
+captcha
