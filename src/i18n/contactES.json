@@ -1,0 +1,29 @@
+{
+  "contact": {
+    "title": "Hablemos de tu Proyecto",
+    "subtitle": "¿Listo para empezar algo increíble? Rellena el formulario o contáctame por otro medio.",
+    "info": {
+      "email": {
+        "title": "Email",
+        "description": "La forma más directa de contactar."
+      },
+      "meeting": {
+        "title": "Reunión Virtual",
+        "description": "Agenda una llamada para discutir los detalles.",
+        "cta": "Reservar un hueco"
+      },
+      "whatsapp": {
+        "title": "Escríbeme Por WhatsApp",
+        "description1": "Prometo responder lo antes posible.",
+        "description2": "Dentro de mi jornada laboral.",
+        "cta": "Escríbeme"
+      }
+    },
+    "form": {
+      "name": "Nombre Completo",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    }
+  }
+}

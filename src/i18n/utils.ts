@@ -1,5 +1,7 @@
 import ctaEN from "./ctaEN.json";
 import ctaES from "./ctaES.json";
+import contactEN from "./contactEN.json";
+import contactES from "./contactES.json";
 import featuresEN from "./featuresEN.json";
 import featuresES from "./featuresES.json";
 import footerEN from "./footerEN.json";
@@ -57,6 +59,7 @@ const translations = {
 		responsiveDesign: responsiveDesignEN,
 		coreFeatures: coreFeaturesEN.coreFeatures,
 		about: aboutEN.about,
+		contact: contactEN.contact,
 	},
 	es: {
 		common: es,
@@ -77,6 +80,7 @@ const translations = {
 		responsiveDesign: responsiveDesignES,
 		coreFeatures: coreFeaturesES.coreFeatures,
 		about: aboutES.about,
+		contact: contactES.contact,
 	},
 	"404": {
 		common: es,
@@ -97,6 +101,7 @@ const translations = {
 		responsiveDesign: null,
 		coreFeatures: null,
 		about: null,
+		contact: null,
 	},
 	"500": {
 		common: es,
@@ -117,6 +122,7 @@ const translations = {
 		responsiveDesign: null,
 		coreFeatures: null,
 		about: null,
+		contact: null,
 	},
 };
 
@@ -180,3 +186,4 @@ export type Footer = {
 export type About = typeof aboutEN.about;
 export type CallToAction = typeof ctaEN;
 export type StatsSolition = typeof solutionEN.solution;
+export type ContactType = typeof contactEN.contact;

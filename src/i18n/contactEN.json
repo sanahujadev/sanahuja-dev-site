@@ -1,0 +1,29 @@
+{
+  "contact": {
+    "title": "Let's Talk About Your Project",
+    "subtitle": "Ready to start something amazing? Fill out the form or contact me through other means.",
+    "info": {
+      "email": {
+        "title": "Email",
+        "description": "The most direct way to get in touch."
+      },
+      "meeting": {
+        "title": "Virtual Meeting",
+        "description": "Schedule a call to discuss the details.",
+        "cta": "Book a slot"
+      },
+      "whatsapp": {
+        "title": "Message Me on WhatsApp",
+        "description1": "I promise to reply as soon as possible.",
+        "description2": "Within my working hours.",
+        "cta": "Write me"
+      }
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  }
+}
