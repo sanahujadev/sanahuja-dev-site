@@ -91,29 +91,40 @@ const links = [
 </header>
 
 <script>
-    let isToggled = false;
-    const navbar = document.querySelector("#nav") as HTMLElement;
-    const menuBtn = document.querySelector("#hamburger") as HTMLButtonElement;
-    const linksGroup = navbar.querySelector("#links-group") as HTMLDivElement;
-    const links = [...linksGroup.children] as HTMLAnchorElement[];
+    function initNavbar() {
+        let isToggled = false;
+        const navbar = document.querySelector("#nav") as HTMLElement;
+        const menuBtn = document.querySelector("#hamburger") as HTMLButtonElement;
+        const linksGroup = navbar?.querySelector("#links-group") as HTMLDivElement;
+        
+        if (!navbar || !menuBtn || !linksGroup) return;
+        
+        const links = [...linksGroup.children] as HTMLAnchorElement[];
 
-    function toggleNavlinks() {
-        if (isToggled) {
-            navbar.dataset.state = "active";
-        } else {
-            navbar.dataset.state = "";
+        function toggleNavlinks() {
+            if (isToggled) {
+                navbar.dataset.state = "active";
+            } else {
+                navbar.dataset.state = "";
+            }
         }
-    }
 
-    menuBtn.addEventListener("click", () => {
-        isToggled = !isToggled;
-        toggleNavlinks();
-    });
-
-    links.forEach((link) => {
-        link.addEventListener("click", () => {
+        menuBtn.addEventListener("click", () => {
             isToggled = !isToggled;
             toggleNavlinks();
         });
-    });
+
+        links.forEach((link) => {
+            link.addEventListener("click", () => {
+                isToggled = !isToggled;
+                toggleNavlinks();
+            });
+        });
+    }
+
+    // Ejecutar en la primera carga
+    initNavbar();
+    
+    // Re-ejecutar después de cada navegación con View Transitions
+    document.addEventListener('astro:page-load', initNavbar);
 </script>
