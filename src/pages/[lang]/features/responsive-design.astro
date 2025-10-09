@@ -43,45 +43,52 @@ const rD = t.responsiveDesign?.responsiveDesign as ResponsiveDesign;
     </main>
 
     <script>
-        const iframeContainer = document.getElementById('iframe-container');
-        const demoControls = document.getElementById('demo-controls');
-        const mobileWarning = document.getElementById('mobile-warning');
-        const showDemoBtn = document.getElementById('show-demo-btn');
+        function initListeners () {
+            const iframeContainer = document.getElementById('iframe-container');
+            const demoControls = document.getElementById('demo-controls');
+            const mobileWarning = document.getElementById('mobile-warning');
+            const showDemoBtn = document.getElementById('show-demo-btn');
 
-        showDemoBtn?.addEventListener('click', () => {
-            if (iframeContainer && demoControls && mobileWarning) {
-                mobileWarning.style.display = 'none';
-                iframeContainer.style.display = 'block';
-                demoControls.style.display = 'flex';
-            }
-        });
+            showDemoBtn?.addEventListener('click', () => {
+                if (iframeContainer && demoControls && mobileWarning) {
+                    mobileWarning.style.display = 'none';
+                    iframeContainer.style.display = 'block';
+                    demoControls.style.display = 'flex';
+                }
+            });
 
-        const iframeContainerStyle = iframeContainer?.style;
-        const btnMobile = document.getElementById('btn-mobile');
-        const btnTablet = document.getElementById('btn-tablet');
-        const btnDesktop = document.getElementById('btn-desktop');
+            const iframeContainerStyle = iframeContainer?.style;
+            const btnMobile = document.getElementById('btn-mobile');
+            const btnTablet = document.getElementById('btn-tablet');
+            const btnDesktop = document.getElementById('btn-desktop');
 
-        btnMobile?.addEventListener('click', () => {
+            btnMobile?.addEventListener('click', () => {
+                if (iframeContainerStyle) {
+                    iframeContainerStyle.width = '375px';
+                }
+            });
+
+            btnTablet?.addEventListener('click', () => {
+                if (iframeContainerStyle) {
+                    iframeContainerStyle.width = '768px';
+                }
+            });
+
+            btnDesktop?.addEventListener('click', () => {
+                if (iframeContainerStyle) {
+                    iframeContainerStyle.width = '1200px';
+                }
+            });
+
+            // Set initial width for desktop
             if (iframeContainerStyle) {
-                iframeContainerStyle.width = '375px';
+                iframeContainerStyle.width = '100%';
             }
-        });
-
-        btnTablet?.addEventListener('click', () => {
-            if (iframeContainerStyle) {
-                iframeContainerStyle.width = '768px';
-            }
-        });
-
-        btnDesktop?.addEventListener('click', () => {
-            if (iframeContainerStyle) {
-                iframeContainerStyle.width = '1200px';
-            }
-        });
-
-        // Set initial width for desktop
-        if (iframeContainerStyle) {
-            iframeContainerStyle.width = '100%';
         }
+
+        initListeners ();
+
+        // Re-ejecutar en cada navegación con View Transitions
+        document.addEventListener('astro:page-load', initListeners);
     </script>
 </Layout>

@@ -139,126 +139,136 @@ const contact: ContactType = t.contact as ContactType;
 }
 </style>
 <script>
-    // Seleccionamos las cartas con las que vamos a jugar
-    const form = document.getElementById('contact-form') as HTMLFormElement;
-    const nameInput = document.getElementById('name') as HTMLInputElement;
-    const emailInput = document.getElementById('email') as HTMLInputElement;
-    const emailErrorIcon = document.getElementById('email-error-icon') as HTMLDivElement; // La nueva carta
-    const messageInput = document.getElementById('message') as HTMLTextAreaElement;
-    const nicknameInput = document.getElementById('nickname') as HTMLInputElement; // Campo oculto
-    const submitButton = document.getElementById('submit-button') as HTMLButtonElement;
+    function initContactForm() {
+        // Seleccionamos las cartas con las que vamos a jugar
+        const form = document.getElementById('contact-form') as HTMLFormElement;
+        const nameInput = document.getElementById('name') as HTMLInputElement;
+        const emailInput = document.getElementById('email') as HTMLInputElement;
+        const emailErrorIcon = document.getElementById('email-error-icon') as HTMLDivElement;
+        const messageInput = document.getElementById('message') as HTMLTextAreaElement;
+        const nicknameInput = document.getElementById('nickname') as HTMLInputElement; // Campo oculto
+        const submitButton = document.getElementById('submit-button') as HTMLButtonElement;
 
-    // Una expresión regular simple para validar el email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        // Guard clause: si no existen los elementos, salir
+        if (!form || !nameInput || !emailInput || !messageInput || !submitButton) return;
 
-    function validateEmailFormat(email: string): boolean {
-        return emailRegex.test(email);
-    }
+        // Una expresión regular simple para validar el email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    function checkFormValidity(): boolean {
-        const isNameValid = nameInput.value.trim() !== '';
-        const isEmailValid = validateEmailFormat(emailInput.value);
-        const isMessageValid = messageInput.value.trim() !== '';
-        return isNameValid && isEmailValid && isMessageValid;
-    }
-
-    function updateButtonState() {
-        if (checkFormValidity()) {
-            submitButton.disabled = false;
-        } else {
-            submitButton.disabled = true;
-        }
-    }
-
-    // El Correo Vigilado: Validación al quitar el foco
-    emailInput.addEventListener('blur', () => {
-        const isValid = validateEmailFormat(emailInput.value);
-        // Si hay texto pero el formato es inválido, mostramos una señal
-        if (!isValid && emailInput.value.trim() !== '') {
-            emailInput.classList.remove('border-border-default', 'dark:border-border-default-dark');
-            emailInput.classList.add('border-red-500', 'dark:border-red-500'); // ¡Una carta de peligro!
-            emailErrorIcon.classList.remove('hidden');
-        } else {
-            // Si es válido o está vacío, volvemos a la normalidad
-            emailInput.classList.remove('border-red-500', 'dark:border-red-500');
-            emailInput.classList.add('border-border-default', 'dark:border-border-default-dark');
-            emailErrorIcon.classList.add('hidden');
-        }
-    });
-
-    // Validación en Tiempo Real: escuchamos cada jugada del usuario
-    form.addEventListener('input', updateButtonState);
-
-    // También podrías añadir aquí el código para enviar el formulario con fetch si no quieres una recarga de página
-    /**
-     * El crupier que maneja el envío del formulario.
-     * @param {SubmitEvent} event - El evento del formulario.
-     */
-    async function onSubmit(event: SubmitEvent) {
-        // 1. Detenemos el comportamiento por defecto del navegador.
-        event.preventDefault();
-        const previousBtnText = submitButton.querySelector('span')!.textContent;
-        submitButton.disabled = true; // Prevenir múltiples envíos
-        submitButton.querySelector('span')!.textContent = `📨 ...`;
-
-        // 2. Aquí va la acción. Por ahora, un simple console.log.
-        console.log('Formulario capturado. ¡Listo para el fetch!');
-        
-        // Creamos un objeto con los datos, listo para ser enviado.
-        const formData = {
-            name: nameInput.value,
-            email: emailInput.value,
-            message: messageInput.value,
-            nickname: nicknameInput.value, // Campo oculto para bots
-        };
-
-        console.log('Datos a enviar:', formData);
-
-        // validaciones antibots básicas
-        if (
-            formData.nickname
-            || formData.name.length > 254
-            || formData.email.length > 254
-            || formData.message.length > 3000
-        ) {
-            return;
+        function validateEmailFormat(email: string): boolean {
+            return emailRegex.test(email);
         }
 
-        // envuelvelo en una promesa
-        const response = new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(true);
-            }, 3000);
+        function checkFormValidity(): boolean {
+            const isNameValid = nameInput.value.trim() !== '';
+            const isEmailValid = validateEmailFormat(emailInput.value);
+            const isMessageValid = messageInput.value.trim() !== '';
+            return isNameValid && isEmailValid && isMessageValid;
+        }
+
+        function updateButtonState() {
+            if (checkFormValidity()) {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+
+        // El Correo Vigilado: Validación al quitar el foco
+        emailInput.addEventListener('blur', () => {
+            const isValid = validateEmailFormat(emailInput.value);
+            // Si hay texto pero el formato es inválido, mostramos una señal
+            if (!isValid && emailInput.value.trim() !== '') {
+                emailInput.classList.remove('border-border-default', 'dark:border-border-default-dark');
+                emailInput.classList.add('border-red-500', 'dark:border-red-500'); // ¡Una carta de peligro!
+                emailErrorIcon?.classList.remove('hidden');
+            } else {
+                // Si es válido o está vacío, volvemos a la normalidad
+                emailInput.classList.remove('border-red-500', 'dark:border-red-500');
+                emailInput.classList.add('border-border-default', 'dark:border-border-default-dark');
+                emailErrorIcon?.classList.add('hidden');
+            }
         });
-        try {
-            await response;
-            console.log('¡Éxito! El correo se ha enviado.');
-        } catch (error) {
-            console.error('Error al enviar el correo:', error);
-        } finally {
-            form.reset(); // Limpiar el formulario
-            submitButton.querySelector('span')!.textContent = previousBtnText;
+
+        // Validación en Tiempo Real: escuchamos cada jugada del usuario
+        form.addEventListener('input', updateButtonState);
+
+        /**
+         * El crupier que maneja el envío del formulario.
+         * @param {SubmitEvent} event - El evento del formulario.
+         */
+        async function onSubmit(event: SubmitEvent) {
+            // 1. Detenemos el comportamiento por defecto del navegador.
+            event.preventDefault();
+            const previousBtnText = submitButton.querySelector('span')!.textContent;
+            submitButton.disabled = true; // Prevenir múltiples envíos
+            submitButton.querySelector('span')!.textContent = `📨 ...`;
+
+            // 2. Aquí va la acción. Por ahora, un simple console.log.
+            console.log('Formulario capturado. ¡Listo para el fetch!');
+            
+            // Creamos un objeto con los datos, listo para ser enviado.
+            const formData = {
+                name: nameInput.value,
+                email: emailInput.value,
+                message: messageInput.value,
+                nickname: nicknameInput?.value || '', // Campo oculto para bots
+            };
+
+            console.log('Datos a enviar:', formData);
+
+            // validaciones antibots básicas
+            if (
+                formData.nickname
+                || formData.name.length > 254
+                || formData.email.length > 254
+                || formData.message.length > 3000
+            ) {
+                return;
+            }
+
+            // envuelvelo en una promesa
+            const response = new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve(true);
+                }, 3000);
+            });
+            try {
+                await response;
+                console.log('¡Éxito! El correo se ha enviado.');
+            } catch (error) {
+                console.error('Error al enviar el correo:', error);
+            } finally {
+                form.reset(); // Limpiar el formulario
+                submitButton.querySelector('span')!.textContent = previousBtnText;
+            }
+            // TODO: Reemplazar esto con la llamada fetch a tu AWS Lambda.
+            // Ejemplo:
+            // try {
+            //   const response = await fetch('URL_DE_TU_LAMBDA', {
+            //     method: 'POST',
+            //     body: JSON.stringify(formData),
+            //     headers: { 'Content-Type': 'application/json' }
+            //   });
+            //   if (response.ok) {
+            //     console.log('¡Éxito! El correo se ha enviado.');
+            //     form.reset(); // Limpiar el formulario
+            //   } else {
+            //     console.error('Hubo un problema con el envío.');
+            //   }
+            // } catch (error) {
+            //   console.error('Error de red:', error);
+            // }
         }
-        // TODO: Reemplazar esto con la llamada fetch a tu AWS Lambda.
-        // Ejemplo:
-        // try {
-        //   const response = await fetch('URL_DE_TU_LAMBDA', {
-        //     method: 'POST',
-        //     body: JSON.stringify(formData),
-        //     headers: { 'Content-Type': 'application/json' }
-        //   });
-        //   if (response.ok) {
-        //     console.log('¡Éxito! El correo se ha enviado.');
-        //     form.reset(); // Limpiar el formulario
-        //   } else {
-        //     console.error('Hubo un problema con el envío.');
-        //   }
-        // } catch (error) {
-        //   console.error('Error de red:', error);
-        // }
+
+        // 3. Le decimos al formulario que llame a nuestro crupier cuando se envíe.
+        form.addEventListener('submit', onSubmit);
     }
 
-    // 3. Le decimos al formulario que llame a nuestro crupier cuando se envíe.
-    form.addEventListener('submit', onSubmit);
+    // Primera carga
+    initContactForm();
+    
+    // Re-ejecutar en cada navegación con View Transitions
+    document.addEventListener('astro:page-load', initContactForm);
 </script>
 </Layout>

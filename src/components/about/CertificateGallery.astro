@@ -48,23 +48,36 @@ const { categories } = Astro.props;
 </style>
 
 <script>
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    function initGalleryFilters() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
 
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+        // Si no hay elementos, salir
+        if (!filterBtns.length || !galleryItems.length) return;
 
-            const filter = btn.getAttribute('data-filter');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remover clase active de todos los botones
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
 
-            galleryItems.forEach(item => {
-                if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                    item.classList.remove('hidden');
-                } else {
-                    item.classList.add('hidden');
-                }
+                const filter = btn.getAttribute('data-filter');
+
+                // Filtrar items de la galería
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
             });
         });
-    });
+    }
+
+    // Primera carga
+    initGalleryFilters();
+    
+    // Re-ejecutar en cada navegación
+    document.addEventListener('astro:page-load', initGalleryFilters);
 </script>
