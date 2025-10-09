@@ -14,6 +14,11 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const t = getTranslations(lang as "en" | "es");
 const about = t.about as About;
+
+const thisCallToAction = t.cta ? { ...t.cta } : null;
+if (thisCallToAction) {
+  thisCallToAction.actions[1].href = "#about-hero";
+}
 ---
 
 <Layout t={t} lang={lang}>
@@ -23,6 +28,6 @@ const about = t.about as About;
     <History history={about.history} gallery={about.gallery} />
     <Testimonials t={t.reviews} />
     <TextSection text={about.humanSide} reversed />
-    <CallToAction t={t.cta} />
+    <CallToAction t={thisCallToAction} />
   </main>
 </Layout>

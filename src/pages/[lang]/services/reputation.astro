@@ -2,6 +2,7 @@
 import { getTranslations, type ReputationConditions } from '../../../i18n/utils';
 import Layout from '../../../layouts/Layout.astro';
 import Container from '../../../components/Container.astro';
+import ServiceHero from '../../../components/ServiceHero.astro';
 
 export function getStaticPaths() {
   return [
@@ -18,14 +19,15 @@ const services = t.reputation as ReputationConditions;
 <Layout t={t} lang={lang}>
   <Container>
     <div class="py-20 text-text-strong dark:text-text-default-dark">
-      <div class="text-center">
-          <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark md:text-5xl">
-            {services.title}
-          </h1>
-          <p class="mt-4 text-xl text-text-strong dark:text-text-muted-dark">
-            {services.intro.description}
-          </p>
-      </div>
+      <ServiceHero
+        title={services.title}
+        description={services.intro.description}
+        imageName="services-reputation"
+        basePath="sanahujadev"
+        fallbackFormat="jpeg"
+        imageSizes="(max-width: 768px) 100vw, 50vw" 
+        imageWidth={720}
+      />
       
       <div class="mt-12">
         <h2 class="text-2xl font-bold">{services.object.title}</h2>

@@ -9,7 +9,8 @@ const {
   width,
   height,
   basePath,
-  fallbackFormat = 'jpeg'
+  fallbackFormat = 'jpeg',
+  transitionName = ''
 } = Astro.props;
 
 const widths = [360, 720, 1280, 1920];
@@ -20,7 +21,7 @@ const generateSrcset = (format: 'avif' | 'webp' | 'jpeg') => {
   return widths.map(w => `${cdnBaseUrl}${basePath}/${imageName}/${format}/${imageName}-${w}w.${format} ${w}w`).join(', ');
 };
 ---
-<picture>
+<picture transition:name=`${transitionName}`>
   {formats.map(format => (
     <source
       type={`image/${format}`}

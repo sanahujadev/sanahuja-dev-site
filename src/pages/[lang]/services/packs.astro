@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import { getTranslations, type Packs } from '../../../i18n/utils';
 import Container from '../../../components/Container.astro';
+import ServiceHero from '../../../components/ServiceHero.astro';
 
 export function getStaticPaths() {
   return [{ params: { lang: 'en' } }, { params: { lang: 'es' } }];
@@ -15,14 +16,15 @@ const packsData = t.packs as Packs;
 <Layout t={t} lang={lang}>
   <main class="mb-40 pt-20">
     <Container>
-      <div class="text-center">
-        <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark md:text-5xl">
-          {packsData.title}
-        </h1>
-        <p class="mt-4 text-xl lg:mx-auto lg:w-8/12 text-text-strong dark:text-text-muted-dark">
-          {packsData.subtitle}
-        </p>
-      </div>
+      <ServiceHero 
+        title={packsData.title}
+        description={packsData.subtitle}
+        imageName="services-packs"
+        basePath="sanahujadev"
+        fallbackFormat="jpeg"
+        imageSizes="(max-width: 768px) 100vw, 50vw" 
+        imageWidth={720}
+      />
 
       <div class="mt-16 grid gap-8 lg:grid-cols-3 items-start">
         {packsData.packs.map(pack => (

@@ -1,5 +1,6 @@
 ---
-import Container from "./Container.astro"
+import { ClientRouter } from "astro:transitions";
+import Container from "./Container.astro";
 import ResponsiveImage from "./ResponsiveImage.astro";
 
 const { posts, title, subtitle } = Astro.props;
@@ -37,6 +38,7 @@ type Post = {
                     height="667"
                     class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"
                     sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                    transitionName={post.imageName}
                 />
               </div>
               <div class="mt-6 relative">

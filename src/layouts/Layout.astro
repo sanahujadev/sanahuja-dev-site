@@ -1,5 +1,6 @@
 ---
 import { AstroFont } from 'astro-font';
+import { ClientRouter } from "astro:transitions";
 import AppFooter from "../components/AppFooter.astro";
 import AppHeader from "../components/AppHeader.astro";
 import "./../global.css"
@@ -31,6 +32,7 @@ const common = t.common;
                 },
             ]}
         />
+        <ClientRouter />
     </head>
     <body class="bg-bg-canvas dark:bg-bg-canvas-dark">
         <AppHeader t={common} lang={lang} />

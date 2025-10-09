@@ -1,0 +1,59 @@
+---
+import ResponsiveImage from "./ResponsiveImage.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  imageName: string;
+  imageAlt?: string;
+  transitionId?: string; // For Astro View Transitions
+  reversed?: boolean;
+  basePath?: string;
+  fallbackFormat?: string;
+  imageSizes?: string;
+  imageWidth?: string | number;
+  imageClass?: string;
+}
+
+const {
+  title,
+  description,
+  imageName,
+  imageAlt = imageName + "-image",
+  transitionId = imageName,
+  reversed = false,
+  basePath = "sanahujadev",
+  fallbackFormat = "jpeg",
+  imageSizes,
+  imageWidth,
+  imageClass,
+} = Astro.props;
+---
+
+  <section class="grid md:grid-cols-2 gap-4 items-center lg:gap-12 sm:gap-2 ">
+    <div class:list={[{ "md:order-last": reversed }]}>
+      <h1
+        class="text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark md:text-5xl"
+      >
+        {title}
+      </h1>
+      <p
+        class="mt-4 text-xl lg:mx-auto lg: text-text-strong dark:text-text-muted-dark"
+      >
+        {description}
+      </p>
+    </div>
+    <div class:list={[{ "md:order-first": reversed }]}>
+      <ResponsiveImage
+        basePath={basePath}
+        imageName={imageName}
+        fallbackFormat={fallbackFormat}
+        alt={imageAlt}
+        sizes={imageSizes}
+        width={imageWidth}
+        class:list={["rounded-3xl shadow-lg w-full max-w-lg mx-auto", imageClass]}
+        transitionName={transitionId}
+      />
+    </div>
+  </section>
+
