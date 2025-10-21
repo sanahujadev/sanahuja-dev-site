@@ -1,38 +1,38 @@
 {
-    "avatars": [
-      {
-        "imageName": "fiverr-client-joaco",
-        "alt": "Photo of Joaco B., a satisfied client"
-      },
-      {
-        "imageName": null,
-        "alt": "A Photo of Alerco, a satisfied client"
-      },
-      {
-        "imageName": "fiverr-client-antoine",
-        "alt": "Photo of Antoine R., a satisfied client"
-      },
-      {
-        "imageName": null,
-        "alt": "F Photo of Fengjason, a satisfied client"
-      },
-      {
-        "imageName": null,
-        "alt": "T Photo of a satisfied client"
-      }
-    ],
+  "avatars": [
+    {
+      "imageName": "fiverr-client-joaco",
+      "alt": "Photo of Joaco B., a satisfied client"
+    },
+    {
+      "imageName": null,
+      "alt": "A Photo of Alerco, a satisfied client"
+    },
+    {
+      "imageName": "fiverr-client-antoine",
+      "alt": "Photo of Antoine R., a satisfied client"
+    },
+    {
+      "imageName": null,
+      "alt": "F Photo of Fengjason, a satisfied client"
+    },
+    {
+      "imageName": null,
+      "alt": "T Photo of a satisfied client"
+    }
+  ],
   "headline": "More than a developer, your IT partner.",
   "subtitle": "I don't just build websites; I build partnerships. I'm here to empower your digital presence, because your success is my success.",
   "actions": [
-    { 
-      "text": "Let's Talk About Your Project", 
+    {
+      "text": "Let's Talk About Your Project",
       "href": "/en/contact",
       "variant": "primary"
     },
-    { 
-      "text": "See My Work", 
+    {
+      "text": "See My Work",
       "href": "/en/about",
-      "variant": "secondary" 
+      "variant": "secondary"
     }
   ]
 }

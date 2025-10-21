@@ -24,15 +24,15 @@
   "headline": "Más que un desarrollador, tu socio IT.",
   "subtitle": "No solo construyo tu web: te acompaño en tu camino digital para potenciar tu presencia online. Tu éxito es el mío.",
   "actions": [
-    { 
-      "text": "Hablemos de tu Proyecto", 
+    {
+      "text": "Hablemos de tu Proyecto",
       "href": "/es/contact",
       "variant": "primary"
     },
-    { 
-      "text": "Ver mi Trabajo", 
+    {
+      "text": "Ver mi Trabajo",
       "href": "/es/about",
-      "variant": "secondary" 
+      "variant": "secondary"
     }
   ]
 }

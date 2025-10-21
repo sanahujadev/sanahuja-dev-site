@@ -1,19 +1,26 @@
-import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig, envField } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  redirects: {
-    '/': '/es'
-  },
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
   i18n: {
     defaultLocale: "es",
     locales: ["es", "en"],
     routing: {
-      prefixDefaultLocale: false
-    }
-  }
+      prefixDefaultLocale: false,
+    },
+  },
+  env: {
+    schema: {
+      PUBLIC_TURNSTILE_SITE_KEY: envField.string({
+        context: "client",
+        access: "public",
+      }),
+      API_URL: envField.string({ context: "client", access: "public" }),
+      API_KEY: envField.string({ context: "client", access: "public" }),
+    },
+  },
 });

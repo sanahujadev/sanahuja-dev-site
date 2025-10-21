@@ -1,28 +1,28 @@
 {
-    "meta": {
-        "title": "SanahujaDev | Web Developer",
-        "description": "The professional portfolio and website of SanahujaDev, a web application developer."
+  "meta": {
+    "title": "SanahujaDev | Web Developer",
+    "description": "The professional portfolio and website of SanahujaDev, a web application developer."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "contact": "Contact",
+    "services": {
+      "label": "Services",
+      "badge": "Featured!"
     },
-    "nav": {
-        "home": "Home",
-        "about": "About Me",
-        "contact": "Contact",
-        "services": {
-            "label": "Services",
-            "badge": "Featured!"
-        },
-        "language": {
-            "label": "Disponible en",
-            "badge": "Español"
-        }
-    },
-    "cta": {
-        "getStarted": "Contact Me"
-    },
-    "aria": {
-        "logo": "Logo of SanahujaDev",
-        "menuToggle": "Toggle main menu"
-    },
-    "lang": "en",
-    "language": "English"
+    "language": {
+      "label": "Disponible en",
+      "badge": "Español"
+    }
+  },
+  "cta": {
+    "getStarted": "Contact Me"
+  },
+  "aria": {
+    "logo": "Logo of SanahujaDev",
+    "menuToggle": "Toggle main menu"
+  },
+  "lang": "en",
+  "language": "English"
 }

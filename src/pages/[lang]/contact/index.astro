@@ -12,7 +12,9 @@ const { lang } = Astro.params;
 const t = getTranslations(lang as "en" | "es" ?? "es");
 
 const contact: ContactType = t.contact as ContactType;
-
+const TURNSTILE_SITE_KEY = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
+const API_URL = import.meta.env.API_URL;
+const API_KEY = import.meta.env.API_KEY;
 ---
 <Layout t={t} lang={lang}>
 <div class="relative py-16 md:py-24" id="contact">
@@ -77,7 +79,7 @@ const contact: ContactType = t.contact as ContactType;
                     </div>
                 </div>
 
-                <form id="contact-form" class="p-8 rounded-3xl bg-bg-surface border border-border-default dark:shadow-none dark:border-border-default-dark dark:bg-bg-surface-dark bg-opacity-50 shadow-2xl shadow-shadow-default space-y-6">
+                <form id="contact-form" class="p-8 rounded-3xl bg-bg-surface border border-border-default dark:shadow-none dark:border-border-default-dark dark:bg-bg-surface-dark bg-opacity-50 shadow-2xl shadow-shadow-default space-y-6" data-turnstile-site-key={TURNSTILE_SITE_KEY} data-api-url={API_URL} data-api-key={API_KEY}>
                     <div>
                         <label for="name" class="font-medium text-text-strong dark:text-text-default-dark">{contact.form.name}</label>
                         <input 
@@ -89,19 +91,22 @@ const contact: ContactType = t.contact as ContactType;
                             class="mt-2 w-full px-4 py-3 rounded-lg bg-transparent border border-border-default dark:border-border-default-dark focus:ring-1 focus:ring-primary dark:focus:ring-primary-dark focus:border-primary dark:focus:border-primary-dark transition text-text-default dark:text-text-default-dark">
                     </div>
                     <div>
-                        <label for="email" class="font-medium text-text-strong dark:text-text-default-dark">{contact.form.email}</label>
+                        <label for="email" class="relative font-medium text-text-strong dark:text-text-default-dark">
+                            {contact.form.email}
+                            <span id="email-error-icon" class="absolute top-0 right-[-2rem] flex items-center pointer-events-none hidden">
+                                <svg class="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a1 1 0 011 1v4a1 1 0 11-2 0V6a1 1 0 011-1zm0 8a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </label>
+                        
                         <input 
                             type="email" 
                             id="email" 
                             name="email" 
                             required
                             maxlength="254"
-                            class="mt-2 w-full px-4 py-3 rounded-lg bg-transparent border border-border-default dark:border-border-default-dark focus:ring-1 focus:ring-primary dark:focus:ring-primary-dark focus:border-primary dark:focus:border-primary-dark transition text-text-default dark:text-text-default-dark">
-                            <div id="email-error-icon" class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none hidden">
-                                <svg class="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a1 1 0 011 1v4a1 1 0 11-2 0V6a1 1 0 011-1zm0 8a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
+                            class="mt-2 w-full px-4 py-3 rounded-lg bg-transparent border border-border-default dark:border-border-default-dark focus:ring-1 focus:ring-primary dark:focus:ring-primary-dark focus:border-primary dark:focus:border-primary-dark transition text-text-default dark:text-text-default-dark"/>
                     </div>
                     <div>
                         <label for="message" class="font-medium text-text-strong dark:text-text-default-dark">{contact.form.message}</label>
@@ -117,6 +122,8 @@ const contact: ContactType = t.contact as ContactType;
                         <label for="nickname">Nickname</label>
                         <input type="text" id="nickname" name="nickname" tabindex="-1" autocomplete="off">
                     </div>
+                    {/*<div id="turnstile-widget" class="flex justify-center"></div>*/}
+
                     <button 
                         type="submit" 
                         id="submit-button"
@@ -127,6 +134,7 @@ const contact: ContactType = t.contact as ContactType;
                             {contact.form.submit}
                         </span>
                     </button>
+                    <div id="form-status" class="hidden"></div>
                 </form>
             </div>
         </div>
@@ -137,138 +145,35 @@ const contact: ContactType = t.contact as ContactType;
   position: absolute;
   left: -5000px;
 }
+
 </style>
+{/*<script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>*/}
 <script>
-    function initContactForm() {
-        // Seleccionamos las cartas con las que vamos a jugar
-        const form = document.getElementById('contact-form') as HTMLFormElement;
-        const nameInput = document.getElementById('name') as HTMLInputElement;
-        const emailInput = document.getElementById('email') as HTMLInputElement;
-        const emailErrorIcon = document.getElementById('email-error-icon') as HTMLDivElement;
-        const messageInput = document.getElementById('message') as HTMLTextAreaElement;
-        const nicknameInput = document.getElementById('nickname') as HTMLInputElement; // Campo oculto
-        const submitButton = document.getElementById('submit-button') as HTMLButtonElement;
+    // Importa la clase desde el archivo TS
+    import { ContactForm } from '../../../scripts/contact-form.ts';
 
-        // Guard clause: si no existen los elementos, salir
-        if (!form || !nameInput || !emailInput || !messageInput || !submitButton) return;
-
-        // Una expresión regular simple para validar el email
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        function validateEmailFormat(email: string): boolean {
-            return emailRegex.test(email);
+    function initializeForm() {
+        const contactFormElement = document.getElementById('contact-form') as HTMLFormElement | null;
+        
+        // Guard clause: si el formulario no está en la página, no hagas nada.
+        if (!contactFormElement) {
+            return;
+        }
+        
+        // Evita reinicializar si ya existe una instancia (importante para HMR en dev)
+        if ((contactFormElement as any).formInstance) {
+            return;
         }
 
-        function checkFormValidity(): boolean {
-            const isNameValid = nameInput.value.trim() !== '';
-            const isEmailValid = validateEmailFormat(emailInput.value);
-            const isMessageValid = messageInput.value.trim() !== '';
-            return isNameValid && isEmailValid && isMessageValid;
-        }
-
-        function updateButtonState() {
-            if (checkFormValidity()) {
-                submitButton.disabled = false;
-            } else {
-                submitButton.disabled = true;
-            }
-        }
-
-        // El Correo Vigilado: Validación al quitar el foco
-        emailInput.addEventListener('blur', () => {
-            const isValid = validateEmailFormat(emailInput.value);
-            // Si hay texto pero el formato es inválido, mostramos una señal
-            if (!isValid && emailInput.value.trim() !== '') {
-                emailInput.classList.remove('border-border-default', 'dark:border-border-default-dark');
-                emailInput.classList.add('border-red-500', 'dark:border-red-500'); // ¡Una carta de peligro!
-                emailErrorIcon?.classList.remove('hidden');
-            } else {
-                // Si es válido o está vacío, volvemos a la normalidad
-                emailInput.classList.remove('border-red-500', 'dark:border-red-500');
-                emailInput.classList.add('border-border-default', 'dark:border-border-default-dark');
-                emailErrorIcon?.classList.add('hidden');
-            }
-        });
-
-        // Validación en Tiempo Real: escuchamos cada jugada del usuario
-        form.addEventListener('input', updateButtonState);
-
-        /**
-         * El crupier que maneja el envío del formulario.
-         * @param {SubmitEvent} event - El evento del formulario.
-         */
-        async function onSubmit(event: SubmitEvent) {
-            // 1. Detenemos el comportamiento por defecto del navegador.
-            event.preventDefault();
-            const previousBtnText = submitButton.querySelector('span')!.textContent;
-            submitButton.disabled = true; // Prevenir múltiples envíos
-            submitButton.querySelector('span')!.textContent = `📨 ...`;
-
-            // 2. Aquí va la acción. Por ahora, un simple console.log.
-            console.log('Formulario capturado. ¡Listo para el fetch!');
-            
-            // Creamos un objeto con los datos, listo para ser enviado.
-            const formData = {
-                name: nameInput.value,
-                email: emailInput.value,
-                message: messageInput.value,
-                nickname: nicknameInput?.value || '', // Campo oculto para bots
-            };
-
-            console.log('Datos a enviar:', formData);
-
-            // validaciones antibots básicas
-            if (
-                formData.nickname
-                || formData.name.length > 254
-                || formData.email.length > 254
-                || formData.message.length > 3000
-            ) {
-                return;
-            }
-
-            // envuelvelo en una promesa
-            const response = new Promise((resolve) => {
-                setTimeout(() => {
-                    resolve(true);
-                }, 3000);
-            });
-            try {
-                await response;
-                console.log('¡Éxito! El correo se ha enviado.');
-            } catch (error) {
-                console.error('Error al enviar el correo:', error);
-            } finally {
-                form.reset(); // Limpiar el formulario
-                submitButton.querySelector('span')!.textContent = previousBtnText;
-            }
-            // TODO: Reemplazar esto con la llamada fetch a tu AWS Lambda.
-            // Ejemplo:
-            // try {
-            //   const response = await fetch('URL_DE_TU_LAMBDA', {
-            //     method: 'POST',
-            //     body: JSON.stringify(formData),
-            //     headers: { 'Content-Type': 'application/json' }
-            //   });
-            //   if (response.ok) {
-            //     console.log('¡Éxito! El correo se ha enviado.');
-            //     form.reset(); // Limpiar el formulario
-            //   } else {
-            //     console.error('Hubo un problema con el envío.');
-            //   }
-            // } catch (error) {
-            //   console.error('Error de red:', error);
-            // }
-        }
-
-        // 3. Le decimos al formulario que llame a nuestro crupier cuando se envíe.
-        form.addEventListener('submit', onSubmit);
+        // Crea la instancia y la "adjunta" al elemento para referencia futura
+        const formInstance = new ContactForm(contactFormElement);
+        (contactFormElement as any).formInstance = formInstance;
     }
 
-    // Primera carga
-    initContactForm();
-    
-    // Re-ejecutar en cada navegación con View Transitions
-    document.addEventListener('astro:page-load', initContactForm);
+    // Ejecutar en la carga inicial de la página
+    initializeForm();
+
+    // Re-ejecutar en cada navegación del lado del cliente (View Transitions)
+    document.addEventListener('astro:page-load', initializeForm);
 </script>
 </Layout>

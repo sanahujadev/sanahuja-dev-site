@@ -57,7 +57,11 @@
     {
       "title": "Equivalence with the Hour Pack",
       "table": {
-        "headers": ["Concept", "Estimated time", "Cost if done with Hour Pack (€25/h)"],
+        "headers": [
+          "Concept",
+          "Estimated time",
+          "Cost if done with Hour Pack (€25/h)"
+        ],
         "rows": [
           ["SEO research and planning", "0.5h", "€12.50"],
           ["Article writing and revision (600–900 words)", "2h", "€50.00"],

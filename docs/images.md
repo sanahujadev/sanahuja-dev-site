@@ -35,6 +35,7 @@ Como desarrollador frontend senior, te guiaré a través de una estrategia compl
 ```
 
 **Ventajas:**
+
 - Fácil de navegar y mantener
 - Permite eliminar tamaños específicos sin afectar otros
 - Clara separación entre original y variantes
@@ -64,6 +65,7 @@ Como desarrollador frontend senior, te guiaré a través de una estrategia compl
 ```
 
 **Ventajas:**
+
 - Ideal para implementar cache strategies por formato
 - Facilita la migración a nuevos formatos
 - Permite servir diferentes headers HTTP por carpeta
@@ -86,6 +88,7 @@ Como desarrollador frontend senior, te guiaré a través de una estrategia compl
 ```
 
 **Ventajas:**
+
 - Simplicidad extrema para scripts de procesamiento
 - Fácil búsqueda por glob patterns
 - Menor profundidad de directorios (mejor para algunos CDNs)
@@ -103,6 +106,7 @@ npm install sharp
 ```
 
 **Características:**
+
 - Extremadamente rápida (usa libvips)
 - Soporte completo para AVIF, WebP, JPEG, PNG
 - Control fino sobre compresión y calidad
@@ -111,12 +115,12 @@ npm install sharp
 **Ejemplo básico:**
 
 ```javascript
-import sharp from 'sharp';
+import sharp from "sharp";
 
-await sharp('input.jpg')
+await sharp("input.jpg")
   .resize(720, null, { withoutEnlargement: true })
   .avif({ quality: 80, effort: 6 })
-  .toFile('output-720w.avif');
+  .toFile("output-720w.avif");
 ```
 
 #### **2. Squoosh CLI (Google - Óptima para calidad/tamaño)**
@@ -126,6 +130,7 @@ npm install @squoosh/cli
 ```
 
 **Características:**
+
 - Algoritmos de compresión de última generación
 - CLI simple y efectiva
 - Misma tecnología que squoosh.app
@@ -144,6 +149,7 @@ npm install imagemagick
 ```
 
 **Características:**
+
 - El clásico, con soporte para +200 formatos
 - Muy versátil para transformaciones complejas
 - Ideal si ya está en tu pipeline de build
@@ -157,18 +163,18 @@ Aquí tienes un script simple pero efectivo que puedes integrar en tu `package.j
 
 ```javascript
 // scripts/optimize-images.mjs
-import sharp from 'sharp';
-import { readdir, mkdir } from 'fs/promises';
-import { join, parse } from 'path';
+import sharp from "sharp";
+import { readdir, mkdir } from "fs/promises";
+import { join, parse } from "path";
 
 const SIZES = [360, 720, 1280, 1920];
-const FORMATS = ['avif', 'webp', 'jpg'];
-const INPUT_DIR = './public/images/original';
-const OUTPUT_DIR = './public/images/optimized';
+const FORMATS = ["avif", "webp", "jpg"];
+const INPUT_DIR = "./public/images/original";
+const OUTPUT_DIR = "./public/images/optimized";
 
 async function optimizeImages() {
   const files = await readdir(INPUT_DIR);
-  const images = files.filter(f => /\.(jpg|jpeg|png)$/i.test(f));
+  const images = files.filter((f) => /\.(jpg|jpeg|png)$/i.test(f));
 
   for (const image of images) {
     const { name } = parse(image);
@@ -180,11 +186,10 @@ async function optimizeImages() {
       const sizeDir = join(OUTPUT_DIR, `w${size}`);
       await mkdir(sizeDir, { recursive: true });
 
-      const pipeline = sharp(inputPath)
-        .resize(size, null, {
-          withoutEnlargement: true,
-          fit: 'inside'
-        });
+      const pipeline = sharp(inputPath).resize(size, null, {
+        withoutEnlargement: true,
+        fit: "inside",
+      });
 
       // AVIF - mejor compresión
       await pipeline
@@ -208,7 +213,7 @@ async function optimizeImages() {
     }
   }
 
-  console.log('✨ All images optimized!');
+  console.log("✨ All images optimized!");
 }
 
 optimizeImages().catch(console.error);
@@ -238,32 +243,32 @@ optimizeImages().catch(console.error);
   <source
     type="image/avif"
     srcset="
-      /images/w360/product.avif 360w,
-      /images/w720/product.avif 720w,
+      /images/w360/product.avif   360w,
+      /images/w720/product.avif   720w,
       /images/w1280/product.avif 1280w,
       /images/w1920/product.avif 1920w
     "
     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
   />
-  
+
   <!-- WebP - buen balance (la mayoría de navegadores) -->
   <source
     type="image/webp"
     srcset="
-      /images/w360/product.webp 360w,
-      /images/w720/product.webp 720w,
+      /images/w360/product.webp   360w,
+      /images/w720/product.webp   720w,
       /images/w1280/product.webp 1280w,
       /images/w1920/product.webp 1920w
     "
     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
   />
-  
+
   <!-- JPEG - fallback universal -->
   <img
     src="/images/w720/product.jpg"
     srcset="
-      /images/w360/product.jpg 360w,
-      /images/w720/product.jpg 720w,
+      /images/w360/product.jpg   360w,
+      /images/w720/product.jpg   720w,
       /images/w1280/product.jpg 1280w,
       /images/w1920/product.jpg 1920w
     "
@@ -295,7 +300,7 @@ import { h } from 'preact';
 
 /**
  * ResponsiveImage Component
- * 
+ *
  * @param {string} src - Base path/name without extension (e.g., 'products/gift-box')
  * @param {string} alt - Alt text for accessibility
  * @param {string} [sizes] - CSS sizes attribute (defaults based on common breakpoints)
@@ -417,19 +422,19 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <HeroSection />
-      
+
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">
           Productos Destacados
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProductCard />
           <ProductCard />
           <ProductCard />
         </div>
       </div>
-      
+
       <footer className="bg-gray-800 text-white py-8 text-center">
         <p>© 2025 Gift Shop. Optimizado para Core Web Vitals ⚡</p>
       </footer>
@@ -446,7 +451,7 @@ export default function App() {
 /**
  * ResponsiveImage.astro
  * Astro component for optimized, responsive images
- * 
+ *
  * @prop {string} src - Base path/name without extension
  * @prop {string} alt - Alt text
  * @prop {string} [sizes] - CSS sizes attribute
@@ -526,7 +531,7 @@ const fetchPriorityAttr = priority ? 'high' : 'auto';
   picture {
     display: contents;
   }
-  
+
   img {
     max-width: 100%;
     height: auto;
@@ -681,8 +686,8 @@ import Layout from '@/layouts/Layout.astro';
 import ResponsiveImage from '@/components/ResponsiveImage.astro';
 ---
 
-<Layout 
-  title="Inicio" 
+<Layout
+  title="Inicio"
   heroImage={{
     src: 'hero/holiday-banner',
     type: 'avif',
@@ -720,7 +725,7 @@ Los videos optimizados pueden mejorar conversión sin perjudicar performance si 
 /**
  * VideoBackground.astro
  * Optimized background video component for Core Web Vitals
- * 
+ *
  * @prop {string} src - Base path/name without extension
  * @prop {string} [poster] - Poster image path
  * @prop {string} [className] - CSS classes
@@ -745,7 +750,7 @@ const {
 
 <div class:list={['video-background-container', className]} {...attrs}>
   {overlay && <div class="video-overlay"></div>}
-  
+
   <video
     autoplay
     muted
@@ -758,16 +763,16 @@ const {
   >
     <!-- WebM for Chrome/Firefox (mejor compresión) -->
     <source src={`${src}.webm`} type="video/webm" />
-    
+
     <!-- MP4 for Safari/Edge (compatibilidad universal) -->
     <source src={`${src}.mp4`} type="video/mp4" />
-    
+
     <!-- Fallback para navegadores sin soporte -->
     {poster && (
       <img src={poster} alt="Video fallback" class="video-fallback" />
     )}
   </video>
-  
+
   <slot />
 </div>
 
@@ -819,7 +824,7 @@ const {
     .video-background {
       display: none;
     }
-    
+
     .video-fallback {
       display: block;
     }
@@ -830,7 +835,7 @@ const {
     .video-background {
       display: none;
     }
-    
+
     .video-fallback {
       display: block;
     }
@@ -841,12 +846,12 @@ const {
   // Pausar video si no está visible (Intersection Observer)
   document.addEventListener('DOMContentLoaded', () => {
     const videos = document.querySelectorAll('.video-background');
-    
+
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           const video = entry.target as HTMLVideoElement;
-          
+
           if (entry.isIntersecting) {
             video.play().catch(() => {
               // Silently handle autoplay restrictions
@@ -1042,13 +1047,13 @@ const { src, poster, class: className = '' } = Astro.props;
       const video = document.createElement('video');
       video.controls = true;
       video.autoplay = true;
-      
+
       // WebM source
       const sourceWebM = document.createElement('source');
       sourceWebM.src = `${videoSrc}.webm`;
       sourceWebM.type = 'video/webm';
       video.appendChild(sourceWebM);
-      
+
       // MP4 source
       const sourceMP4 = document.createElement('source');
       sourceMP4.src = `${videoSrc}.mp4`;
@@ -1128,12 +1133,14 @@ Ya que te encanta debatir arquitectura, aquí hay algunos puntos clave donde tom
 **Mi elección**: Build-time con Sharp
 
 **Razones:**
+
 - ✅ Zero overhead en runtime
 - ✅ Predecible y versionable
 - ✅ Funciona con cualquier CDN (no necesitas transformación on-the-fly)
 - ✅ Control total sobre calidad/compresión
 
 **Alternativa**: Runtime con servicios como Cloudinary/imgix
+
 - ✅ Más flexible para contenido dinámico
 - ✅ No aumenta tiempo de build
 - ❌ Costo adicional
@@ -1148,12 +1155,14 @@ Ya que te encanta debatir arquitectura, aquí hay algunos puntos clave donde tom
 **Mi elección**: Componentes reutilizables (`<ResponsiveImage />`)
 
 **Razones:**
+
 - ✅ DRY principle
 - ✅ Consistencia en toda la app
 - ✅ Fácil actualizar estrategia globalmente
 - ✅ Tipado y validación
 
 **Alternativa**: `<picture>` tags directos
+
 - ✅ Más control granular
 - ✅ Menos abstracción
 - ❌ Repetición de código
@@ -1168,11 +1177,13 @@ Ya que te encanta debatir arquitectura, aquí hay algunos puntos clave donde tom
 **Mi elección**: Tres formatos completos
 
 **Razones:**
+
 - ✅ AVIF: ~50% mejor compresión que JPEG
 - ✅ WebP: Soporte casi universal (>95% navegadores)
 - ✅ JPEG: Fallback absoluto
 
 **Alternativa**: Solo WebP + JPEG
+
 - ✅ Menos archivos que generar
 - ✅ Menor complejidad
 - ❌ Pierdes 30-40% de ahorro adicional de AVIF
@@ -1186,11 +1197,13 @@ Ya que te encanta debatir arquitectura, aquí hay algunos puntos clave donde tom
 **Mi elección**: Autoplay para hero backgrounds, click-to-play para contenido
 
 **Razones:**
+
 - ✅ Autoplay mejora engagement en hero sections
 - ✅ Click-to-play respeta bandwidth del usuario
 - ✅ Mejor accesibilidad con preferencias de usuario
 
 **Alternativa**: Todo click-to-play
+
 - ✅ Más respetuoso con datos
 - ✅ Mejor para conexiones lentas
 - ❌ Menos impacto visual inicial

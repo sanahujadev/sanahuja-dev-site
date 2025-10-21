@@ -1,28 +1,28 @@
 {
-    "meta": {
-        "title": "SanahujaDev | Desarrollador Web",
-        "description": "Portfolio profesional y sitio web de SanahujaDev, desarrollador de aplicaciones web."
+  "meta": {
+    "title": "SanahujaDev | Desarrollador Web",
+    "description": "Portfolio profesional y sitio web de SanahujaDev, desarrollador de aplicaciones web."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "services": {
+      "label": "Servicios",
+      "badge": "¡Destacado!"
     },
-    "nav": {
-        "home": "Inicio",
-        "about": "Sobre mí",
-        "contact": "Contacto",
-        "services": {
-            "label": "Servicios",
-            "badge": "¡Destacado!"
-        },
-        "language": {
-            "label": "Available in",
-            "badge": "English"
-        }
-    },
-    "cta": {
-      "getStarted": "Contáctame"
-    },
-    "aria": {
-        "logo": "Logo de SanahujaDev",
-        "menuToggle": "Alternar menú principal"
-    },
-    "lang": "es",
-    "language": "Español"
+    "language": {
+      "label": "Available in",
+      "badge": "English"
+    }
+  },
+  "cta": {
+    "getStarted": "Contáctame"
+  },
+  "aria": {
+    "logo": "Logo de SanahujaDev",
+    "menuToggle": "Alternar menú principal"
+  },
+  "lang": "es",
+  "language": "Español"
 }

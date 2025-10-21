@@ -57,13 +57,25 @@
     {
       "title": "Equivalencia con la Bolsa de Horas",
       "table": {
-        "headers": ["Concepto", "Tiempo estimado", "Coste si se realiza con Bolsa de Horas (25€/h)"],
+        "headers": [
+          "Concepto",
+          "Tiempo estimado",
+          "Coste si se realiza con Bolsa de Horas (25€/h)"
+        ],
         "rows": [
           ["Investigación y planificación SEO", "0.5h", "12,50€"],
-          ["Redacción y revisión del artículo (600–900 palabras)", "2h", "50,00€"],
+          [
+            "Redacción y revisión del artículo (600–900 palabras)",
+            "2h",
+            "50,00€"
+          ],
           ["Creación y Edición de Imagen", "0.5h", "12,50€"],
           ["Revisión con el dueño de la web", "0.5h", "12,50€"],
-          ["Preparación de contenido en CDN y subida a la web", "0.5h", "12.50€"]
+          [
+            "Preparación de contenido en CDN y subida a la web",
+            "0.5h",
+            "12.50€"
+          ]
         ],
         "footer": ["Total estimado", "4h", "100,00€"]
       },

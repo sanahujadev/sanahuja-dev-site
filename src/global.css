@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 /* 
   ================================================================
@@ -8,78 +8,83 @@
 
 :root {
   /* Colores de tu Marca */
-  --color-brand-dark: #212121; 
-  --color-brand-light: #E0E0E0;
-  --color-brand-orange: #FF6F00; /*Primary Orange 600*/
+  --color-brand-dark: #212121;
+  --color-brand-light: #e0e0e0;
+  --color-brand-orange: #ff6f00; /*Primary Orange 600*/
   --color-brand-orange-rgb: 255, 111, 0;
-  --color-brand-orange-300: #FEC87D; /*Primary Orange 200*/
+  --color-brand-orange-300: #fec87d; /*Primary Orange 200*/
 
-  --color-brand-indigo: #6366F1; /*Secondary Indigo 500*/
-  --color-brand-teal: #14B8A6; /*Third Teal 500*/
-  --color-brand-blue: #3B82F6; /*Fourth Blue 500*/
+  --color-brand-indigo: #6366f1; /*Secondary Indigo 500*/
+  --color-brand-teal: #14b8a6; /*Third Teal 500*/
+  --color-brand-blue: #3b82f6; /*Fourth Blue 500*/
 
   /* -- Fondos -- */
-  --color-bg-surface: #FFFFFF; /* white */ /*Light*/
-  --color-bg-surface-dark: #1E293B88; /* Slate-800 */ /*Tarjetas Dark*/
-  --color-bg-emphasis: #0F172A88; /* Slate-900 */ /*Tarjetas Dark*/
-  --color-bg-emphasis-dark: #FFFFFF; /* white */ /*Light*/
+  --color-bg-surface: #ffffff; /* white */ /*Light*/
+  --color-bg-surface-dark: #1e293b88; /* Slate-800 */ /*Tarjetas Dark*/
+  --color-bg-emphasis: #0f172a88; /* Slate-900 */ /*Tarjetas Dark*/
+  --color-bg-emphasis-dark: #ffffff; /* white */ /*Light*/
 
-  --color-bg-canvas-translucent: rgba(255,255,255,0.7); /*Light*/
-  --color-bg-canvas-translucent-dark: rgba(3,7,18,0.7); /*Dark*/
+  --color-bg-canvas-translucent: rgba(255, 255, 255, 0.7); /*Light*/
+  --color-bg-canvas-translucent-dark: rgba(3, 7, 18, 0.7); /*Dark*/
   --color-primary-soft: rgba(var(--color-brand-orange-rgb), 0.2); /*Primary*/
-  --color-bg-emphasis-soft-dark: rgba(255,255,255,0.1); /*Light*/
+  --color-bg-emphasis-soft-dark: rgba(255, 255, 255, 0.1); /*Light*/
 
-  --color-bg-accent-soft: #FCE8B2; /* orange-100 */ /*Primary 100*/
-  --color-bg-accent-soft-dark: rgba(249,115,22, 0.3); /*Primary 600*/
-  --color-bg-surface-soft: #F9FAFB; /* gray-50 */ /*Light*/
-  --color-bg-secondary-accent-soft: #CCFBF1; /* teal-100 */ /*Light*/ /*Third 100*/
-  --color-bg-secondary-accent-soft-dark: rgba(19, 78, 74, 0.2); /*Teal 900*/ /*Third 900*/
-  
+  --color-bg-accent-soft: #fce8b2; /* orange-100 */ /*Primary 100*/
+  --color-bg-accent-soft-dark: rgba(249, 115, 22, 0.3); /*Primary 600*/
+  --color-bg-surface-soft: #f9fafb; /* gray-50 */ /*Light*/
+  --color-bg-secondary-accent-soft: #ccfbf1; /* teal-100 */ /*Light*/ /*Third 100*/
+  --color-bg-secondary-accent-soft-dark: rgba(
+    19,
+    78,
+    74,
+    0.2
+  ); /*Teal 900*/ /*Third 900*/
+
   /* -- Texto -- */
   --color-text-default: #111827; /* gray-900 */ /* On Light */
-  --color-text-default-dark: #FFFFFF; /* white */ /* On Dark */
-  --color-text-muted: #4B5563; /* gray-600 */  /* On Light */
-  --color-text-muted-dark: #D1D5DB; /* gray-300 */ /* On Dark */
-  --color-text-subtle: #6B7280; /* gray-500 */ /* On Light */
-  --color-text-subtle-dark: #9CA3AF; /* gray-400 */ /* On Dark */
+  --color-text-default-dark: #ffffff; /* white */ /* On Dark */
+  --color-text-muted: #4b5563; /* gray-600 */ /* On Light */
+  --color-text-muted-dark: #d1d5db; /* gray-300 */ /* On Dark */
+  --color-text-subtle: #6b7280; /* gray-500 */ /* On Light */
+  --color-text-subtle-dark: #9ca3af; /* gray-400 */ /* On Dark */
   --color-text-strong: #374151; /* gray-700 */ /* On Light */
-  --color-text-muted-darker: #E5E7EB; /* gray-200 */ /* On Light */
-  --color-text-on-primary: #FFFFFF; /* white */  /* On Dark */
-  --color-text-stronger: #1F2937; /* gray-800 */ /* On Light */
+  --color-text-muted-darker: #e5e7eb; /* gray-200 */ /* On Light */
+  --color-text-on-primary: #ffffff; /* white */ /* On Dark */
+  --color-text-stronger: #1f2937; /* gray-800 */ /* On Light */
 
-  --color-text-accent: #C05621; /* orange-700 */ /*Primary*/
-  --color-text-accent-dark: #A5B4FC; /* indigo-300 */ /*Secoundary*/
-  --color-text-info: #3B82F6; /* blue-500 */ /* On Light Fourth*/
-  --color-text-info-dark: #93C5FD; /* blue-300 */ /* On Dark Secondary or Third*/
-  --color-text-accent-strong: #C05621; /* orange-500 */ /* On Light Primary*/
-  --color-text-accent-strong-dark: #FDBA74; /* orange-300 */ /* On Dark Primary*/
-  --color-text-accent-darker: #FDBA74; /* orange-300 */ /* On Light Primary*/
-  --color-text-secondary-accent: #0D9488; /* teal-600 */ /* On Light Third*/
-  --color-text-secondary-accent-dark: #2DD4BF; /* teal-400 */ /* On Dark Third*/
-  --color-text-secondary-accent-darker: #5EEAD4; /* teal-300 */ /* On Dark Third*/
+  --color-text-accent: #c05621; /* orange-700 */ /*Primary*/
+  --color-text-accent-dark: #a5b4fc; /* indigo-300 */ /*Secoundary*/
+  --color-text-info: #3b82f6; /* blue-500 */ /* On Light Fourth*/
+  --color-text-info-dark: #93c5fd; /* blue-300 */ /* On Dark Secondary or Third*/
+  --color-text-accent-strong: #c05621; /* orange-500 */ /* On Light Primary*/
+  --color-text-accent-strong-dark: #fdba74; /* orange-300 */ /* On Dark Primary*/
+  --color-text-accent-darker: #fdba74; /* orange-300 */ /* On Light Primary*/
+  --color-text-secondary-accent: #0d9488; /* teal-600 */ /* On Light Third*/
+  --color-text-secondary-accent-dark: #2dd4bf; /* teal-400 */ /* On Dark Third*/
+  --color-text-secondary-accent-darker: #5eead4; /* teal-300 */ /* On Dark Third*/
 
   /* -- Gradientes -- */
-  --color-accent-gradient-stop: #FBBF24; /* amber-400 */ /*On Light Gradient*/
-  --color-primary-gradient-start-dark: #3730A3; /* Indigo-800 */ /*On Dark Gradient*/
-  --color-secondary-gradient-start: #2DD4BF; /* teal-400 */ /* Secondary or Third*/
-  --color-secondary-gradient-stop: #60A5FA; /* blue-400 */ /* Secondary or Third*/
-  --color-secondary-gradient-stop-dark: #6366F1; /* indigo-500 */ /* Secondary or Third*/
+  --color-accent-gradient-stop: #fbbf24; /* amber-400 */ /*On Light Gradient*/
+  --color-primary-gradient-start-dark: #3730a3; /* Indigo-800 */ /*On Dark Gradient*/
+  --color-secondary-gradient-start: #2dd4bf; /* teal-400 */ /* Secondary or Third*/
+  --color-secondary-gradient-stop: #60a5fa; /* blue-400 */ /* Secondary or Third*/
+  --color-secondary-gradient-stop-dark: #6366f1; /* indigo-500 */ /* Secondary or Third*/
 
   --color-primary-softest: rgba(var(--color-brand-orange-rgb), 0.1); /*Primary*/
-  --color-secondary: #4F46E5; /* indigo-600 */ /*Reemplazar luego, secundary o third*/
-  
+  --color-secondary: #4f46e5; /* indigo-600 */ /*Reemplazar luego, secundary o third*/
+
   /* -- Bordes y Divisiones -- */
-  --color-border-default: #E5E7EB; /* gray-200 */
+  --color-border-default: #e5e7eb; /* gray-200 */
   --color-border-default-dark: #374151; /* gray-700 */
-  --color-border-darker: #1F2937; /* gray-800 */
-  
-  --color-border-subtle: rgba(0,0,0,0.05); /* Light */
-  --color-border-subtle-dark: rgba(255,255,255,0.05); /* Dark */
-  
+  --color-border-darker: #1f2937; /* gray-800 */
+
+  --color-border-subtle: rgba(0, 0, 0, 0.05); /* Light */
+  --color-border-subtle-dark: rgba(255, 255, 255, 0.05); /* Dark */
+
   /* -- Iconos -- */
   --color-icon-default: #030712; /* gray-950 */ /* Light */
-  --color-icon-default-dark: #FFFFFF; /* white */ /* Dark */
-  --color-icon-accent: #0EA5E9; /* sky-500 */ /*Secondary or Third*/
+  --color-icon-default-dark: #ffffff; /* white */ /* Dark */
+  --color-icon-accent: #0ea5e9; /* sky-500 */ /*Secondary or Third*/
 
   /* -- Sombras -- */
   --color-shadow-default: rgba(75, 85, 99, 0.1); /* gray-600 */
@@ -91,74 +96,80 @@
   ================================================================
 */
 @theme {
-    --color-primary: var(--color-brand-orange);
-    --color-primary-300: var(--color-brand-orange-300);
-    --color-bg-canvas: var(--color-brand-light);
-    --color-bg-canvas-dark: var(--color-brand-dark);
+  --color-primary: var(--color-brand-orange);
+  --color-primary-300: var(--color-brand-orange-300);
+  --color-bg-canvas: var(--color-brand-light);
+  --color-bg-canvas-dark: var(--color-brand-dark);
 
-    /* -- Texto -- */
-    --color-text-muted: var(--color-text-muted);
-    --color-text-muted-dark: var(--color-text-muted-dark);
-    --color-text-subtle: var(--color-text-subtle);
-    --color-text-subtle-dark: var(--color-text-subtle-dark);
-    --color-text-default-dark: var(--color-text-default-dark);
-    --color-text-default: var(--color-text-default);
-    --color-text-on-primary: var(--color-text-on-primary);
-    --color-text-strong: var(--color-text-strong);
-    --color-text-muted-darker: var(--color-text-muted-darker);
-    --color-text-accent: var(--color-text-accent);
-    --color-text-accent-dark: var(--color-text-accent-dark);
-    --color-text-stronger: var(--color-text-stronger);
-    --color-text-info: var(--color-text-info);
-    --color-text-info-dark: var(--color-text-info-dark);
+  /* -- Texto -- */
+  --color-text-muted: var(--color-text-muted);
+  --color-text-muted-dark: var(--color-text-muted-dark);
+  --color-text-subtle: var(--color-text-subtle);
+  --color-text-subtle-dark: var(--color-text-subtle-dark);
+  --color-text-default-dark: var(--color-text-default-dark);
+  --color-text-default: var(--color-text-default);
+  --color-text-on-primary: var(--color-text-on-primary);
+  --color-text-strong: var(--color-text-strong);
+  --color-text-muted-darker: var(--color-text-muted-darker);
+  --color-text-accent: var(--color-text-accent);
+  --color-text-accent-dark: var(--color-text-accent-dark);
+  --color-text-stronger: var(--color-text-stronger);
+  --color-text-info: var(--color-text-info);
+  --color-text-info-dark: var(--color-text-info-dark);
 
-    --color-text-accent-strong: var(--color-text-accent-strong);
-    --color-text-accent-strong-dark: var(--color-text-accent-strong-dark);
-    --color-text-accent-darker: var(--color-text-accent-darker);
-    
-    --color-text-secondary-accent: var(--color-text-secondary-accent);
-    --color-text-secondary-accent-dark: var(--color-text-secondary-accent-dark);
-    --color-text-secondary-accent-darker: var(--color-text-secondary-accent-darker);
-    
-    /* -- Gradientes -- */
-    --color-accent-gradient-stop: var(--color-accent-gradient-stop);
-    --color-primary-gradient-start-dark: var(--color-primary-gradient-start-dark);
-    --color-secondary-gradient-start: var(--color-secondary-gradient-start);
-    --color-secondary-gradient-stop: var(--color-secondary-gradient-stop);
-    --color-secondary-gradient-stop-dark: var(--color-secondary-gradient-stop-dark);
-    --color-primary-softest: var(--color-primary-softest);
-    --color-dark: var(--color-brand-dark);
-    --color-secondary: var(--color-secondary);
-    --color-border-darker: var(--color-border-darker);
-    --color-icon-accent: var(--color-icon-accent);
-    --color-bg-surface-soft: var(--color-bg-surface-soft);
-    --color-bg-accent-soft: var(--color-bg-accent-soft);
-    --color-bg-accent-soft-dark: var(--color-bg-accent-soft-dark);
-    --color-bg-secondary-accent-soft: var(--color-bg-secondary-accent-soft);
-    --color-bg-secondary-accent-soft-dark: var(--color-bg-secondary-accent-soft-dark);
+  --color-text-accent-strong: var(--color-text-accent-strong);
+  --color-text-accent-strong-dark: var(--color-text-accent-strong-dark);
+  --color-text-accent-darker: var(--color-text-accent-darker);
 
-    /* -- Fondos -- */
-    --color-bg-surface: var(--color-bg-surface);
-    --color-bg-surface-dark: var(--color-bg-surface-dark);
-    --color-bg-emphasis: var(--color-bg-emphasis);
-    --color-bg-emphasis-dark: var(--color-bg-emphasis-dark);
-    --color-bg-canvas-translucent: var(--color-bg-canvas-translucent);
-    --color-bg-canvas-translucent-dark: var(--color-bg-canvas-translucent-dark);
-    --color-primary-soft: var(--color-primary-soft);
-    --color-bg-emphasis-soft-dark: var(--color-bg-emphasis-soft-dark);
+  --color-text-secondary-accent: var(--color-text-secondary-accent);
+  --color-text-secondary-accent-dark: var(--color-text-secondary-accent-dark);
+  --color-text-secondary-accent-darker: var(
+    --color-text-secondary-accent-darker
+  );
 
-    /* -- Bordes y Divisiones -- */
-    --color-border-default: var(--color-border-default);
-    --color-border-default-dark: var(--color-border-default-dark);
-    --color-border-subtle: var(--color-border-subtle);
-    --color-border-subtle-dark: var(--color-border-subtle-dark);
+  /* -- Gradientes -- */
+  --color-accent-gradient-stop: var(--color-accent-gradient-stop);
+  --color-primary-gradient-start-dark: var(--color-primary-gradient-start-dark);
+  --color-secondary-gradient-start: var(--color-secondary-gradient-start);
+  --color-secondary-gradient-stop: var(--color-secondary-gradient-stop);
+  --color-secondary-gradient-stop-dark: var(
+    --color-secondary-gradient-stop-dark
+  );
+  --color-primary-softest: var(--color-primary-softest);
+  --color-dark: var(--color-brand-dark);
+  --color-secondary: var(--color-secondary);
+  --color-border-darker: var(--color-border-darker);
+  --color-icon-accent: var(--color-icon-accent);
+  --color-bg-surface-soft: var(--color-bg-surface-soft);
+  --color-bg-accent-soft: var(--color-bg-accent-soft);
+  --color-bg-accent-soft-dark: var(--color-bg-accent-soft-dark);
+  --color-bg-secondary-accent-soft: var(--color-bg-secondary-accent-soft);
+  --color-bg-secondary-accent-soft-dark: var(
+    --color-bg-secondary-accent-soft-dark
+  );
 
-    /* -- Iconos -- */
-    --color-icon-default: var(--color-icon-default);
-    --color-icon-default-dark: var(--color-icon-default-dark);
+  /* -- Fondos -- */
+  --color-bg-surface: var(--color-bg-surface);
+  --color-bg-surface-dark: var(--color-bg-surface-dark);
+  --color-bg-emphasis: var(--color-bg-emphasis);
+  --color-bg-emphasis-dark: var(--color-bg-emphasis-dark);
+  --color-bg-canvas-translucent: var(--color-bg-canvas-translucent);
+  --color-bg-canvas-translucent-dark: var(--color-bg-canvas-translucent-dark);
+  --color-primary-soft: var(--color-primary-soft);
+  --color-bg-emphasis-soft-dark: var(--color-bg-emphasis-soft-dark);
 
-    /* -- Sombras -- */
-    --color-shadow-default: var(--color-shadow-default);
+  /* -- Bordes y Divisiones -- */
+  --color-border-default: var(--color-border-default);
+  --color-border-default-dark: var(--color-border-default-dark);
+  --color-border-subtle: var(--color-border-subtle);
+  --color-border-subtle-dark: var(--color-border-subtle-dark);
+
+  /* -- Iconos -- */
+  --color-icon-default: var(--color-icon-default);
+  --color-icon-default-dark: var(--color-icon-default-dark);
+
+  /* -- Sombras -- */
+  --color-shadow-default: var(--color-shadow-default);
 }
 
 /* Styles for theme-aware logos */
@@ -167,7 +178,7 @@
 }
 
 .dark .astro-logo path {
-  fill: #FFFFFF; /* White for dark mode */
+  fill: #ffffff; /* White for dark mode */
 }
 
 .nextjs-logo path {
@@ -175,7 +186,7 @@
 }
 
 .dark .nextjs-logo path {
-  fill: #FFFFFF; /* White for dark mode */
+  fill: #ffffff; /* White for dark mode */
 }
 
 html {
@@ -185,4 +196,12 @@ html {
 
 body {
   overflow-x: hidden;
+}
+
+#form-status.success {
+  @apply block p-4 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-800 dark:text-green-200;
+}
+
+#form-status.error {
+  @apply block p-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-800 dark:text-red-200;
 }

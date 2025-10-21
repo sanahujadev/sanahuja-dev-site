@@ -6,19 +6,31 @@
     { "label": "Contacto", "url": "/es/contact" }
   ],
   "social": [
-    { "name": "github", "label": "Github", "url": "https://github.com/sanahujadev/sanahujadev" },
-    { "name": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/josejsanahuja/" },
-    { "name": "freelancer", "label": "Fiverr", "url": "https://www.fiverr.com/josejsanahuja/create-a-full-stack-application" }
+    {
+      "name": "github",
+      "label": "Github",
+      "url": "https://github.com/sanahujadev/sanahujadev"
+    },
+    {
+      "name": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/josejsanahuja/"
+    },
+    {
+      "name": "freelancer",
+      "label": "Fiverr",
+      "url": "https://www.fiverr.com/josejsanahuja/create-a-full-stack-application"
+    }
   ],
   "legal": [
-      { "label": "Términos y condiciones", "url": "/es/terms" },
-      { "label": "Política de privacidad", "url": "/es/privacy" }
+    { "label": "Términos y condiciones", "url": "/es/terms" },
+    { "label": "Política de privacidad", "url": "/es/privacy" }
   ],
   "tagline": "No solo creo sitios web: te acompaño en tu camino digital, porque tu éxito también es el mío",
   "copyright": "SanahujaDev /&gt; &copy;",
   "help": {
-      "text": "¿Necesitas ayuda?",
-      "contact": "Contáctame",
-      "url": "/es/contact"
+    "text": "¿Necesitas ayuda?",
+    "contact": "Contáctame",
+    "url": "/es/contact"
   }
 }
