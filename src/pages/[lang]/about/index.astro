@@ -15,7 +15,8 @@ const { lang } = Astro.params;
 const t = getTranslations(lang as "en" | "es");
 const about = t.about as About;
 
-const thisCallToAction = t.cta ? { ...t.cta } : null;
+const thisCallToAction = t.cta ? JSON.parse(JSON.stringify(t.cta)) : null;
+
 if (thisCallToAction) {
   thisCallToAction.actions[1].href = "#about-hero";
 }

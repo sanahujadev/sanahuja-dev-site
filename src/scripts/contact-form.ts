@@ -7,9 +7,9 @@ export class ContactForm {
   private emailInput: HTMLInputElement;
   private emailErrorIcon: HTMLDivElement;
 
-  // private turnstileSiteKey: string;
-  // private turnstileToken: string | null = null;
-  // private turnstileWidgetId: string | null = null;
+  private turnstileSiteKey: string;
+  private turnstileToken: string | null = null;
+  private turnstileWidgetId: string | null = null;
 
   private apiUrl: string;
   private apiKey: string;
@@ -20,13 +20,13 @@ export class ContactForm {
     this.form = formElement;
 
     // 1. Obtener la clave del sitio desde el atributo data-*
-    // this.turnstileSiteKey = this.form.dataset.turnstileSiteKey || "";
+    this.turnstileSiteKey = this.form.dataset.turnstileSiteKey || "";
     this.apiUrl = this.form.dataset.apiUrl || "";
     this.apiKey = this.form.dataset.apiKey || "";
 
-    // if (!this.turnstileSiteKey) {
-    //   console.error("Turnstile site key is not defined on the form element.");
-    // }
+    if (!this.turnstileSiteKey) {
+      console.error("Turnstile site key is not defined on the form element.");
+    }
     if (!this.apiUrl || !this.apiKey) {
       console.error("API URL or API Key is not defined on the form element.");
     }
@@ -41,11 +41,11 @@ export class ContactForm {
 
     // 3. Inicializar todo
     this.addEventListeners();
-    // this.initTurnstile();
+    this.initTurnstile();
     this.updateButtonState();
   }
 
-  /*
+
   private initTurnstile() {
     if (typeof window.turnstile === "undefined") {
       // Si Turnstile no se ha cargado, reintenta en un momento.
@@ -79,7 +79,7 @@ export class ContactForm {
       },
     });
   }
-  */
+
 
   private addEventListeners() {
     // Usamos .bind(this) para mantener el contexto de la clase en los manejadores de eventos
@@ -146,11 +146,12 @@ export class ContactForm {
 
     const formData = new FormData(this.form);
     const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      message: formData.get("message"),
+      fromName: formData.get("name"),
+      fromEmail: formData.get("email"),
+      body: formData.get("message"),
+      numeroDeTelefono: "", //formData.get("phone"),
       nickname: formData.get("nickname"), // Honeypot
-      // "cf-turnstile-response": this.turnstileToken,
+      "cfTurnstileResponse": this.turnstileToken,
     };
 
     try {
@@ -166,9 +167,9 @@ export class ContactForm {
       if (response.ok) {
         this.showStatus("¡Mensaje enviado con éxito!", "success");
         this.form.reset();
-        // if (this.turnstileWidgetId) {
-        //   window.turnstile.reset(this.turnstileWidgetId);
-        // }
+        if (this.turnstileWidgetId) {
+          window.turnstile.reset(this.turnstileWidgetId);
+        }
       } else {
         this.showStatus(
           "Error al enviar el mensaje. Inténtalo de nuevo.",
@@ -189,7 +190,7 @@ export class ContactForm {
   }
 }
 
-/*
+
 // Declaración para que TypeScript conozca el objeto global `turnstile`
 declare global {
   interface Window {
@@ -199,4 +200,3 @@ declare global {
     };
   }
 }
-*/

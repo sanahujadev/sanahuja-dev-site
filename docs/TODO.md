@@ -1,8 +1,6 @@
 actualizar mi linkedIn
 
-/[lang]/terms
-
-/[lang]/conditions
+ADD A REAL TELEPHONE NUMBER
 
 hacer lo de hacienda...
 
