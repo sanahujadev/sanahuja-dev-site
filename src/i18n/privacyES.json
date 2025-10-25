@@ -1,0 +1,92 @@
+{
+  "title": "Política de Privacidad",
+  "lastUpdated": "Última actualización: 25 de octubre de 2025",
+  "sections": [
+    {
+      "title": "1. IDENTIDAD Y DATOS DEL RESPONSABLE DEL TRATAMIENTO",
+      "content": [
+        "Responsable del Tratamiento: SanahujaDev",
+        "Domicilio Social/Fiscal: Calle San Bartolomé 49, El Río Arico, Islas Canarias, España.",
+        "NIF/CIF: En proceso de alta como autónomo",
+        "Email de Contacto para Privacidad: josejavier@sanahuja.dev"
+      ]
+    },
+    {
+      "title": "2. PRINCIPIOS APLICABLES AL TRATAMIENTO DE DATOS",
+      "content": [
+        "En el tratamiento de sus datos personales, SanahujaDev aplicará los siguientes principios que se ajustan a las exigencias del RGPD: Licitud, Lealtad y Transparencia; Limitación de la Finalidad; Minimización de Datos; Exactitud; Limitación del Plazo de Conservación; Integridad y Confidencialidad."
+      ]
+    },
+    {
+      "title": "3. FINALIDADES DEL TRATAMIENTO Y BASES JURÍDICAS",
+      "subsections": [
+        {
+          "title": "A. Datos Recogidos por SanahujaDev (Como Responsable del Tratamiento)",
+          "table": {
+            "headers": ["Origen del Dato", "Finalidad del Tratamiento", "Base Jurídica (RGPD)", "Datos Recogidos"],
+            "rows": [
+              ["Contratación de Servicios", "Gestión administrativa, facturación, cobro y cumplimiento del contrato de servicios digitales.", "Ejecución de un Contrato (Art. 6.1.b RGPD).", "Nombre/Razón Social, NIF/CIF, Domicilio Fiscal, Email, Teléfono, Datos Bancarios/Pago."],
+              ["Comunicaciones Comerciales / Newsletter", "Envío periódico de información sobre servicios, promociones y novedades de SanahujaDev.", "Consentimiento del interesado (Art. 6.1.a RGPD).", "Email, Nombre (opcional)."],
+              ["Analítica Web (Cookies)", "Medición del tráfico web y mejora de la experiencia de usuario.", "Consentimiento del interesado (Art. 6.1.a RGPD y LSSI).", "Dirección IP (anonimizada), datos de navegación y uso."]
+            ]
+          }
+        },
+        {
+          "title": "B. Datos Recogidos para Clientes de SanahujaDev (Encargado del Tratamiento)",
+          "table": {
+            "headers": ["Origen del Dato", "Finalidad del Tratamiento", "Base Jurídica (RGPD)", "Rol de SanahujaDev"],
+            "rows": [
+              ["Formularios de Leads", "Poner en contacto al interesado con el Cliente final de SanahujaDev.", "Interés Legítimo del lead para ser contactado (Art. 6.1.f RGPD).", "Encargado del Tratamiento"]
+            ]
+          },
+          "note": "Nota sobre Leads de Clientes: SanahujaDev actúa como Encargado del Tratamiento de los datos personales recopilados a través de formularios gestionados en los sitios web de sus clientes (alojados en DynamoDB). El Responsable del Tratamiento de dichos datos es, en todo momento, el Cliente de SanahujaDev. Los términos de este tratamiento están regulados por un Contrato de Encargo del Tratamiento obligatorio entre SanahujaDev y el Cliente."
+        }
+      ]
+    },
+    {
+      "title": "4. DESTINATARIOS Y PROVEEDORES DE SERVICIOS (ENCARGADOS DEL TRATAMIENTO)",
+      "content": [
+        "Sus datos personales podrán ser cedidos o tratados por los siguientes destinatarios, en su rol de Encargados del Tratamiento:",
+        "Administración Pública: A la Agencia Tributaria Española, bancos y entidades financieras, en cumplimiento de obligaciones legales (fiscales y mercantiles).",
+        "Proveedores de Infraestructura y Hosting:",
+        "Amazon Web Services (AWS): Alojamiento seguro de bases de datos de leads (DynamoDB) y copias de seguridad (S3) en servidores ubicados dentro del Espacio Económico Europeo (EEE) (Regiones de España/Irlanda).",
+        "IONOS: Proveedor de servicios transaccionales de hosting y VPS (servidores ubicados dentro del EEE).",
+        "Proveedores de Comunicación:",
+        "Resend: Servicio de envío de emails transaccionales (confirmaciones de formulario y respuestas de leads).",
+        "AWS Simple Email Service (SES): Potencial uso futuro para el envío de newsletters masivas.",
+        "Analítica Web: Google LLC (Google Analytics 4): Para el análisis de tráfico y comportamiento de usuarios, cumpliendo con la anonimización de IP por defecto.",
+        "Transferencias Internacionales de Datos: Dado que los servidores utilizados (AWS y IONOS) están ubicados en regiones de la Unión Europea (España o Irlanda), no se realizan transferencias internacionales de datos personales fuera del Espacio Económico Europeo (EEE), garantizando el máximo nivel de protección de datos."
+      ]
+    },
+    {
+      "title": "5. PLAZO DE CONSERVACIÓN DE LOS DATOS",
+      "content": [
+        "Sus datos personales se conservarán durante el tiempo estrictamente necesario para cumplir con la finalidad para la que fueron recogidos:",
+        "Datos de Clientes (Facturación/Contrato): Se conservarán durante la vigencia de la relación contractual y, posteriormente, durante un plazo de 4 años a partir de la finalización para atender posibles responsabilidades legales y obligaciones fiscales (Art. 66 Ley General Tributaria).",
+        "Datos de Leads y Contacto (Consultas): Se conservarán durante un plazo de 1 año desde la resolución o cierre de la consulta o el desestimo del lead.",
+        "Datos de Newsletter (Marketing): Se conservarán hasta que el interesado revoque su consentimiento y solicite la baja de las comunicaciones comerciales."
+      ]
+    },
+    {
+      "title": "6. DERECHOS DEL INTERESADO",
+      "content": [
+        "Usted tiene derecho a ejercer los siguientes derechos ante SanahujaDev:",
+        "Derecho de Acceso: A obtener confirmación de si se están tratando datos que le conciernen y a recibir una copia de los mismos.",
+        "Derecho de Rectificación: A solicitar la modificación de los datos inexactos.",
+        "Derecho de Supresión (Derecho al Olvido): A solicitar la eliminación de sus datos cuando, entre otros motivos, ya no sean necesarios para los fines que fueron recogidos.",
+        "Derecho de Oposición: A oponerse a que sus datos se traten para fines específicos.",
+        "Derecho de Limitación del Tratamiento: A solicitar la suspensión del tratamiento en ciertos supuestos.",
+        "Derecho a la Portabilidad: A recibir los datos en un formato estructurado para ser transferidos a otro Responsable.",
+        "Para ejercer sus derechos, debe enviar una solicitud clara por escrito y firmada, adjuntando una copia de su DNI o documento equivalente, a la dirección de correo electrónico: josejavier@sanahuja.dev.",
+        "Finalmente, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) (www.aepd.es) si considera que sus derechos no han sido debidamente atendidos."
+      ]
+    },
+    {
+      "title": "7. POLÍTICA DE COOKIES",
+      "content": [
+        "SanahujaDev utiliza cookies propias y de terceros (ej. Google Analytics 4) para fines de analítica y el correcto funcionamiento de la web. Le informamos de que el uso de cookies con fines de analítica requiere de su consentimiento explícito a través del Banner de Cookies habilitado en nuestro sitio web.",
+        "Para obtener información detallada sobre las cookies que utilizamos, su finalidad y cómo puede gestionarlas o rechazarlas, por favor, consulte nuestra Política de Cookies dedicada."
+      ]
+    }
+  ]
+}

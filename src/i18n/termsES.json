@@ -1,0 +1,135 @@
+{
+  "title": "Términos y Condiciones de Servicio",
+  "lastUpdated": "Última actualización: 25 de octubre de 2025",
+  "sections": [
+    {
+      "title": "I. INTRODUCCIÓN Y ACEPTACIÓN DE LOS TÉRMINOS",
+      "subsections": [
+        {
+          "title": "1. Partes y Objeto",
+          "content": [
+            "Estos Términos y Condiciones de Servicio (en adelante, los \"Términos\") regulan la relación contractual entre:",
+            "El Proveedor: SanahujaDev, con domicilio fiscal en Calle San Bartolomé 49, El Río Arico, Islas Canarias, España, actuando en nombre propio como futuro autónomo registrado (Módulos 36/37) (en adelante, \"SanahujaDev\" o el \"Proveedor\").",
+            "El Cliente: Cualquier persona física o jurídica que contrate los servicios de SanahujaDev (en adelante, el \"Cliente\").",
+            "La contratación de cualquier servicio ofrecido por SanahujaDev implica la aceptación plena y sin reservas de estos Términos, que se considerarán parte integral de cualquier presupuesto o contrato específico de proyecto."
+          ]
+        },
+        {
+          "title": "2. Legislación Aplicable y Jurisdicción",
+          "content": [
+            "Estos Términos se rigen por la legislación vigente en España y, específicamente, por las normativas de las Islas Canarias (aplicación del IGIC).",
+            "Para cualquier litigio o controversia que pudiera derivarse de la interpretación o cumplimiento de estos Términos, las partes se someten a los Juzgados y Tribunales de la jurisdicción del Proveedor, renunciando a cualquier otro fuero que pudiera corresponderles, salvo que la Ley determine otra cosa."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II. DESCRIPCIÓN DE LOS SERVICIOS",
+      "subsections": [
+        {
+          "title": "3. Servicios Ofrecidos",
+          "content": [
+            "SanahujaDev se especializa en la prestación de servicios digitales, incluyendo, pero no limitándose a:",
+            "Desarrollo y Creación Web: Desarrollo de sitios web estáticos y Landing Pages a medida.",
+            "Mantenimiento Web Esencial: Servicio de soporte y garantía de disponibilidad , gestión de dominio y SSL, copias de seguridad mensuales y monitorización básica.",
+            "Servicios de Contenido y Reputación: Plan de Contenido Básico (redacción SEO mensual) , Gestión de Reputación Online (respuesta a reseñas) , e Informe de Visibilidad Web (analítica básica).",
+            "Bolsa de Horas: Paquetes prepago para pequeñas actualizaciones, modificaciones de contenido o soporte técnico adicional."
+          ]
+        },
+        {
+          "title": "4. Alcance y Exclusiones",
+          "content": [
+            "El alcance detallado de cada servicio, así como las exclusiones específicas de cada plan (ej. Modificaciones de Contenido o SEO avanzado no incluidas en el Mantenimiento Esencial ), se encuentran definidos en los documentos de Condiciones Particulares de Servicio (ej. \"Mantenimiento Web Esencial\" , \"Bolsa de Horas\", etc.), los cuales el Cliente declara conocer y aceptar.",
+            "Cualquier servicio no explícitamente incluido en la descripción de un plan se considerará un trabajo adicional y requerirá un presupuesto independiente y/o el uso de la Bolsa de Horas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "III. PROPIEDAD INTELECTUAL Y DERECHOS DE AUTOR",
+      "subsections": [
+        {
+          "title": "5. Régimen de Propiedad Intelectual del Código Base",
+          "content": [
+            "El Cliente reconoce y acepta expresamente que, salvo pacto contrario por escrito:",
+            "Propiedad del Proveedor: SanahujaDev retiene la plena propiedad intelectual y los derechos de explotación sobre el código fuente, la estructura, el framework tecnológico y el diseño base de las Landing Pages desarrolladas.",
+            "Cesión de Contenido: Se ceden al Cliente los derechos de uso del contenido textual, imágenes y logotipos que el Cliente haya proporcionado y que son específicos de su marca.",
+            "Licencia de Uso: El Cliente obtiene una licencia de uso no exclusiva e intransferible del código base para fines de su negocio mientras mantenga una relación contractual activa de Mantenimiento con SanahujaDev."
+          ]
+        },
+        {
+          "title": "6. Derechos tras la Terminación por Incumplimiento",
+          "content": [
+            "En caso de que el Cliente incumpla la permanencia mínima de 12 meses asociada a un proyecto web desarrollado con el descuento del 90%, se aplicará lo siguiente:",
+            "Abono del Descuento: El Cliente deberá abonar el 90% del descuento disfrutado sobre el precio base de la creación o migración del sitio web.",
+            "Cesión de la PI: Solo tras el pago íntegro de dicho importe (el valor total del proyecto sin descuento), SanahujaDev cederá al Cliente la propiedad intelectual y los derechos de explotación del código fuente del sitio web. Hasta que este pago se efectúe, la PI permanece en manos de SanahujaDev."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "IV. POLÍTICA DE PAGOS, FACTURACIÓN Y CANCELACIÓN",
+      "subsections": [
+        {
+          "title": "7. Precios y Modalidades de Pago",
+          "content": [
+            "Servicios de Suscripción: Los servicios de mantenimiento, reputación, contenido y analítica tienen una cuota mensual recurrente (ej. 20€ + IVA/IGIC para el Mantenimiento Esencial ) y serán facturados por adelantado.",
+            "Proyectos de Desarrollo: Los proyectos de creación/migración web se facturarán mediante un pago inicial (entre 150€ y 300€) y el pago del saldo restante según el presupuesto detallado.",
+            "Impuestos: Todos los precios se entienden antes de la aplicación del Impuesto General Indirecto Canario (IGIC) o el Impuesto sobre el Valor Añadido (IVA) correspondiente, según la ubicación fiscal del Cliente."
+          ]
+        },
+        {
+          "title": "8. Permanencia y Cancelación por Descuento",
+          "content": [
+            "Permanencia Mínima: La aplicación del descuento del 90% en el proyecto web está supeditada a la contratación y permanencia en el servicio de Mantenimiento Web Esencial (o un paquete equivalente) por un periodo mínimo e ininterrumpido de 12 meses consecutivos.",
+            "Baja Anticipada: En caso de que el Cliente solicite la baja de cualquier servicio recurrente antes de cumplirse el plazo mínimo de 12 meses, estará obligado a abonar la parte proporcional del 90% del descuento que disfrutó en el proyecto inicial. El cálculo se realizará por la parte de meses que falten por cumplir hasta los 12 meses."
+          ]
+        },
+        {
+          "title": "9. Política de Reembolsos",
+          "content": [
+            "Una vez iniciado cualquier servicio de desarrollo (después del pago inicial) o cualquier servicio de suscripción, no se realizarán reembolsos.",
+            "Servicios de Desarrollo: Se podrá considerar un reembolso parcial si el Cliente desiste antes de la entrega y solo si SanahujaDev no ha incurrido en la totalidad de los costes o tiempo de trabajo estimado.",
+            "Suscripciones: Solo se podrá aplicar un reembolso proporcional por los servicios mensuales futuros que no hayan sido ejecutados, siempre que la baja no se deba a un incumplimiento de la cláusula de Permanencia (Punto 8)."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "V. USO DE SERVICIOS DE TERCEROS Y LIMITACIÓN DE RESPONSABILIDAD",
+      "subsections": [
+        {
+          "title": "10. Limitación de Responsabilidad del Proveedor",
+          "content": [
+            "El Cliente acepta que SanahujaDev opera como desarrollador e integrador, y que el servicio depende de infraestructura y software externos. Por lo tanto, SanahujaDev no será responsable por:",
+            "Fallos de Terceros: Interrupciones del servicio, caídas o indisponibilidad causadas por proveedores de hosting (AWS, IONOS, Netlify, Vercel), servicios de correo electrónico (Resend) o cualquier otra plataforma de terceros. En estos casos, SanahujaDev actuará como intermediario y gestor de la incidencia con el proveedor.",
+            "Problemas de Correo Electrónico: La creación, gestión o resolución de problemas de cuentas de correo electrónico no está incluida en el servicio de Mantenimiento Esencial.",
+            "Seguridad y Licencias: La cuota mensual no cubre el coste de licencias, plugins premium, certificados SSL específicos o bancos de imágenes."
+          ]
+        },
+        {
+          "title": "11. Límites de Recursos (Emails y Tráfico)",
+          "content": [
+            "Para garantizar la estabilidad de las cuotas mensuales, el servicio de gestión de formularios de contacto tiene los siguientes límites:",
+            "Límite de Emails: Se incluye un límite de 300 emails transaccionales mensuales (notificaciones de formulario y auto-confirmaciones). Si se supera este límite, se aplicará una tarifa de 1€ extra por cada 2.000 emails adicionales.",
+            "Tráfico Web: El servicio de hospedaje en CDN (AWS CloudFront o similares) incluye un límite de tráfico mensual generoso. Si el tráfico excede el límite estándar de un sitio web estático (a determinar en el presupuesto específico), SanahujaDev se reserva el derecho de notificar al Cliente y solicitar la ampliación de los recursos de hosting."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "VI. PROTECCIÓN DE DATOS Y CONFIDENCIALIDAD",
+      "subsections": [
+        {
+          "title": "12. Protección de Datos",
+          "content": [
+            "Tratamiento de Datos: Para la prestación de los servicios, SanahujaDev podría acceder a datos personales de los clientes y sus usuarios finales (ej. a través de los formularios de contacto o la instalación de analítica como Plausible Analytics ).",
+            "Encargado del Tratamiento: En este caso, SanahujaDev actuará como Encargado del Tratamiento de los datos por cuenta del Cliente (Responsable del Tratamiento).",
+            "Obligaciones: El Cliente se compromete a proporcionar a SanahujaDev el consentimiento explícito de sus usuarios (ej. mediante un Banner de Cookies ) y a contar con una Política de Privacidad conforme al Reglamento General de Protección de Datos (RGPD) de la Unión Europea y la Ley Orgánica 3/2018 (LOPDGDD) española.",
+            "Confidencialidad: Ambas partes se comprometen a mantener la confidencialidad de toda la información técnica, comercial y operativa a la que tengan acceso durante la duración de la relación contractual."
+          ]
+        }
+      ]
+    }
+  ]
+}

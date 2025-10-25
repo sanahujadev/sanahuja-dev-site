@@ -1,0 +1,92 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated: October 25, 2025",
+  "sections": [
+    {
+      "title": "1. IDENTITY AND DATA OF THE DATA CONTROLLER",
+      "content": [
+        "Data Controller: SanahujaDev",
+        "Fiscal Address: Calle San Bartolomé 49, El Río Arico, Canary Islands, Spain.",
+        "NIF/CIF: In the process of registering as a freelancer",
+        "Contact Email for Privacy: josejavier@sanahuja.dev"
+      ]
+    },
+    {
+      "title": "2. PRINCIPLES APPLICABLE TO DATA PROCESSING",
+      "content": [
+        "In the processing of your personal data, SanahujaDev will apply the following principles that comply with the requirements of the GDPR: Lawfulness, Fairness and Transparency; Purpose Limitation; Data Minimization; Accuracy; Storage Limitation; Integrity and Confidentiality."
+      ]
+    },
+    {
+      "title": "3. PURPOSES OF THE PROCESSING AND LEGAL BASIS",
+      "subsections": [
+        {
+          "title": "A. Data Collected by SanahujaDev (As Data Controller)",
+          "table": {
+            "headers": ["Data Origin", "Purpose of Processing", "Legal Basis (GDPR)", "Data Collected"],
+            "rows": [
+              ["Service Contracting", "Administrative management, billing, collection and fulfillment of the digital services contract.", "Execution of a Contract (Art. 6.1.b GDPR).", "Name/Company Name, NIF/CIF, Fiscal Address, Email, Telephone, Bank/Payment Data."],
+              ["Commercial Communications / Newsletter", "Periodic sending of information about services, promotions and news from SanahujaDev.", "Consent of the interested party (Art. 6.1.a GDPR).", "Email, Name (optional)."],
+              ["Web Analytics (Cookies)", "Measurement of web traffic and improvement of user experience.", "Consent of the interested party (Art. 6.1.a GDPR and LSSI).", "IP Address (anonymized), browsing and usage data."]
+            ]
+          }
+        },
+        {
+          "title": "B. Data Collected for SanahujaDev Clients (Data Processor)",
+          "table": {
+            "headers": ["Data Origin", "Purpose of Processing", "Legal Basis (GDPR)", "Role of SanahujaDev"],
+            "rows": [
+              ["Lead Forms", "To put the interested party in contact with the final Client of SanahujaDev.", "Legitimate interest of the lead to be contacted (Art. 6.1.f GDPR).", "Data Processor"]
+            ]
+          },
+          "note": "Note on Client Leads: SanahujaDev acts as a Data Processor for the personal data collected through forms managed on its clients' websites (hosted on DynamoDB). The Data Controller of said data is, at all times, the Client of SanahujaDev. The terms of this processing are regulated by a mandatory Data Processing Agreement between SanahujaDev and the Client."
+        }
+      ]
+    },
+    {
+      "title": "4. RECIPIENTS AND SERVICE PROVIDERS (DATA PROCESSORS)",
+      "content": [
+        "Your personal data may be transferred to or processed by the following recipients, in their role as Data Processors:",
+        "Public Administration: To the Spanish Tax Agency, banks and financial institutions, in compliance with legal obligations (tax and commercial).",
+        "Infrastructure and Hosting Providers:",
+        "Amazon Web Services (AWS): Secure hosting of lead databases (DynamoDB) and backups (S3) on servers located within the European Economic Area (EEA) (Spain/Ireland Regions).",
+        "IONOS: Provider of transactional hosting and VPS services (servers located within the EEA).",
+        "Communication Providers:",
+        "Resend: Transactional email sending service (form confirmations and lead responses).",
+        "AWS Simple Email Service (SES): Potential future use for sending mass newsletters.",
+        "Web Analytics: Google LLC (Google Analytics 4): For the analysis of traffic and user behavior, complying with IP anonymization by default.",
+        "International Data Transfers: Since the servers used (AWS and IONOS) are located in regions of the European Union (Spain or Ireland), no international transfers of personal data are made outside the European Economic Area (EEA), guaranteeing the highest level of data protection."
+      ]
+    },
+    {
+      "title": "5. DATA RETENTION PERIOD",
+      "content": [
+        "Your personal data will be kept for the time strictly necessary to fulfill the purpose for which it was collected:",
+        "Client Data (Billing/Contract): They will be kept for the duration of the contractual relationship and, subsequently, for a period of 4 years from the end to meet possible legal responsibilities and tax obligations (Art. 66 General Tax Law).",
+        "Lead and Contact Data (Inquiries): They will be kept for a period of 1 year from the resolution or closing of the inquiry or the dismissal of the lead.",
+        "Newsletter Data (Marketing): They will be kept until the interested party revokes their consent and requests to unsubscribe from commercial communications."
+      ]
+    },
+    {
+      "title": "6. RIGHTS OF THE INTERESTED PARTY",
+      "content": [
+        "You have the right to exercise the following rights before SanahujaDev:",
+        "Right of Access: To obtain confirmation of whether data concerning you is being processed and to receive a copy of it.",
+        "Right of Rectification: To request the modification of inaccurate data.",
+        "Right of Deletion (Right to be Forgotten): To request the deletion of your data when, among other reasons, they are no longer necessary for the purposes for which they were collected.",
+        "Right of Opposition: To oppose your data being processed for specific purposes.",
+        "Right to Limitation of Processing: To request the suspension of processing in certain cases.",
+        "Right to Portability: To receive the data in a structured format to be transferred to another Controller.",
+        "To exercise your rights, you must send a clear written and signed request, attaching a copy of your ID or equivalent document, to the email address: josejavier@sanahuja.dev.",
+        "Finally, you have the right to file a complaint with the Spanish Data Protection Agency (AEPD) (www.aepd.es) if you consider that your rights have not been duly attended to."
+      ]
+    },
+    {
+      "title": "7. COOKIE POLICY",
+      "content": [
+        "SanahujaDev uses its own and third-party cookies (e.g. Google Analytics 4) for analytics purposes and the proper functioning of the website. We inform you that the use of cookies for analytics purposes requires your explicit consent through the Cookie Banner enabled on our website.",
+        "For detailed information about the cookies we use, their purpose and how you can manage or reject them, please see our dedicated Cookie Policy."
+      ]
+    }
+  ]
+}

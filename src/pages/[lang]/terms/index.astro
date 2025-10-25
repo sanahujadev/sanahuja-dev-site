@@ -1,0 +1,42 @@
+---
+import { getTranslations, type Terms } from "../../../i18n/utils";
+import Layout from "../../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang as "en" | "es");
+
+const terms = t.terms as Terms;
+---
+
+<Layout t={t} lang={lang}>
+  <main class="container mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold text-center mb-8 dark:text-text-default-dark">{terms.title}</h1>
+    <p class="text-center text-text-muted dark:text-text-muted-dark mb-12">{terms.lastUpdated}</p>
+    <div class="prose dark:prose-invert mx-auto">
+      {terms.sections.map((section: any) => (
+        <section>
+          <h2 class="dark:text-text-default-dark">{section.title}</h2>
+          {section.content && (Array.isArray(section.content) ? (
+            section.content.map((p: string) => <p class="dark:text-text-muted-dark">{p}</p>)
+          ) : (
+            <p class="dark:text-text-muted-dark">{section.content}</p>
+          ))}
+          {section.subsections && section.subsections.map((subsection: any) => (
+            <div>
+              <h3 class="dark:text-text-default-dark">{subsection.title}</h3>
+              {Array.isArray(subsection.content) ? (
+                subsection.content.map((p: string) => <p class="dark:text-text-muted-dark">{p}</p>)
+              ) : (
+                <p class="dark:text-text-muted-dark">{subsection.content}</p>
+              )}
+            </div>
+          ))}
+        </section>
+      ))}
+    </div>
+  </main>
+</Layout>

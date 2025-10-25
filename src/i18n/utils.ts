@@ -38,6 +38,10 @@ import aboutEN from "./aboutEN.json";
 import aboutES from "./aboutES.json";
 import en from "./en.json";
 import es from "./es.json";
+import termsEN from "./termsEN.json";
+import termsES from "./termsES.json";
+import privacyEN from "./privacyEN.json";
+import privacyES from "./privacyES.json";
 
 const translations = {
   en: {
@@ -60,6 +64,8 @@ const translations = {
     coreFeatures: coreFeaturesEN.coreFeatures,
     about: aboutEN.about,
     contact: contactEN.contact,
+    terms: termsEN,
+    privacy: privacyEN,
   },
   es: {
     common: es,
@@ -81,6 +87,8 @@ const translations = {
     coreFeatures: coreFeaturesES.coreFeatures,
     about: aboutES.about,
     contact: contactES.contact,
+    terms: termsES,
+    privacy: privacyES,
   },
   "404": {
     common: es,
@@ -102,6 +110,8 @@ const translations = {
     coreFeatures: null,
     about: null,
     contact: null,
+    terms: null,
+    privacy: null,
   },
   "500": {
     common: es,
@@ -123,6 +133,8 @@ const translations = {
     coreFeatures: null,
     about: null,
     contact: null,
+    terms: null,
+    privacy: null,
   },
 };
 
@@ -187,3 +199,5 @@ export type About = typeof aboutEN.about;
 export type CallToAction = typeof ctaEN;
 export type StatsSolition = typeof solutionEN.solution;
 export type ContactType = typeof contactEN.contact;
+export type Terms = typeof termsES;
+export type Privacy = typeof privacyES;

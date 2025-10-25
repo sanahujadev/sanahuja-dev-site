@@ -1,0 +1,135 @@
+{
+  "title": "Terms and Conditions of Service",
+  "lastUpdated": "Last updated: October 25, 2025",
+  "sections": [
+    {
+      "title": "I. INTRODUCTION AND ACCEPTANCE OF TERMS",
+      "subsections": [
+        {
+          "title": "1. Parties and Object",
+          "content": [
+            "These Terms and Conditions of Service (hereinafter, the \"Terms\") regulate the contractual relationship between:",
+            "The Provider: SanahujaDev, with fiscal address at Calle San Bartolomé 49, El Río Arico, Canary Islands, Spain, acting on its own behalf as a future registered freelancer (Modules 36/37) (hereinafter, \"SanahujaDev\" or the \"Provider\").",
+            "The Client: Any natural or legal person who contracts the services of SanahujaDev (hereinafter, the \"Client\").",
+            "The contracting of any service offered by SanahujaDev implies the full and unreserved acceptance of these Terms, which will be considered an integral part of any budget or specific project contract."
+          ]
+        },
+        {
+          "title": "2. Applicable Legislation and Jurisdiction",
+          "content": [
+            "These Terms are governed by the current legislation in Spain and, specifically, by the regulations of the Canary Islands (application of the IGIC).",
+            "For any litigation or controversy that may arise from the interpretation or fulfillment of these Terms, the parties submit to the Courts and Tribunals of the Provider's jurisdiction, waiving any other jurisdiction that may correspond to them, unless the Law determines otherwise."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II. DESCRIPTION OF SERVICES",
+      "subsections": [
+        {
+          "title": "3. Services Offered",
+          "content": [
+            "SanahujaDev specializes in the provision of digital services, including, but not limited to:",
+            "Web Development and Creation: Development of static websites and custom Landing Pages.",
+            "Essential Web Maintenance: Support and availability guarantee service, domain and SSL management, monthly backups and basic monitoring.",
+            "Content and Reputation Services: Basic Content Plan (monthly SEO writing), Online Reputation Management (response to reviews), and Web Visibility Report (basic analytics).",
+            "Hour Bank: Prepaid packages for small updates, content modifications or additional technical support."
+          ]
+        },
+        {
+          "title": "4. Scope and Exclusions",
+          "content": [
+            "The detailed scope of each service, as well as the specific exclusions of each plan (e.g. Content Modifications or advanced SEO not included in the Essential Maintenance), are defined in the Particular Conditions of Service documents (e.g. \"Essential Web Maintenance\", \"Hour Bank\", etc.), which the Client declares to know and accept.",
+            "Any service not explicitly included in the description of a plan will be considered additional work and will require a separate budget and/or the use of the Hour Bank."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "III. INTELLECTUAL PROPERTY AND COPYRIGHT",
+      "subsections": [
+        {
+          "title": "5. Intellectual Property Regime of the Base Code",
+          "content": [
+            "The Client expressly acknowledges and accepts that, unless otherwise agreed in writing:",
+            "Provider's Property: SanahujaDev retains full intellectual property and exploitation rights over the source code, structure, technological framework and base design of the developed Landing Pages.",
+            "Content Cession: The rights to use the textual content, images and logos that the Client has provided and that are specific to their brand are ceded to the Client.",
+            "License of Use: The Client obtains a non-exclusive and non-transferable license to use the base code for their business purposes as long as they maintain an active contractual relationship of Maintenance with SanahujaDev."
+          ]
+        },
+        {
+          "title": "6. Rights after Termination for Breach",
+          "content": [
+            "In the event that the Client breaches the minimum permanence of 12 months associated with a web project developed with the 90% discount, the following will apply:",
+            "Payment of the Discount: The Client must pay 90% of the discount enjoyed on the base price of the creation or migration of the website.",
+            "Cession of the IP: Only after full payment of said amount (the total value of the project without discount), SanahujaDev will cede to the Client the intellectual property and exploitation rights of the website's source code. Until this payment is made, the IP remains in the hands of SanahujaDev."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "IV. PAYMENT, BILLING AND CANCELLATION POLICY",
+      "subsections": [
+        {
+          "title": "7. Prices and Payment Methods",
+          "content": [
+            "Subscription Services: Maintenance, reputation, content and analytics services have a recurring monthly fee (e.g. €20 + VAT/IGIC for Essential Maintenance) and will be billed in advance.",
+            "Development Projects: Web creation/migration projects will be billed through an initial payment (between €150 and €300) and the payment of the remaining balance according to the detailed budget.",
+            "Taxes: All prices are understood before the application of the corresponding Canary Islands General Indirect Tax (IGIC) or Value Added Tax (VAT), according to the Client's fiscal location."
+          ]
+        },
+        {
+          "title": "8. Permanence and Cancellation for Discount",
+          "content": [
+            "Minimum Permanence: The application of the 90% discount on the web project is subject to the contracting and permanence in the Essential Web Maintenance service (or an equivalent package) for a minimum and uninterrupted period of 12 consecutive months.",
+            "Early Cancellation: In the event that the Client requests the cancellation of any recurring service before the minimum period of 12 months is met, they will be obliged to pay the proportional part of the 90% discount they enjoyed on the initial project. The calculation will be made for the part of the months remaining to complete the 12 months."
+          ]
+        },
+        {
+          "title": "9. Refund Policy",
+          "content": [
+            "Once any development service (after the initial payment) or any subscription service has begun, no refunds will be made.",
+            "Development Services: A partial refund may be considered if the Client withdraws before delivery and only if SanahujaDev has not incurred all the estimated costs or work time.",
+            "Subscriptions: A proportional refund may only be applied for future monthly services that have not been executed, provided that the cancellation is not due to a breach of the Permanence clause (Point 8)."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "V. USE OF THIRD-PARTY SERVICES AND LIMITATION OF LIABILITY",
+      "subsections": [
+        {
+          "title": "10. Limitation of Provider's Liability",
+          "content": [
+            "The Client accepts that SanahujaDev operates as a developer and integrator, and that the service depends on external infrastructure and software. Therefore, SanahujaDev will not be responsible for:",
+            "Third-Party Failures: Service interruptions, downtime or unavailability caused by hosting providers (AWS, IONOS, Netlify, Vercel), email services (Resend) or any other third-party platform. In these cases, SanahujaDev will act as an intermediary and incident manager with the provider.",
+            "Email Problems: The creation, management or resolution of email account problems is not included in the Essential Maintenance service.",
+            "Security and Licenses: The monthly fee does not cover the cost of licenses, premium plugins, specific SSL certificates or image banks."
+          ]
+        },
+        {
+          "title": "11. Resource Limits (Emails and Traffic)",
+          "content": [
+            "To ensure the stability of the monthly fees, the contact form management service has the following limits:",
+            "Email Limit: A limit of 300 transactional emails per month (form notifications and auto-confirmations) is included. If this limit is exceeded, an extra fee of €1 will be applied for every 2,000 additional emails.",
+            "Web Traffic: The CDN hosting service (AWS CloudFront or similar) includes a generous monthly traffic limit. If the traffic exceeds the standard limit of a static website (to be determined in the specific budget), SanahujaDev reserves the right to notify the Client and request the expansion of hosting resources."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "VI. DATA PROTECTION AND CONFIDENTIALITY",
+      "subsections": [
+        {
+          "title": "12. Data Protection",
+          "content": [
+            "Data Processing: For the provision of services, SanahujaDev may access personal data of clients and their end users (e.g. through contact forms or the installation of analytics such as Plausible Analytics).",
+            "Data Processor: In this case, SanahujaDev will act as the Data Processor of the data on behalf of the Client (Data Controller).",
+            "Obligations: The Client undertakes to provide SanahujaDev with the explicit consent of its users (e.g. through a Cookie Banner) and to have a Privacy Policy in accordance with the General Data Protection Regulation (GDPR) of the European Union and the Spanish Organic Law 3/2018 (LOPDGDD).",
+            "Confidentiality: Both parties undertake to maintain the confidentiality of all technical, commercial and operational information to which they have access during the duration of the contractual relationship."
+          ]
+        }
+      ]
+    }
+  ]
+}
