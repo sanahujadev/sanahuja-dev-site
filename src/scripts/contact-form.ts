@@ -5,7 +5,10 @@ export class ContactForm {
   private submitButton: HTMLButtonElement;
   private formStatus: HTMLDivElement;
   private emailInput: HTMLInputElement;
+  private phoneInput: HTMLInputElement;
   private emailErrorIcon: HTMLDivElement;
+  private phoneErrorIcon: HTMLDivElement;
+  private iti: any;
 
   private turnstileSiteKey: string;
   private turnstileToken: string | null = null;
@@ -35,7 +38,18 @@ export class ContactForm {
     this.submitButton = this.form.querySelector("#submit-button")!;
     this.formStatus = this.form.querySelector("#form-status")!;
     this.emailInput = this.form.querySelector("#email")!;
+    this.phoneInput = this.form.querySelector("#phone")!;
     this.emailErrorIcon = this.form.querySelector("#email-error-icon")!;
+    this.phoneErrorIcon = this.form.querySelector("#phone-error-icon")!;
+    
+    this.iti = window.intlTelInput(this.phoneInput, {
+      initialCountry: "es",
+      nationalMode: false,
+      validationNumberTypes: null,
+      // @ts-ignore
+      loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/js/utils.js"),
+    });
+
     this.originalButtonText =
       this.submitButton.querySelector("span")?.textContent || "Submit";
 
@@ -50,7 +64,7 @@ export class ContactForm {
     if (typeof window.turnstile === "undefined") {
       // Si Turnstile no se ha cargado, reintenta en un momento.
       setTimeout(() => {
-        console.log("REINICIALIZANDO TURNSTILE");
+        
         return this.initTurnstile();
       }, 500);
       return;
@@ -89,6 +103,10 @@ export class ContactForm {
       "blur",
       this.validateEmailOnBlur.bind(this),
     );
+    this.phoneInput.addEventListener(
+      "blur",
+      this.validatePhoneOnBlur.bind(this),
+    );
   }
 
   private validateEmailFormat(email: string): boolean {
@@ -96,7 +114,7 @@ export class ContactForm {
     return emailRegex.test(email);
   }
 
-  private checkFormValidity(): boolean {
+  private async checkFormValidity(): Promise<boolean> {
     const nameInput = this.form.querySelector<HTMLInputElement>("#name")!;
     const messageInput =
       this.form.querySelector<HTMLTextAreaElement>("#message")!;
@@ -104,17 +122,31 @@ export class ContactForm {
     const isNameValid = nameInput.value.trim() !== "";
     const isEmailValid = this.validateEmailFormat(this.emailInput.value);
     const isMessageValid = messageInput.value.trim() !== "";
+    await this.iti.utilsReady;
+    let isPhoneValid = false;
+    try {
+      // Esperamos a que el script esté listo
+      await this.iti.utilsReady;
+      // Si el campo está vacío ES válido, o si no, comprobamos el número
+      isPhoneValid = this.phoneInput.value.trim() === "" || this.iti.isValidNumber() === true;
+    } catch (err) {
+      console.error("Error cargando utils.js de intl-tel-input:", err);
+      // Si el script de utilidades falla, no podemos validar.
+      // Asumimos que no es válido si el usuario ha escrito algo.
+      isPhoneValid = this.phoneInput.value.trim() === "";
+    }
 
     return (
       isNameValid &&
       isEmailValid &&
-      isMessageValid
+      isMessageValid &&
+      isPhoneValid
     );
   }
 
-  private updateButtonState() {
+  private async updateButtonState() {
     if (this.submitButton) {
-      this.submitButton.disabled = !this.checkFormValidity();
+      this.submitButton.disabled = !await this.checkFormValidity();
     }
   }
 
@@ -129,6 +161,33 @@ export class ContactForm {
     }
   }
 
+  private async validatePhoneOnBlur() {
+    // If the input is empty, it's a valid state for an optional field, so remove error styles.
+    if (this.phoneInput.value.trim() === "") {
+      this.phoneInput.classList.remove("border-red-500", "dark:border-red-500");
+      this.phoneErrorIcon?.classList.add("hidden");
+      return;
+    }
+
+    let isValid = false;
+    try {
+      await this.iti.utilsReady;
+      isValid = this.iti.isValidNumber();
+    } catch (err) {
+      console.error("Fallo utilsReady en blur:", err);
+      // isValid remains false
+    }
+
+    // If isValid is not strictly true, and the field is not empty, treat as invalid.
+    if (isValid !== true) {
+      this.phoneInput.classList.add("border-red-500", "dark:border-red-500");
+      this.phoneErrorIcon?.classList.remove("hidden");
+    } else {
+      this.phoneInput.classList.remove("border-red-500", "dark:border-red-500");
+      this.phoneErrorIcon?.classList.add("hidden");
+    }
+  }
+
   private showStatus(message: string, type: "success" | "error") {
     this.formStatus.textContent = message;
     this.formStatus.className = `p-4 text-center rounded-lg ${type === "success" ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`;
@@ -139,7 +198,7 @@ export class ContactForm {
 
   private async handleSubmit(event: SubmitEvent) {
     event.preventDefault();
-    if (!this.checkFormValidity()) return;
+    if (! await this.checkFormValidity()) return;
 
     this.submitButton.disabled = true;
     this.submitButton.querySelector("span")!.textContent = `Enviando...`;
@@ -149,7 +208,7 @@ export class ContactForm {
       fromName: formData.get("name"),
       fromEmail: formData.get("email"),
       body: formData.get("message"),
-      numeroDeTelefono: "", //formData.get("phone"),
+      numeroDeTelefono: this.phoneInput.value.trim() ? this.iti.getNumber() : "",
       nickname: formData.get("nickname"), // Honeypot
       "cfTurnstileResponse": this.turnstileToken,
     };
@@ -198,5 +257,6 @@ declare global {
       render: (container: string, params: any) => string;
       reset: (widgetId: string) => void;
     };
+    intlTelInput: (input: HTMLInputElement, options: any) => any; 
   }
 }

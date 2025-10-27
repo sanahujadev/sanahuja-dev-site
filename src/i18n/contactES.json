@@ -23,6 +23,7 @@
       "name": "Nombre Completo",
       "email": "Email",
       "message": "Mensaje",
+      "phone": "Teléfono (opcional)",
       "submit": "Enviar Mensaje",
       "submitting": "Enviando..."
     }

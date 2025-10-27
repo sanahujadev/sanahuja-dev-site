@@ -1,16 +1,18 @@
 /*
-  # Estas son nuestras reglas de seguridad.
-  
-  # Evita 'sniffing' de MIME type
   X-Content-Type-Options: nosniff
-  
-  # Previene 'Clickjacking'
   X-Frame-Options: SAMEORIGIN
-  
-  # Controla el 'Referrer'
   Referrer-Policy: strict-origin-when-cross-origin
   
-  # La 'Content Security Policy' (CSP)
-  # Ajustada para un sitio estático con fuentes de Google y View Transitions
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; frame-ancestors 'self'; form-action 'self'; base-uri 'self';
-*/
+  # LA LÍNEA ACTUALIZADA:
+  Content-Security-Policy: 
+    default-src 'self'; 
+    script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://challenges.cloudflare.com; 
+    style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; 
+    font-src 'self' https://fonts.gstatic.com; 
+    frame-src 'self' https://challenges.cloudflare.com;
+    connect-src 'self' https://challenges.cloudflare.com;
+    img-src 'self' data:; 
+    object-src 'none'; 
+    frame-ancestors 'self'; 
+    form-action 'self'; 
+    base-uri 'self';
