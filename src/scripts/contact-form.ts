@@ -8,6 +8,7 @@ export class ContactForm {
   private phoneInput: HTMLInputElement;
   private emailErrorIcon: HTMLDivElement;
   private phoneErrorIcon: HTMLDivElement;
+  private consentCheckbox: HTMLInputElement;
   private iti: any;
 
   private turnstileSiteKey: string;
@@ -41,6 +42,7 @@ export class ContactForm {
     this.phoneInput = this.form.querySelector("#phone")!;
     this.emailErrorIcon = this.form.querySelector("#email-error-icon")!;
     this.phoneErrorIcon = this.form.querySelector("#phone-error-icon")!;
+    this.consentCheckbox = this.form.querySelector("#consent")!;
     
     this.iti = window.intlTelInput(this.phoneInput, {
       initialCountry: "es",
@@ -122,6 +124,7 @@ export class ContactForm {
     const isNameValid = nameInput.value.trim() !== "";
     const isEmailValid = this.validateEmailFormat(this.emailInput.value);
     const isMessageValid = messageInput.value.trim() !== "";
+    const isConsentChecked = this.consentCheckbox.checked;
     await this.iti.utilsReady;
     let isPhoneValid = false;
     try {
@@ -140,7 +143,8 @@ export class ContactForm {
       isNameValid &&
       isEmailValid &&
       isMessageValid &&
-      isPhoneValid
+      isPhoneValid &&
+      isConsentChecked
     );
   }
 
@@ -211,6 +215,7 @@ export class ContactForm {
       numeroDeTelefono: this.phoneInput.value.trim() ? this.iti.getNumber() : "",
       nickname: formData.get("nickname"), // Honeypot
       "cfTurnstileResponse": this.turnstileToken,
+      consent: formData.get("consent") === "on",
     };
 
     try {

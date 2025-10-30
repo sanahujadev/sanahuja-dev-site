@@ -25,7 +25,11 @@
       "message": "Message",
       "phone": "Phone (optional)",
       "submit": "Send Message",
-      "submitting": "Sending..."
+      "submitting": "Sending...",
+      "consent": {
+        "text": "I have read and agree to the ",
+        "link": "Privacy Policy"
+      }
     }
   }
 }

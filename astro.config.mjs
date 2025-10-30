@@ -23,4 +23,5 @@ export default defineConfig({
       API_KEY: envField.string({ context: "client", access: "public" }),
     },
   },
+  site: "https://www.sanahuja.dev",
 });

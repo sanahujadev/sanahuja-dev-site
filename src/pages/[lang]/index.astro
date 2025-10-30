@@ -6,6 +6,7 @@ import Features from "../../components/Features.astro";
 import Stats from "../../components/Stats.astro";
 import Testimonials from "../../components/Testimonials.astro";
 import CallToAction from "../../components/CallToAction.astro";
+import { MI_TELEFONO, MI_LINKEDIN } from "../../data/constantes";
 
 export function getStaticPaths() {
 	return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
@@ -13,9 +14,38 @@ export function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = getTranslations(lang as "en" | "es" ?? "es");
+
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": t.common.meta.title,
+    "description": t.common.meta.description,
+    "url": Astro.url.href,
+    "image": new URL("/logo.svg", Astro.site).href,
+    "telephone": "+"+MI_TELEFONO,
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santa Cruz de Tenerife",
+        "addressRegion": "Canarias",
+        "addressCountry": "ES"
+    },
+    "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "28.2916",
+            "longitude": "-16.6291"
+        },
+        "geoRadius": "150000"
+    },
+    "sameAs": [
+        MI_LINKEDIN
+    ]
+};
 ---
 
 <Layout t={t} lang={lang}>
+	<script type="application/ld+json" set:html={JSON.stringify(schema)} slot="json-ld" />
 	<main class="space-y-40 mb-40">
 		<HeroSection t={t.hero} />
 		<Features t={t.features} />

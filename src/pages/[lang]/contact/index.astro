@@ -3,6 +3,7 @@
 import Container from "../../../components/Container.astro";
 import { getTranslations, type ContactType } from "../../../i18n/utils";
 import Layout from "../../../layouts/Layout.astro";
+import { MI_TELEFONO, MI_LINKEDIN, MI_EMAIL } from "../../../data/constantes";
 
 export function getStaticPaths() {
 	return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
@@ -45,7 +46,7 @@ const API_KEY = import.meta.env.API_KEY;
                         <div>
                             <h3 class="text-xl font-semibold text-text-strong dark:text-text-default-dark">{contact.info.email.title}</h3>
                             <p class="text-text-muted dark:text-text-muted-dark mt-1">{contact.info.email.description}</p>
-                            <a href="mailto:josejavier@sanahuja.dev" class="mt-2 inline-block font-semibold text-primary dark:text-primary-dark hover:underline">josejavier@sanahuja.dev</a>
+                            <a href={`mailto:${MI_EMAIL}`} class="mt-2 inline-block font-semibold text-primary dark:text-primary-dark hover:underline">{MI_EMAIL}</a>
                         </div>
                     </div>
                     {/*
@@ -73,8 +74,8 @@ const API_KEY = import.meta.env.API_KEY;
                             <h3 class="text-xl font-semibold text-text-strong dark:text-text-default-dark">{contact.info.whatsapp.title}</h3>
                             <p class="text-text-muted dark:text-text-muted-dark mt-1">{contact.info.whatsapp.description1}</p>
                             <p class="text-text-muted dark:text-text-muted-dark mt-1">{contact.info.whatsapp.description2}</p>
-                            <p class="text-text-muted dark:text-text-muted-dark mt-1">+34 642 794 960</p>
-                            <a href="https://wa.me/34642794960" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block font-semibold text-primary dark:text-primary-dark hover:underline">{contact.info.whatsapp.cta}</a>
+                            <p class="text-text-muted dark:text-text-muted-dark mt-1">+{MI_TELEFONO.substring(0,2)} {MI_TELEFONO.substring(2,5)} {MI_TELEFONO.substring(5,8)} {MI_TELEFONO.substring(8,11)}</p>
+                            <a href={`https://wa.me/${MI_TELEFONO}`} target="_blank" rel="noopener noreferrer" class="mt-2 inline-block font-semibold text-primary dark:text-primary-dark hover:underline">{contact.info.whatsapp.cta}</a>
                         </div>
                     </div>
                 </div>
@@ -138,6 +139,27 @@ const API_KEY = import.meta.env.API_KEY;
                         <label for="nickname">Nickname</label>
                         <input type="text" id="nickname" name="nickname" tabindex="-1" autocomplete="off">
                     </div>
+                    <div class="flex items-center gap-x-3">
+                        <input 
+                            id="consent" 
+                            name="consent" 
+                            type="checkbox" 
+                            required
+                            class="h-4 w-4 rounded border-border-default dark:border-border-default-dark text-primary dark:focus:ring-primary-dark focus:ring-primary"
+                        />
+                        <label for="consent" class="text-sm text-text-muted dark:text-text-muted-dark">
+                            {contact.form.consent.text}
+                            <a 
+                                href={`/${lang}/privacy`} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                class="font-semibold text-primary dark:text-primary-dark hover:underline"
+                            >
+                                {contact.form.consent.link}
+                            </a>
+                        </label>
+                    </div>
+
                     <div id="turnstile-widget" class="flex justify-center"></div>
 
                     <button 

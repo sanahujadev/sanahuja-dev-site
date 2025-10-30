@@ -18,7 +18,8 @@ type valuePorpositionProps = {
     <Container>
         <div class="relative pt-36 ml-auto">
             <div class="lg:w-2/3 text-center mx-auto">
-                <h1 
+                <h1 class="sr-only">{t.hero.seo_title}</h1>
+                <p 
                     class="text-text-default text-balance dark:text-text-default-dark font-bold text-5xl md:text-6xl xl:text-7xl" 
                     set:html={t.hero.headline}
                 />
