@@ -23,20 +23,50 @@
         {
           "title": "A. Datos Recogidos por SanahujaDev (Como Responsable del Tratamiento)",
           "table": {
-            "headers": ["Origen del Dato", "Finalidad del Tratamiento", "Base Jurídica (RGPD)", "Datos Recogidos"],
+            "headers": [
+              "Origen del Dato",
+              "Finalidad del Tratamiento",
+              "Base Jurídica (RGPD)",
+              "Datos Recogidos"
+            ],
             "rows": [
-              ["Contratación de Servicios", "Gestión administrativa, facturación, cobro y cumplimiento del contrato de servicios digitales.", "Ejecución de un Contrato (Art. 6.1.b RGPD).", "Nombre/Razón Social, NIF/CIF, Domicilio Fiscal, Email, Teléfono, Datos Bancarios/Pago."],
-              ["Comunicaciones Comerciales / Newsletter", "Envío periódico de información sobre servicios, promociones y novedades de SanahujaDev.", "Consentimiento del interesado (Art. 6.1.a RGPD).", "Email, Nombre (opcional)."],
-              ["Analítica Web (Cookies)", "Medición del tráfico web y mejora de la experiencia de usuario.", "Consentimiento del interesado (Art. 6.1.a RGPD y LSSI).", "Dirección IP (anonimizada), datos de navegación y uso."]
+              [
+                "Contratación de Servicios",
+                "Gestión administrativa, facturación, cobro y cumplimiento del contrato de servicios digitales.",
+                "Ejecución de un Contrato (Art. 6.1.b RGPD).",
+                "Nombre/Razón Social, NIF/CIF, Domicilio Fiscal, Email, Teléfono, Datos Bancarios/Pago."
+              ],
+              [
+                "Comunicaciones Comerciales / Newsletter",
+                "Envío periódico de información sobre servicios, promociones y novedades de SanahujaDev.",
+                "Consentimiento del interesado (Art. 6.1.a RGPD).",
+                "Email, Nombre (opcional)."
+              ],
+              [
+                "Analítica Web (Cookies)",
+                "Medición del tráfico web y mejora de la experiencia de usuario.",
+                "Consentimiento del interesado (Art. 6.1.a RGPD y LSSI).",
+                "Dirección IP (anonimizada), datos de navegación y uso."
+              ]
             ]
           }
         },
         {
           "title": "B. Datos Recogidos para Clientes de SanahujaDev (Encargado del Tratamiento)",
           "table": {
-            "headers": ["Origen del Dato", "Finalidad del Tratamiento", "Base Jurídica (RGPD)", "Rol de SanahujaDev"],
+            "headers": [
+              "Origen del Dato",
+              "Finalidad del Tratamiento",
+              "Base Jurídica (RGPD)",
+              "Rol de SanahujaDev"
+            ],
             "rows": [
-              ["Formularios de Leads", "Poner en contacto al interesado con el Cliente final de SanahujaDev.", "Interés Legítimo del lead para ser contactado (Art. 6.1.f RGPD).", "Encargado del Tratamiento"]
+              [
+                "Formularios de Leads",
+                "Poner en contacto al interesado con el Cliente final de SanahujaDev.",
+                "Interés Legítimo del lead para ser contactado (Art. 6.1.f RGPD).",
+                "Encargado del Tratamiento"
+              ]
             ]
           },
           "note": "Nota sobre Leads de Clientes: SanahujaDev actúa como Encargado del Tratamiento de los datos personales recopilados a través de formularios gestionados en los sitios web de sus clientes (alojados en DynamoDB). El Responsable del Tratamiento de dichos datos es, en todo momento, el Cliente de SanahujaDev. Los términos de este tratamiento están regulados por un Contrato de Encargo del Tratamiento obligatorio entre SanahujaDev y el Cliente."

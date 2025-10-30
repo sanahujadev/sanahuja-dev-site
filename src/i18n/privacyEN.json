@@ -23,20 +23,50 @@
         {
           "title": "A. Data Collected by SanahujaDev (As Data Controller)",
           "table": {
-            "headers": ["Data Origin", "Purpose of Processing", "Legal Basis (GDPR)", "Data Collected"],
+            "headers": [
+              "Data Origin",
+              "Purpose of Processing",
+              "Legal Basis (GDPR)",
+              "Data Collected"
+            ],
             "rows": [
-              ["Service Contracting", "Administrative management, billing, collection and fulfillment of the digital services contract.", "Execution of a Contract (Art. 6.1.b GDPR).", "Name/Company Name, NIF/CIF, Fiscal Address, Email, Telephone, Bank/Payment Data."],
-              ["Commercial Communications / Newsletter", "Periodic sending of information about services, promotions and news from SanahujaDev.", "Consent of the interested party (Art. 6.1.a GDPR).", "Email, Name (optional)."],
-              ["Web Analytics (Cookies)", "Measurement of web traffic and improvement of user experience.", "Consent of the interested party (Art. 6.1.a GDPR and LSSI).", "IP Address (anonymized), browsing and usage data."]
+              [
+                "Service Contracting",
+                "Administrative management, billing, collection and fulfillment of the digital services contract.",
+                "Execution of a Contract (Art. 6.1.b GDPR).",
+                "Name/Company Name, NIF/CIF, Fiscal Address, Email, Telephone, Bank/Payment Data."
+              ],
+              [
+                "Commercial Communications / Newsletter",
+                "Periodic sending of information about services, promotions and news from SanahujaDev.",
+                "Consent of the interested party (Art. 6.1.a GDPR).",
+                "Email, Name (optional)."
+              ],
+              [
+                "Web Analytics (Cookies)",
+                "Measurement of web traffic and improvement of user experience.",
+                "Consent of the interested party (Art. 6.1.a GDPR and LSSI).",
+                "IP Address (anonymized), browsing and usage data."
+              ]
             ]
           }
         },
         {
           "title": "B. Data Collected for SanahujaDev Clients (Data Processor)",
           "table": {
-            "headers": ["Data Origin", "Purpose of Processing", "Legal Basis (GDPR)", "Role of SanahujaDev"],
+            "headers": [
+              "Data Origin",
+              "Purpose of Processing",
+              "Legal Basis (GDPR)",
+              "Role of SanahujaDev"
+            ],
             "rows": [
-              ["Lead Forms", "To put the interested party in contact with the final Client of SanahujaDev.", "Legitimate interest of the lead to be contacted (Art. 6.1.f GDPR).", "Data Processor"]
+              [
+                "Lead Forms",
+                "To put the interested party in contact with the final Client of SanahujaDev.",
+                "Legitimate interest of the lead to be contacted (Art. 6.1.f GDPR).",
+                "Data Processor"
+              ]
             ]
           },
           "note": "Note on Client Leads: SanahujaDev acts as a Data Processor for the personal data collected through forms managed on its clients' websites (hosted on DynamoDB). The Data Controller of said data is, at all times, the Client of SanahujaDev. The terms of this processing are regulated by a mandatory Data Processing Agreement between SanahujaDev and the Client."
