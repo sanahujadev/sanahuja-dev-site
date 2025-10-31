@@ -24,6 +24,9 @@ const packsData = t.packs as Packs;
         fallbackFormat="jpeg"
         imageSizes="(max-width: 768px) 100vw, 50vw" 
         imageWidth={720}
+        imageHeight={480}
+        loading="eager"
+        fetchpriority="high"
       />
 
       <div class="mt-16 grid gap-8 lg:grid-cols-3 items-start">
@@ -31,7 +34,7 @@ const packsData = t.packs as Packs;
           <div class={`relative p-8 rounded-3xl border ${pack.highlight ? 'border-primary dark:border-primary-dark' : 'border-border-default dark:border-border-default-dark'} bg-bg-surface dark:bg-bg-surface-dark shadow-lg ${pack.highlight ? 'shadow-primary/20' : 'shadow-shadow-default'}`}>
             {pack.highlight && (
               <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
-                  <span class="px-3 py-1 text-sm font-semibold tracking-wider text-white bg-primary rounded-full uppercase dark:bg-primary-dark">
+                  <span class="px-3 py-1 text-sm font-semibold tracking-wider text-text-on-primary bg-primary rounded-full uppercase dark:bg-primary-dark">
                       {packsData.recommended}
                   </span>
               </div>
@@ -50,7 +53,7 @@ const packsData = t.packs as Packs;
                 </li>
               ))}
             </ul>
-            <a href="#" class={`mt-8 block w-full text-center px-6 py-3 rounded-lg font-semibold ${pack.highlight ? 'bg-primary text-white dark:bg-primary-dark' : 'bg-bg-offset dark:bg-bg-offset-dark text-text-stronger dark:text-text-default-dark hover:bg-gray-200 dark:hover:bg-gray-700'}`}>
+            <a href="#" class={`mt-8 block w-full text-center px-6 py-3 rounded-lg font-semibold ${pack.highlight ? 'bg-primary text-text-on-primary dark:bg-primary-dark' : 'bg-bg-offset dark:bg-bg-offset-dark text-text-stronger dark:text-text-default-dark hover:bg-gray-200 dark:hover:bg-gray-700'}`}>
               {pack.buttonText}
             </a>
           </div>

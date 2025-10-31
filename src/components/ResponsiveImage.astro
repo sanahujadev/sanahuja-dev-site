@@ -10,7 +10,8 @@ const {
   height,
   basePath,
   fallbackFormat = 'jpeg',
-  transitionName = ''
+  transitionName = '',
+  fetchpriority = ''
 } = Astro.props;
 
 const widths = [360, 720, 1280, 1920];
@@ -38,6 +39,7 @@ const generateSrcset = (format: 'avif' | 'webp' | 'jpeg') => {
     decoding={decoding}
     width={width}
     height={height}
+    fetchpriority={fetchpriority}
     class={className}
   />
 </picture>

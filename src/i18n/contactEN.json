@@ -27,8 +27,10 @@
       "submit": "Send Message",
       "submitting": "Sending...",
       "consent": {
-        "text": "I have read and agree to the ",
-        "link": "Privacy Policy"
+        "text_part1": "I have read and agree to the ",
+        "privacy_link_text": "Privacy Policy",
+        "text_part2": " and the ",
+        "terms_link_text": "Terms and Conditions"
       }
     }
   }

@@ -7,7 +7,7 @@ const { categories } = Astro.props;
 
 <div class="mt-8">
     <div class="flex justify-center flex-wrap gap-4 mb-8">
-        <button data-filter="all" class="filter-btn active px-4 py-2 rounded-md bg-primary text-white">{categories.all}</button>
+        <button data-filter="all" class="filter-btn active px-4 py-2 rounded-md bg-primary text-text-on-primary">{categories.all}</button>
         {Object.entries(categories).map(([key, value]) => {
             if (key !== 'all') {
                 return <button data-filter={key} class="cursor-pointer filter-btn px-4 py-2 rounded-md bg-bg-surface dark:bg-bg-surface-dark border border-border-default dark:border-border-default-dark text-text-muted-dark">{value}</button>
@@ -19,8 +19,8 @@ const { categories } = Astro.props;
         <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {diplomas.map(diploma => (
                 <a href={diploma.pdfUrl} target="_blank" rel="noopener noreferrer" class="gallery-item block border border-border-default dark:border-border-default-dark rounded-lg overflow-hidden transition hover:scale-105" data-category={diploma.category}>
-                    <OptimizedLazyImage src={diploma.thumbnailBaseUrl} alt={diploma.title} class="w-full h-auto object-cover"/>
-                    <p class="p-2 text-sm text-center bg-bg-surface dark:bg-bg-surface-dark">{diploma.title}</p>
+                    <OptimizedLazyImage src={diploma.thumbnailBaseUrl} alt="" class="w-full h-auto object-cover"/>
+                    <p class="p-2 text-sm text-center bg-bg-surface dark:bg-bg-surface-dark text-text-strong">{diploma.title}</p>
                 </a>
             ))}
         </div>

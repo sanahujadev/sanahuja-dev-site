@@ -26,6 +26,9 @@ const conditions = t.contentPlanConditions as ContentPlanConditions;
             fallbackFormat="jpeg" 
             imageSizes="(max-width: 768px) 100vw, 50vw" 
             imageWidth={720}
+            imageHeight={405}
+            loading="eager"
+            fetchpriority="high"
           />
 
         {conditions.sections.map((section) => (

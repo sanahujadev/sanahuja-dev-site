@@ -12,7 +12,10 @@ interface Props {
   fallbackFormat?: string;
   imageSizes?: string;
   imageWidth?: string | number;
+  imageHeight?: string | number;
   imageClass?: string;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
 }
 
 const {
@@ -26,7 +29,10 @@ const {
   fallbackFormat = "jpeg",
   imageSizes,
   imageWidth,
+  imageHeight,
   imageClass,
+  loading,
+  fetchpriority,
 } = Astro.props;
 ---
 
@@ -51,6 +57,9 @@ const {
         alt={imageAlt}
         sizes={imageSizes}
         width={imageWidth}
+        height={imageHeight}
+        loading={loading}
+        fetchpriority={fetchpriority}
         class:list={["rounded-3xl shadow-lg w-full max-w-lg mx-auto", imageClass]}
         transitionName={transitionId}
       />

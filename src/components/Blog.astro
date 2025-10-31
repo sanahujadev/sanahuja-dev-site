@@ -48,9 +48,11 @@ type Post = {
                 <p class="mt-6 mb-8 text-text-muted dark:text-text-muted-dark">
                   {post.description}
                 </p>
-                <a class="inline-block" href={post.url}>
-                  <span class="text-text-info dark:text-text-info-dark">{post.urlInnerText}</span>
-                </a>
+                {post.urlInnerText && (
+                  <a class="inline-block" href={post.url}>
+                    <span class="text-text-info dark:text-text-info-dark">{post.urlInnerText}</span>
+                  </a>
+                )}
               </div>
             </div>
             {post.status === 'soon' && (

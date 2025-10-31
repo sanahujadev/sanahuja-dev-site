@@ -18,6 +18,7 @@ const API_URL = import.meta.env.API_URL;
 const API_KEY = import.meta.env.API_KEY;
 ---
 <Layout t={t} lang={lang}>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/css/intlTelInput.css">
 <div class="relative py-16 md:py-24" id="contact">
     <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
         <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-accent-gradient-stop dark:from-primary-gradient-start-dark"></div>
@@ -148,14 +149,23 @@ const API_KEY = import.meta.env.API_KEY;
                             class="h-4 w-4 rounded border-border-default dark:border-border-default-dark text-primary dark:focus:ring-primary-dark focus:ring-primary"
                         />
                         <label for="consent" class="text-sm text-text-muted dark:text-text-muted-dark">
-                            {contact.form.consent.text}
+                            {contact.form.consent.text_part1}
                             <a 
                                 href={`/${lang}/privacy`} 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                                 class="font-semibold text-primary dark:text-primary-dark hover:underline"
                             >
-                                {contact.form.consent.link}
+                                {contact.form.consent.privacy_link_text}
+                            </a>
+                            {contact.form.consent.text_part2}
+                            <a 
+                                href={`/${lang}/terms`} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                class="font-semibold text-primary dark:text-primary-dark hover:underline"
+                            >
+                                {contact.form.consent.terms_link_text}
                             </a>
                         </label>
                     </div>

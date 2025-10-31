@@ -27,6 +27,9 @@ const services = t.services as MaintenanceConditions;
         fallbackFormat="jpeg" 
         imageSizes="(max-width: 768px) 100vw, 50vw" 
         imageWidth={720}
+        imageHeight={405}
+        loading="eager"
+        fetchpriority="high"
       />
       <div class="mt-12">
         <h2 class="text-2xl font-bold">{services.service.title}</h2>
