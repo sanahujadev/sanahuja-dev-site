@@ -43,7 +43,7 @@ export class ContactForm {
     this.emailErrorIcon = this.form.querySelector("#email-error-icon")!;
     this.phoneErrorIcon = this.form.querySelector("#phone-error-icon")!;
     this.consentCheckbox = this.form.querySelector("#consent")!;
-    
+
     this.iti = window.intlTelInput(this.phoneInput, {
       initialCountry: "es",
       nationalMode: false,
@@ -61,12 +61,10 @@ export class ContactForm {
     this.updateButtonState();
   }
 
-
   private initTurnstile() {
     if (typeof window.turnstile === "undefined") {
       // Si Turnstile no se ha cargado, reintenta en un momento.
       setTimeout(() => {
-        
         return this.initTurnstile();
       }, 500);
       return;
@@ -95,7 +93,6 @@ export class ContactForm {
       },
     });
   }
-
 
   private addEventListeners() {
     // Usamos .bind(this) para mantener el contexto de la clase en los manejadores de eventos
@@ -131,7 +128,9 @@ export class ContactForm {
       // Esperamos a que el script esté listo
       await this.iti.utilsReady;
       // Si el campo está vacío ES válido, o si no, comprobamos el número
-      isPhoneValid = this.phoneInput.value.trim() === "" || this.iti.isValidNumber() === true;
+      isPhoneValid =
+        this.phoneInput.value.trim() === "" ||
+        this.iti.isValidNumber() === true;
     } catch (err) {
       console.error("Error cargando utils.js de intl-tel-input:", err);
       // Si el script de utilidades falla, no podemos validar.
@@ -150,7 +149,7 @@ export class ContactForm {
 
   private async updateButtonState() {
     if (this.submitButton) {
-      this.submitButton.disabled = !await this.checkFormValidity();
+      this.submitButton.disabled = !(await this.checkFormValidity());
     }
   }
 
@@ -202,7 +201,7 @@ export class ContactForm {
 
   private async handleSubmit(event: SubmitEvent) {
     event.preventDefault();
-    if (! await this.checkFormValidity()) return;
+    if (!(await this.checkFormValidity())) return;
 
     this.submitButton.disabled = true;
     this.submitButton.querySelector("span")!.textContent = `Enviando...`;
@@ -212,14 +211,16 @@ export class ContactForm {
       fromName: formData.get("name"),
       fromEmail: formData.get("email"),
       body: formData.get("message"),
-      numeroDeTelefono: this.phoneInput.value.trim() ? this.iti.getNumber() : "",
+      numeroDeTelefono: this.phoneInput.value.trim()
+        ? this.iti.getNumber()
+        : "",
       nickname: formData.get("nickname"), // Honeypot
-      "cfTurnstileResponse": this.turnstileToken,
+      cfTurnstileResponse: this.turnstileToken,
       consent: formData.get("consent") === "on",
     };
 
     try {
-      const response = await fetch(this.apiUrl+"/forms", {
+      const response = await fetch(this.apiUrl + "/forms", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -254,7 +255,6 @@ export class ContactForm {
   }
 }
 
-
 // Declaración para que TypeScript conozca el objeto global `turnstile`
 declare global {
   interface Window {
@@ -262,6 +262,6 @@ declare global {
       render: (container: string, params: any) => string;
       reset: (widgetId: string) => void;
     };
-    intlTelInput: (input: HTMLInputElement, options: any) => any; 
+    intlTelInput: (input: HTMLInputElement, options: any) => any;
   }
 }

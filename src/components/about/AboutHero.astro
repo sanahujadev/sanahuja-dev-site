@@ -12,10 +12,10 @@ const { hero } = Astro.props;
         <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-gradient-stop dark:from-primary-dark dark:to-secondary-gradient-stop-dark">{hero.title}</h1>
         <p class="mt-4 text-xl lg:mx-auto lg: text-text-strong dark:text-text-muted-dark">{hero.description}</p>
       </div>
-      <div>
+      <div class="bg-gradient-to-br from-orange-400/20 to-transparent rounded-3xl shadow-lg w-full max-w-lg mx-auto">
         <ResponsiveImage
             basePath="sanahujadev"
-            imageName="fotoperfil"
+            imageName="perfil-sin-fondo"
             fallbackFormat="jpeg"
             alt="SanahujaDev"
             sizes="(max-width: 768px) 100vw, 50vw"
