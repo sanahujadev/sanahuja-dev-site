@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+import { getTranslations } from '../i18n/utils';
+
+// --- ¡LA JUGADA MAESTRA! ---
+// 1. No hay Astro.params.lang, así que forzamos 'es'
+const lang = 'es'; 
+const t = getTranslations(lang);
+
+// 2. La URL de tu Google Form
+const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeaZ6CMlFf3oBaQ-xpn-mu4imDRxWBdZ31zxkVJGlj_twlojA/viewform?embedded=true";
+---
+<Layout t={t} lang={lang}>
+
+    <meta name="robots" content="noindex, nofollow" slot="head" />
+
+    <Container>
+        <div class="py-16 md:py-24 text-center">
+            
+            <h1 class="text-4xl font-bold text-text-stronger dark:text-text-default-dark md:text-5xl">
+                Casi listos...
+            </h1>
+            <p class="mt-4 text-xl text-text-muted dark:text-text-muted-dark">
+                💡 Completa esto para que pueda analizar tu caso.
+            </p>
+            <iframe
+                src={FORM_URL}
+                width="100%"
+                height="1200" 
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="Formulario de Proyecto"
+            >
+                Cargando…
+            </iframe>
+        </div>
+    </Container>
+</Layout>
+<style>
+    iframe {
+        min-height: 1200px; /* Ajusta esto al largo de tu form */
+        border-radius: 12px;
+        border: 1px solid var(--color-border-default);
+        margin-top: 2rem;
+    }
+</style>
