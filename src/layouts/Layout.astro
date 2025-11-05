@@ -1,5 +1,6 @@
 ---
 import { AstroFont } from 'astro-font';
+import GoogleTagManager from './GoogleTagManager.astro';
 import { ClientRouter } from "astro:transitions";
 import AppFooter from "../components/AppFooter.astro";
 import AppHeader from "../components/AppHeader.astro";
@@ -52,6 +53,7 @@ const common = t.common;
             ]}
         />
         <ClientRouter />
+        <GoogleTagManager />
     </head>
     <body class="bg-bg-canvas dark:bg-bg-canvas-dark">
         <AppHeader t={common} lang={lang} />

@@ -6,6 +6,7 @@ import TextSection from "../../../components/about/TextSection.astro";
 import History from "../../../components/about/History.astro";
 import Testimonials from "../../../components/Testimonials.astro";
 import CallToAction from "../../../components/CallToAction.astro";
+import { MI_LINKEDIN } from "../../../data/constantes";
 
 export function getStaticPaths() {
   return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
@@ -20,9 +21,40 @@ const thisCallToAction = t.cta ? JSON.parse(JSON.stringify(t.cta)) : null;
 if (thisCallToAction) {
   thisCallToAction.actions[1].href = "#about-hero";
 }
+
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": about.hero.title,
+    "description": about.hero.description,
+    "url": Astro.url.href,
+    "mainEntity": {
+        "@type": "Person",
+        "name": "Jose Javier Sanahuja",
+        "jobTitle": "Desarrollador Web",
+        "url": Astro.site,
+        "sameAs": [
+            MI_LINKEDIN
+        ],
+        "knowsAbout": [
+            "Web Development",
+            "SEO",
+            "React",
+            "Next.js",
+            "Node.js",
+            "Astro",
+            "Java",
+            "Python",
+            "Bases de Datos",
+            "Cloud",
+            "DevOps"
+        ]
+    }
+};
 ---
 
 <Layout t={t} lang={lang}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} slot="json-ld" />
   <main class="space-y-20 mb-40 pt-20">
     <AboutHero hero={about.hero} />
     <TextSection text={about.philosophy} />

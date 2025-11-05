@@ -17,9 +17,56 @@ const t = getTranslations(lang as 'en' | 'es');
 const servicesIndex = t.servicesIndex as ServicesIndex;
 const offer = servicesIndex.offer;
 const coreFeatures = t.coreFeatures as CoreFeaturesType;
+console.log();
+
+
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": servicesIndex.title,
+    "description": servicesIndex.subtitle,
+    "url": Astro.url.href,
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": t.common.nav.home,
+                "item": Astro.site
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": t.common.nav.services.label,
+                "item": Astro.url.href
+            }
+        ]
+    },
+    "mainEntity": [
+        ...servicesIndex.services.filter(service => service.status === 'active').map(service => ({
+            "@type": "Service",
+            "name": service.title,
+            "description": service.description,
+            "url": new URL(service.url, Astro.site).href,
+            "provider": {
+                "@type": "Organization",
+                "name": "SanahujaDev"
+            }
+        })),
+        {
+            "@type": "Offer",
+            "name": offer.title,
+            "description": offer.description,
+            "price": "22.5",
+            "priceCurrency": "EUR"
+        }
+    ]
+};
 ---
 
 <Layout t={t} lang={lang}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} slot="json-ld" />
   <main class="space-y-8 mb-40 pt-20">
     <SpecialOffer offer={offer} />
     <Blog title={servicesIndex.title} subtitle={servicesIndex.subtitle} posts={servicesIndex.services} />

@@ -23,6 +23,10 @@ export default defineConfig({
       }),
       API_URL: envField.string({ context: "client", access: "public" }),
       API_KEY: envField.string({ context: "client", access: "public" }),
+      PUBLIC_GTM_ID: envField.string({
+        context: "client",
+        access: "public",
+      }),
     },
   },
   site: "https://www.sanahuja.dev",

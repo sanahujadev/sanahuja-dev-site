@@ -16,8 +16,64 @@ const contact: ContactType = t.contact as ContactType;
 const TURNSTILE_SITE_KEY = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 const API_URL = import.meta.env.API_URL;
 const API_KEY = import.meta.env.API_KEY;
+
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": contact.title,
+    "description": contact.subtitle,
+    "url": Astro.url.href,
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": t.common.nav.home,
+                "item": Astro.site
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": t.common.nav.contact,
+                "item": Astro.url.href
+            }
+        ]
+    },
+    "contactPoint": [
+        {
+            "@type": "ContactPoint",
+            "telephone": "+"+MI_TELEFONO,
+            "contactType": "customer service",
+            "areaServed": "ES",
+            "availableLanguage": ["Spanish", "English"]
+        },
+        {
+            "@type": "ContactPoint",
+            "email": MI_EMAIL,
+            "contactType": "customer service",
+            "areaServed": "ES",
+            "availableLanguage": ["Spanish", "English"]
+        }
+    ],
+    "potentialAction": {
+        "@type": "CommunicateAction",
+        "target": {
+            "@type": "EntryPoint",
+            "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+            ]
+        },
+        "recipient": {
+            "@type": "Organization",
+            "name": "SanahujaDev"
+        }
+    }
+};
 ---
 <Layout t={t} lang={lang}>
+<script type="application/ld+json" set:html={JSON.stringify(schema)} slot="json-ld" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.2/build/css/intlTelInput.css">
 <div class="relative py-16 md:py-24" id="contact">
     <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
