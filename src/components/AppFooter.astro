@@ -51,6 +51,13 @@ const icons: { [key: string]: string } = {
                 <a href={link.url} class="font-medium transition hover:text-primary">{link.label}</a>
             ))}
           </span>
+
+          <button 
+              id="manage-cookies-btn"
+              class="text-sm text-text-subtle dark:text-text-subtle-dark hover:text-text-default dark:hover:text-text-default-dark"
+          >
+              Gestionar cookies
+          </button>
   
           <span class="block text-text-subtle dark:text-text-subtle-dark">
             {t.help.text} <a href={t.help.url} class="font-semibold text-text-muted dark:text-text-default-dark transition hover:text-primary">{t.help.contact}</a>
@@ -60,3 +67,20 @@ const icons: { [key: string]: string } = {
     </div>
   </Container>
 </footer>
+
+<script>
+    function setupCookieButton() {
+        const btn = document.getElementById('manage-cookies-btn');
+        if (!btn) return;
+
+        btn.addEventListener('click', () => {
+            // ✅ API v3
+            if (typeof window.CookieConsent !== 'undefined') {
+                window.CookieConsent.showSettings();
+            }
+        });
+    }
+
+    setupCookieButton();
+    document.addEventListener('astro:page-load', setupCookieButton);
+</script>

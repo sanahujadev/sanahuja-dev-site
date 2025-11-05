@@ -42,6 +42,8 @@ import termsEN from "./termsEN.json";
 import termsES from "./termsES.json";
 import privacyEN from "./privacyEN.json";
 import privacyES from "./privacyES.json";
+import CookieConsentES from "./cookieConsentES.json";
+import CookieConsentEN from "./cookieConsentEN.json";
 
 const translations = {
   en: {
@@ -55,6 +57,7 @@ const translations = {
     services: maintenanceConditionsEN,
     servicesIndex: servicesIndexEN,
     reputation: reputationConditionsEN,
+    cookieConsent: CookieConsentEN,
     supportPack: supportPackConditionsEN,
     analyticsReport: analyticsReportConditionsEN,
     contentPlanConditions: contentPlanConditionsEN,
@@ -81,6 +84,7 @@ const translations = {
     supportPack: supportPackConditionsES,
     analyticsReport: analyticsReportConditionsES,
     contentPlanConditions: contentPlanConditionsES,
+    cookieConsent: CookieConsentES,
     addOns: addOnsES,
     packs: packsES,
     responsiveDesign: responsiveDesignES,
@@ -104,6 +108,7 @@ const translations = {
     supportPack: null,
     analyticsReport: null,
     contentPlanConditions: null,
+    cookieConsent: null,
     addOns: null,
     packs: null,
     responsiveDesign: null,
@@ -127,6 +132,7 @@ const translations = {
     supportPack: null,
     analyticsReport: null,
     contentPlanConditions: null,
+    cookieConsent: null,
     addOns: null,
     packs: null,
     responsiveDesign: null,
@@ -152,6 +158,7 @@ export type Packs = typeof packsEN;
 export type ServicesIndex = typeof servicesIndexEN;
 export type Features = typeof featuresEN.features;
 export type ResponsiveDesign = typeof responsiveDesignEN.responsiveDesign;
+export type CookieConsentType = typeof CookieConsentEN;
 
 export type CoreFeatureItem = {
   icon: string;

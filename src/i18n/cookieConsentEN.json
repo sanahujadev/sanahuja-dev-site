@@ -1,0 +1,41 @@
+{
+  "consent_modal": {
+    "title": "We Manage Your Privacy",
+    "description": "This site uses **Google Tag Manager** to load anonymous analytics scripts that help us improve the website. Your trust is our priority. <a href=\"/en/privacy-policy\" target=\"_blank\" class=\"cc-link\">Read our Cookie Policy</a>",
+    "primary_btn": {
+      "text": "Accept",
+      "role": "accept_all"
+    },
+    "secondary_btn": {
+      "text": "Customize",
+      "role": "settings"
+    }
+  },
+  "settings_modal": {
+    "title": "Privacy Preference Center",
+    "save_settings_btn": "Save Preferences",
+    "accept_all_btn": "Accept All",
+    "reject_all_btn": "Reject All",
+    "close_btn_label": "Close",
+    "blocks": [
+      {
+        "title": "Essential (Always Active)",
+        "description": "Indispensable for the basic functionality of the site and to remember this decision. They do not store personal data.",
+        "toggle": {
+          "value": "necessary",
+          "enabled": true,
+          "readonly": true
+        }
+      },
+      {
+        "title": "Google Analytics (Optional)",
+        "description": "These cookies are managed by **Google Tag Manager** to anonymously understand how you use this site (which pages you visit, etc.). This allows us to load **Google Analytics (GA4)** to improve your experience.",
+        "toggle": {
+          "value": "analytics",
+          "enabled": false,
+          "readonly": false
+        }
+      }
+    ]
+  }
+}

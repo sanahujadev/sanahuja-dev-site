@@ -4,10 +4,22 @@ import GoogleTagManager from './GoogleTagManager.astro';
 import { ClientRouter } from "astro:transitions";
 import AppFooter from "../components/AppFooter.astro";
 import AppHeader from "../components/AppHeader.astro";
-import "./../global.css"
+import "./../global.css";
+import type { CookieConsentType } from '../i18n/utils';
 
 const { t, lang } = Astro.props;
 const common = t.common;
+const cookieTranslations = t.cookieConsent as CookieConsentType;
+const GTM_ID = import.meta.env.PUBLIC_GTM_ID;
+
+if (!GTM_ID) {
+    console.warn("[Gambito] ADVERTENCIA: PUBLIC_GTM_ID no está definido.");
+}
+
+const consentConfig = {
+  lang: lang,
+  translations: cookieTranslations
+};
 ---
 
 <!DOCTYPE html>
@@ -36,28 +48,47 @@ const common = t.common;
         <link rel="canonical" href={Astro.url.href} />
 
         <slot name="json-ld" />
-
         <slot name="head" />
 
         <AstroFont
-            config={[
-                {
-                    src: [],
-                    name: "Urbanist",
-                    preload: true,
-                    display: "swap",
-                    selector: "html",
-                    fallback: "sans-serif",
-                    googleFontsURL: 'https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap',
-                },
-            ]}
+            config={[{
+                src: [],
+                name: "Urbanist",
+                preload: true,
+                display: "swap",
+                selector: "html",
+                fallback: "sans-serif",
+                googleFontsURL: 'https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap',
+            }]}
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
         <ClientRouter />
         <GoogleTagManager />
     </head>
+    
     <body class="bg-bg-canvas dark:bg-bg-canvas-dark">
+        {GTM_ID && (
+            <noscript>
+                <iframe 
+                    src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+                    height="0" 
+                    width="0" 
+                    style="display:none;visibility:hidden">
+                </iframe>
+            </noscript>
+        )}
+        
         <AppHeader t={common} lang={lang} />
         <slot />
         <AppFooter t={t.footer} />
+        
+        <script is:inline src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js" defer></script>
+        <!-- ✅ Pasar config a window (inline script sin imports) -->
+        <script is:inline define:vars={{ consentConfig }}>
+            window.__CONSENT_CONFIG__ = consentConfig;
+            </script>
+        
+        <!-- ✅ Script externo que se bundlea correctamente -->
+        <script src="../scripts/init-consent.ts"></script>
     </body>
 </html>

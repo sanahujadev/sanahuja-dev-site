@@ -21,11 +21,10 @@ if (!GTM_ID) {
                 'wait_for_update': 500 // Espera 500ms al banner
             });
             
-            // Esto es necesario para que GTM sepa que el 'consent' está listo
             gtag('js', new Date());
             gtag('config', GTM_ID); 
         </script>
-
+        <!-- Google Tag Manager Official Snippet -->
         <script is:inline define:vars={{ GTM_ID }}>
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
