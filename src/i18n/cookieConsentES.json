@@ -1,40 +1,26 @@
 {
-  "consent_modal": {
+  "consentModal": {
     "title": "Gestionamos tu privacidad",
-    "description": "Este sitio utiliza **Google Tag Manager** para cargar *scripts* de análisis anónimos que nos ayudan a mejorar la web. Tu confianza es nuestra prioridad. <a href=\"/es/privacy-policy\" target=\"_blank\" class=\"cc-link\">Consulta nuestra Política de Cookies</a>",
-    "primary_btn": {
-      "text": "Aceptar",
-      "role": "accept_all"
-    },
-    "secondary_btn": {
-      "text": "Personalizar",
-      "role": "settings"
-    }
+    "description": "Este sitio utiliza **Google Tag Manager** para cargar *scripts* de análisis anónimos que nos ayudan a mejorar la web. Tu confianza es nuestra prioridad.",
+    "acceptAllBtn": "Aceptar",
+    "showPreferencesBtn": "Personalizar",
+    "footer": "<a href=\" /es/privacy-policy\" target=\"_blank\" class=\"cc-link\">Consulta nuestra Política de Cookies</a>"
   },
-  "settings_modal": {
+  "preferencesModal": {
     "title": "Centro de Preferencias de Privacidad",
-    "save_settings_btn": "Guardar preferencias",
-    "accept_all_btn": "Aceptar todas",
-    "reject_all_btn": "Rechazar todas",
-    "close_btn_label": "Cerrar",
-    "blocks": [
+    "acceptAllBtn": "Aceptar todas",
+    "savePreferencesBtn": "Guardar preferencias",
+    "closeIconLabel": "Cerrar",
+    "sections": [
       {
         "title": "Esenciales (Siempre Activas)",
         "description": "Indispensables para el funcionamiento básico del sitio y para recordar esta decisión. No almacenan datos personales.",
-        "toggle": {
-          "value": "necessary",
-          "enabled": true,
-          "readonly": true
-        }
+        "linkedCategory": "necessary"
       },
       {
         "title": "Analítica de Google (Opcional)",
         "description": "Estas cookies son gestionadas por **Google Tag Manager** para entender, de forma anónima, cómo usas este sitio (qué páginas visitas, etc.). Nos permite cargar **Google Analytics (GA4)** para mejorar tu experiencia.",
-        "toggle": {
-          "value": "analytics",
-          "enabled": false,
-          "readonly": false
-        }
+        "linkedCategory": "analytics"
       }
     ]
   }

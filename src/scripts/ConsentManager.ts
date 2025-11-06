@@ -1,10 +1,12 @@
 // src/scripts/ConsentManager.ts
+import * as CookieConsentAPI from "vanilla-cookieconsent";
 import type { CookieConsentType } from '../i18n/utils';
+// import type {CookieConsen} from "vanilla-cookieconsent";
 
 declare global {
   interface Window {
     gtag: (type: string, action: string, payload: object) => void;
-    CookieConsent: any; // ✅ CookieConsent, no initCookieConsent
+    CookieConsent: typeof CookieConsentAPI; // ✅ CookieConsent, no initCookieConsent
   }
 }
 
@@ -36,19 +38,16 @@ export class ConsentManager {
 
     // ✅ API v3: CookieConsent.run()
     window.CookieConsent.run({
-      current_lang: this.config.lang,
-      autoclear_cookies: true,
-      page_scripts: true,
+      autoClearCookies: true,
+      manageScriptTags: true,
       
-      gui_options: {
-        consent_modal: {
+      guiOptions: {
+        consentModal: {
           layout: 'box',
-          position: 'bottom right',
-          transition: 'slide'
+          position: 'bottom right'
         },
-        settings_modal: {
-          layout: 'box',
-          transition: 'slide'
+        preferencesModal: {
+          layout: 'box'
         }
       },
 
@@ -109,6 +108,6 @@ export class ConsentManager {
   }
 
   public showSettings(): void {
-    window.CookieConsent?.showSettings();
+    window.CookieConsent?.showPreferences();
   }
 }

@@ -7,6 +7,9 @@ export default defineConfig({
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],
+    esbuild: {
+      exclude: ['console']
+    }
   },
   i18n: {
     defaultLocale: "es",

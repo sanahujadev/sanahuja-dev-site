@@ -7,7 +7,7 @@ interface ConsentConfig {
   translations: CookieConsentType;
 }
 
-const MAX_RETRIES = 10;
+const MAX_RETRIES = 3;
 let retries = 0;
 
 export function initializeCookieConsent(config: ConsentConfig) {

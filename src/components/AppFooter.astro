@@ -76,7 +76,7 @@ const icons: { [key: string]: string } = {
         btn.addEventListener('click', () => {
             // ✅ API v3
             if (typeof window.CookieConsent !== 'undefined') {
-                window.CookieConsent.showSettings();
+                window.CookieConsent.showPreferences();
             }
         });
     }
