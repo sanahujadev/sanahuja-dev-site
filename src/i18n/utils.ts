@@ -200,6 +200,7 @@ export type Footer = {
   tagline: string;
   copyright: string;
   help: Help;
+  cookieSettings: string;
 };
 
 export type About = typeof aboutEN.about;

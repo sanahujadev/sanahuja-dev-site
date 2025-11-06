@@ -1,6 +1,6 @@
 // src/scripts/init-consent.ts
-import { ConsentManager } from './ConsentManager';
-import type { CookieConsentType } from '../i18n/utils';
+import { ConsentManager } from "./ConsentManager";
+import type { CookieConsentType } from "../i18n/utils";
 
 interface ConsentConfig {
   lang: string;
@@ -12,17 +12,24 @@ let retries = 0;
 
 export function initializeCookieConsent(config: ConsentConfig) {
   // Guardia 1: Singleton
-  if ((window as any).__consentManagerInstance || document.querySelector('#cc-main')) {
+  if (
+    (window as any).__consentManagerInstance ||
+    document.querySelector("#cc-main")
+  ) {
     return;
   }
 
   // Guardia 2: ¿Está window.CookieConsent disponible?
-  if (typeof window.CookieConsent === 'undefined') {
+  if (typeof window.CookieConsent === "undefined") {
     retries++;
     if (retries < MAX_RETRIES) {
-      setTimeout(() => initializeCookieConsent(config), 200); 
+      setTimeout(() => initializeCookieConsent(config), 200);
     } else {
-      console.error('[Gambito] window.CookieConsent no se cargó después de', MAX_RETRIES, 'intentos');
+      console.error(
+        "[Gambito] window.CookieConsent no se cargó después de",
+        MAX_RETRIES,
+        "intentos",
+      );
     }
     return;
   }
@@ -34,7 +41,7 @@ export function initializeCookieConsent(config: ConsentConfig) {
     (window as any).__consentManagerInstance = manager;
     retries = 0;
   } catch (error) {
-    console.error('[ConsentManager] Init failed:', error);
+    console.error("[ConsentManager] Init failed:", error);
   }
 }
 
@@ -47,10 +54,10 @@ function autoInit() {
 }
 
 // Para navegaciones de Astro
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', autoInit);
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", autoInit);
 } else {
   autoInit();
 }
 
-document.addEventListener('astro:page-load', autoInit);
+document.addEventListener("astro:page-load", autoInit);

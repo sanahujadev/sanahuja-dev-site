@@ -4,7 +4,7 @@
     "description": "Este sitio utiliza **Google Tag Manager** para cargar *scripts* de análisis anónimos que nos ayudan a mejorar la web. Tu confianza es nuestra prioridad.",
     "acceptAllBtn": "Aceptar",
     "showPreferencesBtn": "Personalizar",
-    "footer": "<a href=\" /es/privacy-policy\" target=\"_blank\" class=\"cc-link\">Consulta nuestra Política de Cookies</a>"
+    "footer": "<a href=\" /es/privacy\" target=\"_blank\" class=\"cc-link\">Consulta nuestra Política de Cookies</a>"
   },
   "preferencesModal": {
     "title": "Centro de Preferencias de Privacidad",

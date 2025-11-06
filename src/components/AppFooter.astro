@@ -54,9 +54,11 @@ const icons: { [key: string]: string } = {
 
           <button 
               id="manage-cookies-btn"
-              class="text-sm text-text-subtle dark:text-text-subtle-dark hover:text-text-default dark:hover:text-text-default-dark"
+              type="button"
+              class="font-semibold cursor-pointer text-text-muted dark:text-text-default-dark transition hover:text-primary"
+              data-cc="show-preferencesModal"
           >
-              Gestionar cookies
+              {t.cookieSettings}
           </button>
   
           <span class="block text-text-subtle dark:text-text-subtle-dark">
@@ -67,20 +69,3 @@ const icons: { [key: string]: string } = {
     </div>
   </Container>
 </footer>
-
-<script>
-    function setupCookieButton() {
-        const btn = document.getElementById('manage-cookies-btn');
-        if (!btn) return;
-
-        btn.addEventListener('click', () => {
-            // ✅ API v3
-            if (typeof window.CookieConsent !== 'undefined') {
-                window.CookieConsent.showPreferences();
-            }
-        });
-    }
-
-    setupCookieButton();
-    document.addEventListener('astro:page-load', setupCookieButton);
-</script>

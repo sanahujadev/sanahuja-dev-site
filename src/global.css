@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import 'vanilla-cookieconsent/dist/cookieconsent.css';
+@import "vanilla-cookieconsent/dist/cookieconsent.css";
 
 /* 
   ================================================================
@@ -205,4 +205,13 @@ body {
 
 #form-status.error {
   @apply block p-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-800 dark:text-red-200;
+}
+
+#cc-main {
+  --cc-btn-primary-bg: var(--color-brand-orange);
+  --cc-btn-primary-border-color: var(--color-brand-orange);
+  --cc-btn-primary-hover-bg: #ff8f00; /* A slightly lighter orange for hover */
+  --cc-btn-primary-hover-border-color: #ff8f00;
+  --cc-toggle-on-bg: var(--color-brand-orange);
+  --cc-btn-border-radius: 9999px; /* Pill shape */
 }

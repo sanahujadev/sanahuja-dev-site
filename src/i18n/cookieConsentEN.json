@@ -4,7 +4,7 @@
     "description": "This site uses **Google Tag Manager** to load anonymous analytics scripts that help us improve the website. Your trust is our priority.",
     "acceptAllBtn": "Accept",
     "showPreferencesBtn": "Customize",
-    "footer": "<a href=\"/en/privacy-policy\" target=\"_blank\" class=\"cc-link\">Read our Cookie Policy</a>"
+    "footer": "<a href=\"/en/privacy\" target=\"_blank\" class=\"cc-link\">Read our Cookie Policy</a>"
   },
   "preferencesModal": {
     "title": "Privacy Preference Center",

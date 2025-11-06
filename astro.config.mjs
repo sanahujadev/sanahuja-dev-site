@@ -8,8 +8,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     esbuild: {
-      exclude: ['console']
-    }
+      exclude: ["console"],
+    },
   },
   i18n: {
     defaultLocale: "es",
