@@ -26,9 +26,9 @@ const rD = t.responsiveDesign?.responsiveDesign as ResponsiveDesign;
             </div>
 
             <div id="demo-controls" class="mt-8 hidden md:flex justify-center gap-4">
-                <button id="btn-mobile" class="px-4 py-2 rounded-md bg-primary text-text-on-primary">{rD.buttons.mobile}</button>
-                <button id="btn-tablet" class="px-4 py-2 rounded-md bg-primary text-text-on-primary">{rD.buttons.tablet}</button>
-                <button id="btn-desktop" class="px-4 py-2 rounded-md bg-primary text-text-on-primary">{rD.buttons.desktop}</button>
+                <button id="btn-mobile" class="font-bold px-4 py-2 rounded-md bg-primary text-text-on-primary">{rD.buttons.mobile}</button>
+                <button id="btn-tablet" class="font-bold px-4 py-2 rounded-md bg-primary text-text-on-primary">{rD.buttons.tablet}</button>
+                <button id="btn-desktop" class="font-bold px-4 py-2 rounded-md bg-primary text-text-on-primary">{rD.buttons.desktop}</button>
             </div>
             
             <div id="iframe-container" class="mt-8 border border-border-default dark:border-border-default-dark rounded-lg overflow-hidden mx-auto hidden md:block">
@@ -37,7 +37,7 @@ const rD = t.responsiveDesign?.responsiveDesign as ResponsiveDesign;
 
             <div id="mobile-warning" class="md:hidden text-center">
                 <p class="text-text-muted dark:text-text-muted-dark">{rD.mobileWarning}</p>
-                <button id="show-demo-btn" class="mt-4 px-4 py-2 rounded-md bg-primary text-white">{rD.showDemoButton}</button>
+                <button id="show-demo-btn" class="font-bold mt-4 px-4 py-2 rounded-md bg-primary text-white">{rD.showDemoButton}</button>
             </div>
         </Container>
     </main>

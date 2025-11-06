@@ -1,6 +1,6 @@
 ---
+// src/layouts/Layout.astro
 import { AstroFont } from 'astro-font';
-import GoogleTagManager from './GoogleTagManager.astro';
 import { ClientRouter } from "astro:transitions";
 import AppFooter from "../components/AppFooter.astro";
 import AppHeader from "../components/AppHeader.astro";
@@ -27,7 +27,13 @@ const consentConfig = {
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="description" content={common.meta.description} />
         <title>{common.meta.title}</title>
 
@@ -62,34 +68,16 @@ const consentConfig = {
             }]}
         />
         <ClientRouter />
-        <GoogleTagManager />
     </head>
     
     <body class="bg-bg-canvas dark:bg-bg-canvas-dark">
-        {GTM_ID && (
-            <noscript>
-                <iframe 
-                    src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-                    height="0" 
-                    width="0" 
-                    style="display:none;visibility:hidden">
-                </iframe>
-            </noscript>
-        )}
-        
-        <AppHeader t={common} lang={lang} />
-        <slot />
-        <AppFooter t={t.footer} />
-        
-        <script is:inline src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js" defer></script>
-        <!-- ✅ Pasar config a window (inline script sin imports) -->
-        <script is:inline define:vars={{ consentConfig }}>
+        <script is:inline define:vars={{ GTM_ID, consentConfig }}>
+            window.__GTM_ID__ = GTM_ID;
             window.__CONSENT_CONFIG__ = consentConfig;
-            </script>
-        
-        <!-- ✅ Script externo que se bundlea correctamente -->
+        </script>
+        <script src="../scripts/gtag-stub.ts"></script>
+        <script is:inline src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js" defer></script>
         <script src="../scripts/init-consent.ts"></script>
-
         <script>
             function setupCookieConsentDarkMode() {
                 const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -112,5 +100,19 @@ const consentConfig = {
             setupCookieConsentDarkMode();
             document.addEventListener('astro:page-load', setupCookieConsentDarkMode);
         </script>
+        <AppHeader t={common} lang={lang} />
+        <slot />
+        <AppFooter t={t.footer} />
+        
+        {GTM_ID && (
+            <noscript>
+                <iframe 
+                    src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+                    height="0" 
+                    width="0" 
+                    style="display:none;visibility:hidden">
+                </iframe>
+            </noscript>
+        )}
     </body>
 </html>
