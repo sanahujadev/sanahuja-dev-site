@@ -208,10 +208,32 @@ body {
 }
 
 #cc-main {
+  --cc-bg: var(--color-bg-surface);
+  --cc-text-color: var(--color-text-default);
+  --cc-border-color: var(--color-border-default);
+  --cc-link-color: var(--color-brand-orange);
+
   --cc-btn-primary-bg: var(--color-brand-orange);
   --cc-btn-primary-border-color: var(--color-brand-orange);
   --cc-btn-primary-hover-bg: #ff8f00; /* A slightly lighter orange for hover */
-  --cc-btn-primary-hover-border-color: #ff8f00;
+
+  --cc-btn-secondary-bg: var(--color-bg-surface-soft);
+  --cc-btn-secondary-border-color: var(--color-border-default);
+  --cc-btn-secondary-text-color: var(--color-text-strong);
+  --cc-btn-secondary-hover-bg: var(--color-border-default);
+
   --cc-toggle-on-bg: var(--color-brand-orange);
   --cc-btn-border-radius: 9999px; /* Pill shape */
+}
+
+.cc--darkmode #cc-main {
+  --cc-bg: var(--color-bg-surface-dark);
+  --cc-text-color: var(--color-text-default-dark);
+  --cc-border-color: var(--color-border-default-dark);
+  --cc-link-color: var(--color-brand-orange-300);
+
+  --cc-btn-secondary-bg: var(--color-border-default-dark);
+  --cc-btn-secondary-border-color: var(--color-border-default-dark);
+  --cc-btn-secondary-text-color: var(--color-text-default-dark);
+  --cc-btn-secondary-hover-bg: var(--color-border-darker);
 }

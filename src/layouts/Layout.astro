@@ -89,5 +89,28 @@ const consentConfig = {
         
         <!-- ✅ Script externo que se bundlea correctamente -->
         <script src="../scripts/init-consent.ts"></script>
+
+        <script>
+            function setupCookieConsentDarkMode() {
+                const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+                function updateTheme(e: { matches: boolean }) {
+                    if (e.matches) {
+                        document.documentElement.classList.add('cc--darkmode');
+                    } else {
+                        document.documentElement.classList.remove('cc--darkmode');
+                    }
+                }
+
+                // Initial check
+                updateTheme(mediaQuery);
+
+                // Listen for changes
+                mediaQuery.addEventListener('change', updateTheme);
+            }
+
+            setupCookieConsentDarkMode();
+            document.addEventListener('astro:page-load', setupCookieConsentDarkMode);
+        </script>
     </body>
 </html>
