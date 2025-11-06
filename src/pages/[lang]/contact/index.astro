@@ -135,6 +135,19 @@ const schema = {
                             <a href={`https://wa.me/${MI_TELEFONO}`} target="_blank" rel="noopener noreferrer" class="mt-2 inline-block font-semibold text-primary dark:text-primary-dark hover:underline">{contact.info.whatsapp.cta}</a>
                         </div>
                     </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="mt-1 flex h-10 w-10 items-center justify-center rounded-full bg-primary-softest dark:bg-bg-emphasis-soft-dark">
+                            <svg class="h-6 w-6 text-primary dark:text-primary-dark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-text-strong dark:text-text-default-dark">{contact.info.projectForm.title}</h3>
+                            <p class="text-text-muted dark:text-text-muted-dark mt-1">{contact.info.projectForm.description}</p>
+                            <a href="/formulario-inicial" class="mt-2 inline-block font-semibold text-primary dark:text-primary-dark hover:underline">{contact.info.projectForm.cta}</a>
+                        </div>
+                    </div>
                 </div>
 
                 <form id="contact-form" class="p-8 rounded-3xl bg-bg-surface border border-border-default dark:shadow-none dark:border-border-default-dark dark:bg-bg-surface-dark bg-opacity-50 shadow-2xl shadow-shadow-default space-y-6" data-turnstile-site-key={TURNSTILE_SITE_KEY} data-api-url={API_URL} data-api-key={API_KEY}>

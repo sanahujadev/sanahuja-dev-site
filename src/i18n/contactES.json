@@ -17,6 +17,11 @@
         "description1": "Prometo responder lo antes posible.",
         "description2": "Dentro de mi jornada laboral.",
         "cta": "Escríbeme"
+      },
+      "projectForm": {
+        "title": "Formulario de Inicio de Proyecto",
+        "description": "Una breve encuesta (2 min) para entender las necesidades de tu proyecto y darte una propuesta a medida.",
+        "cta": "Rellenar Formulario"
       }
     },
     "form": {

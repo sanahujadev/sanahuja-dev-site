@@ -17,6 +17,11 @@
         "description1": "I promise to reply as soon as possible.",
         "description2": "Within my working hours.",
         "cta": "Write me"
+      },
+      "projectForm": {
+        "title": "Project Start Form",
+        "description": "A short survey (2 min) to understand your project needs and provide a tailored proposal. (Note: The form is currently available in Spanish only).",
+        "cta": "Fill Out Form"
       }
     },
     "form": {
